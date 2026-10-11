@@ -1,0 +1,49 @@
+{
+  "campaign": "agnes-stage-a-20261010",
+  "objective": "impulse-recovery",
+  "maxSearch": 6,
+  "gainRanges": {
+    "AngleKp": [
+      3,
+      8
+    ],
+    "AngleKi": [
+      0,
+      0.02
+    ],
+    "AngleKd": [
+      4,
+      16
+    ]
+  },
+  "search": {
+    "durationMs": 3000,
+    "target": 0,
+    "x0": 3,
+    "seed": 20261008,
+    "disturbance": 10
+  },
+  "validation": [
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261010,
+      "disturbance": null
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": -3,
+      "seed": 20261008,
+      "disturbance": -10
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261011,
+      "disturbance": 10
+    }
+  ]
+}

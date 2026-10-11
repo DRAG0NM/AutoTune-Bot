@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="690" viewBox="0 0 1320 690" role="img" aria-labelledby="title desc">
+<title id="title">D2 local method exploration</title>
+<desc id="desc">Local simulation parameter and duration sensitivity exploration: 144 cases across six pressure conditions, plus 18 mechanism activation probes. Cells show convergence counts and integral suppression steps.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="40" y="40">D2 方法探索 | 本机纯仿真 162 点</text>
+<text class="subtitle muted" x="40" y="65">上半部 144 点：Kp=6、Kd=16、固定冲量，多组Ki、时长、控制器和六类压力工况；单元格为收敛数/6。</text>
+<text class="panel-title" x="305" y="119">3 秒</text>
+<text class="small muted" text-anchor="middle" x="384" y="138">baseline</text>
+<text class="small muted" text-anchor="middle" x="542" y="138">conditional I</text>
+<text class="small muted" text-anchor="middle" x="700" y="138">D-filter 20ms</text>
+<text class="small" text-anchor="end" x="289" y="170">Ki=0</text>
+<rect x="305" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="380" y="173">6/6 收敛</text>
+<rect x="463" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="538" y="173">6/6 收敛</text>
+<rect x="621" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="696" y="173">6/6 收敛</text>
+<text class="small" text-anchor="end" x="289" y="208">Ki=0.005</text>
+<rect x="305" y="191" width="150" height="30" rx="2" fill="#edd8d3" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="380" y="211">1/6 收敛</text>
+<rect x="463" y="191" width="150" height="30" rx="2" fill="#edd8d3" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="538" y="211">1/6 收敛</text>
+<rect x="621" y="191" width="150" height="30" rx="2" fill="#e9dcd7" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="696" y="211">2/6 收敛</text>
+<text class="small" text-anchor="end" x="289" y="246">Ki=0.01</text>
+<rect x="305" y="229" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="380" y="249">0/6 收敛</text>
+<rect x="463" y="229" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="538" y="249">0/6 收敛</text>
+<rect x="621" y="229" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="696" y="249">0/6 收敛</text>
+<text class="small" text-anchor="end" x="289" y="284">Ki=0.02</text>
+<rect x="305" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="380" y="287">0/6 收敛</text>
+<rect x="463" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="538" y="287">0/6 收敛</text>
+<rect x="621" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="696" y="287">0/6 收敛</text>
+<text class="panel-title" x="825" y="119">4 秒</text>
+<text class="small muted" text-anchor="middle" x="904" y="138">baseline</text>
+<text class="small muted" text-anchor="middle" x="1062" y="138">conditional I</text>
+<text class="small muted" text-anchor="middle" x="1220" y="138">D-filter 20ms</text>
+<text class="small" text-anchor="end" x="809" y="170">Ki=0</text>
+<rect x="825" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="900" y="173">6/6 收敛</text>
+<rect x="983" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1058" y="173">6/6 收敛</text>
+<rect x="1141" y="153" width="150" height="30" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1216" y="173">6/6 收敛</text>
+<text class="small" text-anchor="end" x="809" y="208">Ki=0.005</text>
+<rect x="825" y="191" width="150" height="30" rx="2" fill="#e1e5de" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="900" y="211">4/6 收敛</text>
+<rect x="983" y="191" width="150" height="30" rx="2" fill="#e1e5de" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1058" y="211">4/6 收敛</text>
+<rect x="1141" y="191" width="150" height="30" rx="2" fill="#e5e1db" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1216" y="211">3/6 收敛</text>
+<text class="small" text-anchor="end" x="809" y="246">Ki=0.01</text>
+<rect x="825" y="229" width="150" height="30" rx="2" fill="#e9dcd7" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="900" y="249">2/6 收敛</text>
+<rect x="983" y="229" width="150" height="30" rx="2" fill="#e9dcd7" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1058" y="249">2/6 收敛</text>
+<rect x="1141" y="229" width="150" height="30" rx="2" fill="#e9dcd7" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1216" y="249">2/6 收敛</text>
+<text class="small" text-anchor="end" x="809" y="284">Ki=0.02</text>
+<rect x="825" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="900" y="287">0/6 收敛</text>
+<rect x="983" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1058" y="287">0/6 收敛</text>
+<rect x="1141" y="267" width="150" height="30" rx="2" fill="#f1d3cf" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1216" y="287">0/6 收敛</text>
+<text class="small muted" x="40" y="330">在相同六类压力条件的组合中，Ki=0 全部收敛；Ki=0.02 在 3 秒与 4 秒均无收敛。延长窗口没有修复该候选。</text>
+<text class="panel-title" x="40" y="385">机制触发补充 | 18 点，无冲量；单元格为收敛状态 / 积分抑制步数</text>
+<text class="small muted" text-anchor="middle" x="462" y="423">x0=+3°</text>
+<text class="small muted" text-anchor="middle" x="354" y="442">baseline</text>
+<text class="small muted" text-anchor="middle" x="462" y="442">conditional I</text>
+<text class="small muted" text-anchor="middle" x="570" y="442">D-filter 20ms</text>
+<text class="small muted" text-anchor="middle" x="786" y="423">x0=+20°</text>
+<text class="small muted" text-anchor="middle" x="678" y="442">baseline</text>
+<text class="small muted" text-anchor="middle" x="786" y="442">conditional I</text>
+<text class="small muted" text-anchor="middle" x="894" y="442">D-filter 20ms</text>
+<text class="small muted" text-anchor="middle" x="1110" y="423">x0=-20°</text>
+<text class="small muted" text-anchor="middle" x="1002" y="442">baseline</text>
+<text class="small muted" text-anchor="middle" x="1110" y="442">conditional I</text>
+<text class="small muted" text-anchor="middle" x="1218" y="442">D-filter 20ms</text>
+<text class="small" text-anchor="end" x="285" y="474">Ki=0.02</text>
+<rect x="300" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="350" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="408" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="458" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="516" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="566" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="624" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="674" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="732" y="457" width="100" height="32" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="782" y="478" fill="#25826e">pass / I=11</text>
+<rect x="840" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="890" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="948" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="998" y="478" fill="#bb4c49">fail / I=0</text>
+<rect x="1056" y="457" width="100" height="32" rx="2" fill="#d9eee6" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1106" y="478" fill="#25826e">pass / I=11</text>
+<rect x="1164" y="457" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1214" y="478" fill="#bb4c49">fail / I=0</text>
+<text class="small" text-anchor="end" x="285" y="519">Ki=0.05</text>
+<rect x="300" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="350" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="408" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="458" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="516" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="566" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="624" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="674" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="732" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="782" y="523" fill="#bb4c49">fail / I=11</text>
+<rect x="840" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="890" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="948" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="998" y="523" fill="#bb4c49">fail / I=0</text>
+<rect x="1056" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1106" y="523" fill="#bb4c49">fail / I=11</text>
+<rect x="1164" y="502" width="100" height="32" rx="2" fill="#f1dddd" stroke="#d8dee5"/>
+<text class="small" text-anchor="middle" x="1214" y="523" fill="#bb4c49">fail / I=0</text>
+<text class="small muted" x="40" y="620">Ki=0.02、x0=±20°时条件积分触发 11 步抑制且均收敛；baseline 未收敛。Ki=0.05 时三控制器均未收敛。</text>
+<text class="small muted" x="40" y="650">绿色：收敛；红色：未收敛；I 为积分抑制步数。上半部冲量施加于 1500ms；下半部为无冲量测试。</text>
+</svg>

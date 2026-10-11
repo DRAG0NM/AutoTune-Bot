@@ -1,0 +1,143 @@
+{
+  "verified": true,
+  "frozenEvaluatorHashes": {
+    "metrics": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+    "diagnostics": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1"
+  },
+  "frozenSimulatorHashes": {
+    "bridge/backends/sim.js": "c4b124d8a9a038be5c27bce803fe6e62f72aa6226363fffdf9e5c350a594255e",
+    "bridge/lib/sim-controller.js": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+    "bridge/lib/sim-options.js": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21"
+  },
+  "publishedHistoricalModules": [
+    {
+      "path": "bridge/backends/sim.js",
+      "originalSha256": "c4b124d8a9a038be5c27bce803fe6e62f72aa6226363fffdf9e5c350a594255e",
+      "publishedSha256": "0e5bd076f0560409ca81dbdd14b97b913454ec4a274cd5ec83a69eb22dc20684",
+      "tokenSha256": "6af807bfe53508ab6dabddf99c5701826b02dc4f6b7bac0b2e095fc1055fd3a5",
+      "commentsOnly": true
+    },
+    {
+      "path": "bridge/lib/metrics.js",
+      "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+      "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+      "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+      "commentsOnly": true
+    },
+    {
+      "path": "bridge/lib/diagnostics.js",
+      "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+      "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+      "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+      "commentsOnly": true
+    },
+    {
+      "path": "bridge/lib/sim-options.js",
+      "originalSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+      "publishedSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+      "tokenSha256": "c55ca7e33a9df1f79c1fb8b1b237343e618c32388606f636d98f5e4a581a7344",
+      "commentsOnly": true
+    },
+    {
+      "path": "bridge/lib/sim-controller.js",
+      "originalSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+      "publishedSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+      "tokenSha256": "7ed6c1cf5e96b462e29a228066d29519a525f96fdac8269b288cee60fc86f438",
+      "commentsOnly": true
+    }
+  ],
+  "recordsChecked": 110,
+  "diagnosticsChecked": 97,
+  "controllerStatsChecked": 72,
+  "historicalDiagnosticsChecked": 13,
+  "campaigns": [
+    {
+      "id": "agnes-20261010-a",
+      "records": 13,
+      "searches": 10,
+      "validations": 3,
+      "convergedValidations": 2
+    },
+    {
+      "id": "agnes-stage-a-20261010",
+      "records": 9,
+      "searches": 6,
+      "validations": 3,
+      "convergedValidations": 3
+    },
+    {
+      "id": "agnes-stage-b-20261010",
+      "records": 7,
+      "searches": 4,
+      "validations": 3,
+      "convergedValidations": 3
+    },
+    {
+      "id": "agnes-stage-c-20261010",
+      "records": 9,
+      "searches": 4,
+      "validations": 5,
+      "convergedValidations": 5
+    },
+    {
+      "id": "agnes-stage-d-baseline-20261010-agent",
+      "records": 6,
+      "searches": 1,
+      "validations": 5,
+      "convergedValidations": 0
+    },
+    {
+      "id": "agnes-stage-d-conditional-integral-20261010-agent",
+      "records": 6,
+      "searches": 1,
+      "validations": 5,
+      "convergedValidations": 0
+    },
+    {
+      "id": "agnes-stage-d-derivative-filter-20261010-agent",
+      "records": 6,
+      "searches": 1,
+      "validations": 5,
+      "convergedValidations": 0
+    },
+    {
+      "id": "agnes-stage-d2-m2-baseline-20261010",
+      "records": 4,
+      "searches": 1,
+      "validations": 3,
+      "convergedValidations": 0
+    },
+    {
+      "id": "agnes-stage-d2-m2-conditional-integral-20261010",
+      "records": 4,
+      "searches": 1,
+      "validations": 3,
+      "convergedValidations": 3
+    },
+    {
+      "id": "agnes-stage-d2-t-baseline-20261010",
+      "records": 12,
+      "searches": 6,
+      "validations": 6,
+      "convergedValidations": 6
+    },
+    {
+      "id": "agnes-stage-d2-t-conditional-integral-20261010",
+      "records": 16,
+      "searches": 10,
+      "validations": 6,
+      "convergedValidations": 6
+    },
+    {
+      "id": "agnes-stage-d2-t-derivative-filter-20261010",
+      "records": 18,
+      "searches": 12,
+      "validations": 6,
+      "convergedValidations": 5
+    }
+  ],
+  "gridPoints": 36,
+  "selftestCases": 9,
+  "replayCasesRecomputed": 1,
+  "explorationPointsReproduced": 162
+}

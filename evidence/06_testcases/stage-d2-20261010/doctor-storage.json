@@ -1,0 +1,5 @@
+{
+  "exitCode": 0,
+  "stdout": "[\n  {\n    \"name\": \"storage\",\n    \"status\": \"ok\",\n    \"detail\": [\n      \"node:sqlite 3.53.0\",\n      \"journal_mode wal\",\n      \"transaction write/read verified\"\n    ]\n  }\n]\n",
+  "stderr": ""
+}

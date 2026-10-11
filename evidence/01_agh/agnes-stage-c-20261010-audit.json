@@ -1,0 +1,79 @@
+{
+  "session": "4d44486a-319d-4e5e-b6f5-222ac77eed9d",
+  "events": 653,
+  "turns": [
+    {
+      "reason": "aborted",
+      "lastAssistantSeq": 316,
+      "error": {
+        "code": "ABORTED",
+        "message": "This operation was aborted"
+      }
+    },
+    {
+      "reason": "aborted",
+      "lastAssistantSeq": 578,
+      "error": {
+        "code": "ABORTED",
+        "message": "This operation was aborted"
+      }
+    },
+    {
+      "reason": "completed",
+      "lastAssistantSeq": 648
+    }
+  ],
+  "toolCalls": 39,
+  "shellCalls": 28,
+  "prohibitedCalls": [],
+  "runCoverage": {
+    "fc33e7ee-6276-419d-be11-d3bd444eb56e": true,
+    "192bb837-838b-482c-b771-38ac73467e38": true,
+    "b1bd181b-0280-46eb-b503-4c27ceff646d": true,
+    "5c1f374d-da8a-4b34-96d2-9949077e2bd0": true,
+    "5c202a96-afdd-4482-a5e9-97727386a290": true,
+    "0faed84c-9d4e-4349-8c77-3b63c669d77a": true,
+    "02e6d5df-dd27-45ee-8870-d40c27061017": true,
+    "5e1ff036-d1b1-4a8e-9394-00da60241709": true,
+    "521c3bc3-28f2-456e-bc0c-3f2c61341a77": true
+  },
+  "effectsBalanced": true,
+  "approval": [
+    {
+      "requestId": "r-a3377b5c9e3b20410bc5c20134af6e41",
+      "verdict": "allowed-session",
+      "via": "sync",
+      "scope": "tool:shell:execute"
+    }
+  ],
+  "commands": [
+    "node -v && node bridge/cli.js selftest --json 2>&1 | head -200",
+    "node bridge/cli.js selftest --json 2>&1 | tail -80",
+    "ls data/ 2>/dev/null; ls data/campaigns/ 2>/dev/null; find . -maxdepth 3 -name '*.json' -path '*data*' 2>/dev/null | head -30",
+    "ls; ls bridge/",
+    "ls runs/ 2>/dev/null; ls state/ 2>/dev/null; ls evidence/ 2>/dev/null",
+    "wc -l runs/index.jsonl; grep -c agnes-stage-c-20261010 runs/index.jsonl; grep agnes-stage-c-20261010 runs/index.jsonl",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/lag.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose search --reason \"公开先验6/0/16（selftest B已测可行先验），+10ms执行器滞后；先测该基准点在滞后下的收敛与J\" --json 2>&1 | tail -120",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/lag.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose search --reason \"x\" --json 2>&1 | head -30; echo ---; tail -3 runs/index.jsonl",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/lag.json --gains \"AngleKp=6,AngleKi=0,AngleKd=10\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose search --reason \"第2点：滞后10ms下高Kd=16使settling拉到2250ms、过冲0.20，振荡5次；假设降Kd到10可减小滞后相位损耗下的振荡与过冲，代价是Kd阻尼稍弱\" --parent fc33e7ee-6276-419d-be11-d3bd444eb56e --json 2>&1 | python3 -c \"\nimport json,sys\nraw=sys.stdin.read()\ntry: d=json.loads(raw)\nexcept Exception as e: print(raw); sys.exit()\nprint('runId',d.get('runId'))\nprint('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','y0','step','ss','overshoot','settlingMs','ssErr','osc','energy','peakAbs','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\nprint('output',diag.get('output'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/lag.json --gains \"AngleKp=8,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose search --reason \"第3点：Kd10已测更差（过冲0.29/osc6/energy55，J0.5373），说明降Kd方向错误；改提高Kp至范围上限8，假设高Kp增强刚度可压低过冲与振荡、改善抗扰恢复\" --parent 192bb837-838b-482c-b771-38ac73467e38 --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nprint('runId',d.get('runId')); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','y0','step','ss','overshoot','settlingMs','ssErr','osc','energy','peakAbs','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\nprint('output',diag.get('output'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/dead-zone.json --gains \"AngleKp=6,AngleKi=0,AngleKd=12\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"冻结候选6/0/12；plan验证第1项死区0.15：检查输出代理先死区后的恢复能力\" --parent b1bd181b-0280-46eb-b503-4c27ceff646d --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nprint('runId',d.get('runId')); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','y0','step','ss','overshoot','settlingMs','ssErr','osc','energy','peakAbs','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\nprint('output',diag.get('output'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/dead-zone.json --gains \"AngleKp=6,AngleKi=0,AngleKd=12\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"x\" --parent b1bd181b-0280-46eb-b503-4c27ceff646d --json 2>&1 | head -5",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/dead-zone.json --gains \"AngleKp=6,AngleKi=0,AngleKd=12\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose validation --reason \"冻结候选6/0/12；plan验证第1项死区0.15：检查输出代理先死区后的恢复能力\" --parent b1bd181b-0280-46eb-b503-4c27ceff646d --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nif 'runId' not in d: print(d); sys.exit()\nprint('runId',d.get('runId')); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','y0','step','ss','overshoot','settlingMs','ssErr','osc','energy','peakAbs','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\nprint('output',diag.get('output'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/lag.json --gains \"AngleKp=8,AngleKi=0,AngleKd=12\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose search --reason \"第4点：Kp8/Kd16未收敛且振荡7（J0.5945）；Kp6/Kd10过冲大（0.29，J0.5373）。假设Kp=8+Kd=12在两者之间，Kd12提供适中阻尼且Kp8提升抗扰刚度\" --parent b1bd181b-0280-46eb-b503-4c27ceff646d --json",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/dead-zone.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"搜索候选6/0/16（本次search唯一收敛非摔倒点，J=0.4633/recovered=true，但search未收敛达标）；plan验证第1项死区0.15\" --parent 5c1f374d-da8a-4b34-96d2-9949077e2bd0 --json",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/delay.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"冻结候选6/0/16；plan验证第2项测量延迟10ms：检查延迟历史队列下恢复\" --parent 5c202a96-afdd-4482-a5e9-97727386a290 --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nif 'runId' not in d: print(d); sys.exit()\nprint('runId',d['runId']); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','overshoot','settlingMs','ssErr','osc','energy','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/noise.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"冻结候选6/0/16；plan验证第3项噪声0.15：检查3倍噪声幅度下的收敛与恢复\" --parent 0faed84c-9d4e-4349-8c77-3b63c669d77a --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nif 'runId' not in d: print(d); sys.exit()\nprint('runId',d['runId']); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','overshoot','settlingMs','ssErr','osc','energy','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/uncertainty.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"冻结候选6/0/16；plan验证第4项控制权限/阻尼scale 0.85/0.85：检查对象参数不确定度下的收敛与恢复\" --parent 02e6d5df-dd27-45ee-8870-d40c27061017 --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nif 'runId' not in d: print(d); sys.exit()\nprint('runId',d['runId']); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','overshoot','settlingMs','ssErr','osc','energy','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\n\"",
+    "node bridge/cli.js trial --backend sim --sim-profile configs/sim/combined.json --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --purpose robustness --reason \"冻结候选6/0/16；plan验证第5项全部组合压力：actuatorLag10ms+死区0.15+延迟10ms+噪声0.15+控制/阻尼scale0.85\" --parent 5e1ff036-d1b1-4a8e-9394-00da60241709 --json 2>&1 | python3 -c \"\nimport json,sys\nd=json.loads(sys.stdin.read())\nif 'runId' not in d: print(d); sys.exit()\nprint('runId',d['runId']); print('verdict',d.get('verdict'))\nm=d.get('metrics',{})\nfor k in ['ok','fail','converged','y0','step','ss','overshoot','settlingMs','ssErr','osc','energy','j']: print(k,'=',m.get(k))\ndiag=d.get('diagnostics',{})\nprint('disturb',diag.get('disturbance'))\nprint('tail',diag.get('tail'))\nprint('output',diag.get('output'))\n\"",
+    "node bridge/cli.js verify --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --json 2>&1 | head -120",
+    "node bridge/cli.js verify --help 2>&1 | head -60; node bridge/cli.js verify --json --campaign agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json 2>&1 | head -60",
+    "node bridge/cli.js verify agnes-stage-c-20261010 --plan configs/campaigns/stage-c.json --json 2>&1 | head -80",
+    "grep -o \"verify[^ \\\"]*\" bridge/cli.js | sort -u; grep -o \"case '[a-z]*'\" bridge/cli.js | sort -u | head",
+    "grep -n \"verify\\|diagnose\" bridge/cli.js | head -20; echo ---; grep -rn \"verified\\|planComplete\\|validationPassed\" bridge/lib/*.js | head -20",
+    "ls bridge/lib/; grep -n \"export\" bridge/lib/campaign.js 2>/dev/null | head; grep -rn \"verifyCampaign\\|verify\" bridge/lib/*.js | grep -v \"diagnose\" | head",
+    "grep -rln \"verify\" tools/ 2>/dev/null | head; ls tools/",
+    "node tools/verify-campaign.js --help 2>&1 | head -30; head -60 tools/verify-campaign.js",
+    "node tools/verify-campaign.js --campaign agnes-stage-c-20261010 --out evidence/05_validation/agnes-stage-c-20261010"
+  ]
+}

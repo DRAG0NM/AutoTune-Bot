@@ -1,0 +1,53 @@
+{
+  "session": "6563b9ce-ac6a-4704-8638-0bc458212e43",
+  "events": 386,
+  "turns": [
+    {
+      "reason": "error",
+      "lastAssistantSeq": 142,
+      "error": {
+        "code": "TRANSPORT",
+        "message": "status=?"
+      }
+    },
+    {
+      "reason": "completed",
+      "lastAssistantSeq": 381
+    }
+  ],
+  "toolCalls": 21,
+  "shellCalls": 12,
+  "prohibitedCalls": [],
+  "runCoverage": {
+    "b61d175f-77dd-4f6c-8dea-0a19b6ba5b91": true,
+    "64b3d008-f99a-4975-b7b0-984f458a2fb5": true,
+    "e7afedc8-1b32-40ee-b5ac-029a71a602a2": true,
+    "e5e513da-544e-42f2-bd43-313ba8050751": true,
+    "26faa133-4d5a-4ad4-a112-5a63ae82fe69": true,
+    "25ffd022-2183-4472-8c39-2a83b9a85d11": true,
+    "7e4e8610-540b-412b-95fb-740c69d4eee7": true
+  },
+  "effectsBalanced": true,
+  "approval": [
+    {
+      "requestId": "r-21cd440eee1642d87975983ca1fc7cc5",
+      "verdict": "allowed-session",
+      "via": "sync",
+      "scope": "tool:shell:execute"
+    }
+  ],
+  "commands": [
+    "node --version",
+    "node bridge/cli.js selftest --json",
+    "node bridge/cli.js selftest --json",
+    "node -e \"const fs=require('fs'); const p='runs/index.jsonl'; if(!fs.existsSync(p)) { console.log(JSON.stringify({campaignRecords:0,lastRunId:null})); process.exit(0); } const lines=fs.readFileSync(p,'utf8').trim().split(/\\n/).filter(Boolean).map(JSON.parse); const rows=lines.filter(r=>r.campaign==='agnes-stage-b-20261010'); const last=rows.at(-1)||null; console.log(JSON.stringify({campaignRecords:rows.length,lastRunId:last?.runId??null,reasons:rows.map(r=>({purpose:r.decision?.purpose,reason:r.decision?.reason}))}, null, 2));\"",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose search --reason \"A阶段公开先验6/0/16，在sim-timing-2与新冲量条件重算基准\" --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0.02,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose search --reason \"同Kp/Kd下加入Ki=0.02，检验积分对尾部误差和冲量恢复的影响\" --parent b61d175f-77dd-4f6c-8dea-0a19b6ba5b91 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=8,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose search --reason \"上一组Ki增加导致未收敛，回到Ki=0并提高Kp至8，检验更强比例/阻尼能否缩短settling\" --parent 64b3d008-f99a-4975-b7b0-984f458a2fb5 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=12\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose search --reason \"Kp=8未收敛，保持Kp=6、Ki=0，单独降Kd至12，减少振荡并检验冲量恢复是否仍达标\" --parent e7afedc8-1b32-40ee-b5ac-029a71a602a2 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261010 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose robustness --reason \"冻结候选6/0/16；plan第1验证：x0=3、seed20261010、不传disturb，检查无冲量回零收敛\" --parent e5e513da-544e-42f2-bd43-313ba8050751 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 -3 --seed 20261008 --disturb -10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose robustness --reason \"冻结候选6/0/16；plan第2验证：x0=-3、seed20261008、disturb=-10，检查反向初态与反向冲量恢复\" --parent 26faa133-4d5a-4ad4-a112-5a63ae82fe69 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261011 --disturb 10 --plan configs/campaigns/stage-b.json --campaign agnes-stage-b-20261010 --purpose robustness --reason \"冻结候选6/0/16；plan第3验证：x0=3、seed20261011、disturb=10，检查另一随机种子下正向冲量恢复\" --parent 25ffd022-2183-4472-8c39-2a83b9a85d11 --json",
+    "node tools/verify-campaign.js --campaign agnes-stage-b-20261010"
+  ]
+}

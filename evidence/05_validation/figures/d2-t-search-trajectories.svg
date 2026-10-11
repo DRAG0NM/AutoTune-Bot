@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="790" viewBox="0 0 1250 790" role="img" aria-labelledby="title desc">
+<title id="title">D2-T autonomous search trajectories</title>
+<desc id="desc">Three independent search campaigns show J by search evaluation. Circles are converged points, triangles are non-converged points, and a ring highlights each campaign best feasible point. Validation success counts are shown separately.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="40" y="40">D2-T | 自主搜索轨迹与验证结果</text>
+<text class="subtitle muted" x="40" y="64">每个控制器单独显示搜索序列；实心圆为收敛候选，三角为未收敛候选，粗环标记该批最佳可行点。</text>
+<text class="panel-title" x="40" y="105">Baseline</text>
+<text class="small muted" x="1201" y="105" text-anchor="end">验证 6/6 收敛 | 批次通过</text>
+<line class="grid" x1="116" x2="1201" y1="237.80851063829786" y2="237.80851063829786"/>
+<text class="small muted" text-anchor="end" x="106" y="241.80851063829786">0.3</text>
+<line class="grid" x1="116" x2="1201" y1="211.4255319148936" y2="211.4255319148936"/>
+<text class="small muted" text-anchor="end" x="106" y="215.4255319148936">0.4</text>
+<line class="grid" x1="116" x2="1201" y1="185.04255319148936" y2="185.04255319148936"/>
+<text class="small muted" text-anchor="end" x="106" y="189.04255319148936">0.5</text>
+<line class="grid" x1="116" x2="1201" y1="158.6595744680851" y2="158.6595744680851"/>
+<text class="small muted" text-anchor="end" x="106" y="162.6595744680851">0.6</text>
+<line class="grid" x1="116" x2="1201" y1="132.27659574468086" y2="132.27659574468086"/>
+<text class="small muted" text-anchor="end" x="106" y="136.27659574468086">0.7</text>
+<line class="axis" x1="116" x2="116" y1="127" y2="251"/>
+<line class="axis" x1="116" x2="1201" y1="251" y2="251"/>
+<path d="M 116 161.65617021276597 L 122 172.65617021276597 L 110 172.65617021276597 Z" fill="#ffffff" stroke="#2878a5" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="116" y="156.65617021276597">1</text>
+<line x1="116" y1="167.65617021276597" x2="333" y2="194.7251063829787" stroke="#2878a5" stroke-width="1.5" opacity="0.48"/>
+<circle cx="333" cy="194.7251063829787" r="8" fill="#2878a5" stroke="#202a35" stroke-width="2.5"/>
+<text class="small muted" text-anchor="middle" x="333" y="183.7251063829787">2</text>
+<line x1="333" y1="194.7251063829787" x2="550" y2="160.11063829787233" stroke="#2878a5" stroke-width="1.5" opacity="0.48"/>
+<path d="M 550 154.11063829787233 L 556 165.11063829787233 L 544 165.11063829787233 Z" fill="#ffffff" stroke="#2878a5" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="550" y="149.11063829787233">3</text>
+<line x1="550" y1="160.11063829787233" x2="767" y2="190.68851063829786" stroke="#2878a5" stroke-width="1.5" opacity="0.48"/>
+<circle cx="767" cy="190.68851063829786" r="5" fill="#2878a5" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="767" y="179.68851063829786">4</text>
+<line x1="767" y1="190.68851063829786" x2="984" y2="146.73446808510639" stroke="#2878a5" stroke-width="1.5" opacity="0.48"/>
+<path d="M 984 140.73446808510639 L 990 151.73446808510639 L 978 151.73446808510639 Z" fill="#ffffff" stroke="#2878a5" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="984" y="135.73446808510639">5</text>
+<line x1="984" y1="146.73446808510639" x2="1201" y2="175.9404255319149" stroke="#2878a5" stroke-width="1.5" opacity="0.48"/>
+<circle cx="1201" cy="175.9404255319149" r="5" fill="#2878a5" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="1201" y="164.9404255319149">6</text>
+<text class="small" x="116" y="292" fill="#2878a5">最佳可行: 6/0/16  J=0.4633</text>
+<text class="panel-title" x="40" y="322">Conditional integral</text>
+<text class="small muted" x="1201" y="322" text-anchor="end">验证 6/6 收敛 | 批次通过</text>
+<line class="grid" x1="116" x2="1201" y1="454.8085106382979" y2="454.8085106382979"/>
+<text class="small muted" text-anchor="end" x="106" y="458.8085106382979">0.3</text>
+<line class="grid" x1="116" x2="1201" y1="428.4255319148936" y2="428.4255319148936"/>
+<text class="small muted" text-anchor="end" x="106" y="432.4255319148936">0.4</text>
+<line class="grid" x1="116" x2="1201" y1="402.04255319148933" y2="402.04255319148933"/>
+<text class="small muted" text-anchor="end" x="106" y="406.04255319148933">0.5</text>
+<line class="grid" x1="116" x2="1201" y1="375.6595744680851" y2="375.6595744680851"/>
+<text class="small muted" text-anchor="end" x="106" y="379.6595744680851">0.6</text>
+<line class="grid" x1="116" x2="1201" y1="349.2765957446809" y2="349.2765957446809"/>
+<text class="small muted" text-anchor="end" x="106" y="353.2765957446809">0.7</text>
+<line class="axis" x1="116" x2="116" y1="344" y2="468"/>
+<line class="axis" x1="116" x2="1201" y1="468" y2="468"/>
+<path d="M 116 378.65617021276597 L 122 389.65617021276597 L 110 389.65617021276597 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="116" y="373.65617021276597">1</text>
+<line x1="116" y1="384.65617021276597" x2="236.55555555555554" y2="399.24595744680846" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<circle cx="236.55555555555554" cy="399.24595744680846" r="5" fill="#25826e" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="236.55555555555554" y="388.24595744680846">2</text>
+<line x1="236.55555555555554" y1="399.24595744680846" x2="357.1111111111111" y2="363.7344680851064" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<path d="M 357.1111111111111 357.7344680851064 L 363.1111111111111 368.7344680851064 L 351.1111111111111 368.7344680851064 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="357.1111111111111" y="352.7344680851064">3</text>
+<line x1="357.1111111111111" y1="363.7344680851064" x2="477.66666666666663" y2="411.7251063829787" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<circle cx="477.66666666666663" cy="411.7251063829787" r="8" fill="#25826e" stroke="#202a35" stroke-width="2.5"/>
+<text class="small muted" text-anchor="middle" x="477.66666666666663" y="400.7251063829787">4</text>
+<line x1="477.66666666666663" y1="411.7251063829787" x2="598.2222222222222" y2="450.90382978723403" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<path d="M 598.2222222222222 444.90382978723403 L 604.2222222222222 455.90382978723403 L 592.2222222222222 455.90382978723403 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="598.2222222222222" y="439.90382978723403">5</text>
+<line x1="598.2222222222222" y1="450.90382978723403" x2="718.7777777777778" y2="407.6885106382979" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<circle cx="718.7777777777778" cy="407.6885106382979" r="5" fill="#25826e" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="718.7777777777778" y="396.6885106382979">6</text>
+<line x1="718.7777777777778" y1="407.6885106382979" x2="839.3333333333333" y2="401.9897872340425" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<path d="M 839.3333333333333 395.9897872340425 L 845.3333333333333 406.9897872340425 L 833.3333333333333 406.9897872340425 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="839.3333333333333" y="390.9897872340425">7</text>
+<line x1="839.3333333333333" y1="401.9897872340425" x2="959.8888888888889" y2="389.7744680851064" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<path d="M 959.8888888888889 383.7744680851064 L 965.8888888888889 394.7744680851064 L 953.8888888888889 394.7744680851064 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="959.8888888888889" y="378.7744680851064">8</text>
+<line x1="959.8888888888889" y1="389.7744680851064" x2="1080.4444444444443" y2="395.3412765957447" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<circle cx="1080.4444444444443" cy="395.3412765957447" r="5" fill="#25826e" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="1080.4444444444443" y="384.3412765957447">9</text>
+<line x1="1080.4444444444443" y1="395.3412765957447" x2="1201" y2="386.7931914893617" stroke="#25826e" stroke-width="1.5" opacity="0.48"/>
+<path d="M 1201 380.7931914893617 L 1207 391.7931914893617 L 1195 391.7931914893617 Z" fill="#ffffff" stroke="#25826e" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="1201" y="375.7931914893617">10</text>
+<text class="small" x="116" y="509" fill="#25826e">最佳可行: 6/0/16  J=0.4633</text>
+<text class="panel-title" x="40" y="539">Derivative filter 20 ms</text>
+<text class="small muted" x="1201" y="539" text-anchor="end">验证 5/6 收敛 | 批次未通过</text>
+<line class="grid" x1="116" x2="1201" y1="671.8085106382979" y2="671.8085106382979"/>
+<text class="small muted" text-anchor="end" x="106" y="675.8085106382979">0.3</text>
+<line class="grid" x1="116" x2="1201" y1="645.4255319148936" y2="645.4255319148936"/>
+<text class="small muted" text-anchor="end" x="106" y="649.4255319148936">0.4</text>
+<line class="grid" x1="116" x2="1201" y1="619.0425531914893" y2="619.0425531914893"/>
+<text class="small muted" text-anchor="end" x="106" y="623.0425531914893">0.5</text>
+<line class="grid" x1="116" x2="1201" y1="592.6595744680851" y2="592.6595744680851"/>
+<text class="small muted" text-anchor="end" x="106" y="596.6595744680851">0.6</text>
+<line class="grid" x1="116" x2="1201" y1="566.2765957446809" y2="566.2765957446809"/>
+<text class="small muted" text-anchor="end" x="106" y="570.2765957446809">0.7</text>
+<line class="axis" x1="116" x2="116" y1="561" y2="685"/>
+<line class="axis" x1="116" x2="1201" y1="685" y2="685"/>
+<text class="small muted" text-anchor="middle" x="116" y="704">1</text>
+<text class="small muted" text-anchor="middle" x="214.63636363636363" y="704">2</text>
+<text class="small muted" text-anchor="middle" x="313.27272727272725" y="704">3</text>
+<text class="small muted" text-anchor="middle" x="411.9090909090909" y="704">4</text>
+<text class="small muted" text-anchor="middle" x="510.54545454545456" y="704">5</text>
+<text class="small muted" text-anchor="middle" x="609.1818181818182" y="704">6</text>
+<text class="small muted" text-anchor="middle" x="707.8181818181818" y="704">7</text>
+<text class="small muted" text-anchor="middle" x="806.4545454545455" y="704">8</text>
+<text class="small muted" text-anchor="middle" x="905.0909090909091" y="704">9</text>
+<text class="small muted" text-anchor="middle" x="1003.7272727272727" y="704">10</text>
+<text class="small muted" text-anchor="middle" x="1102.3636363636365" y="704">11</text>
+<text class="small muted" text-anchor="middle" x="1201" y="704">12</text>
+<circle cx="116" cy="630.308085106383" r="8" fill="#bf6b28" stroke="#202a35" stroke-width="2.5"/>
+<text class="small muted" text-anchor="middle" x="116" y="619.308085106383">1</text>
+<line x1="116" y1="630.308085106383" x2="214.63636363636363" y2="602.2365957446808" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 214.63636363636363 596.2365957446808 L 220.63636363636363 607.2365957446808 L 208.63636363636363 607.2365957446808 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="214.63636363636363" y="591.2365957446808">2</text>
+<line x1="214.63636363636363" y1="602.2365957446808" x2="313.27272727272725" y2="668.0093617021276" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 313.27272727272725 662.0093617021276 L 319.27272727272725 673.0093617021276 L 307.27272727272725 673.0093617021276 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="313.27272727272725" y="657.0093617021276">3</text>
+<line x1="313.27272727272725" y1="668.0093617021276" x2="411.9090909090909" y2="621.0212765957447" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 411.9090909090909 615.0212765957447 L 417.9090909090909 626.0212765957447 L 405.9090909090909 626.0212765957447 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="411.9090909090909" y="610.0212765957447">4</text>
+<line x1="411.9090909090909" y1="621.0212765957447" x2="510.54545454545456" y2="611.8927659574468" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<circle cx="510.54545454545456" cy="611.8927659574468" r="5" fill="#bf6b28" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="510.54545454545456" y="600.8927659574468">5</text>
+<line x1="510.54545454545456" y1="611.8927659574468" x2="609.1818181818182" y2="626.4034042553192" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<circle cx="609.1818181818182" cy="626.4034042553192" r="5" fill="#bf6b28" stroke="#ffffff" stroke-width="1.4"/>
+<text class="small muted" text-anchor="middle" x="609.1818181818182" y="615.4034042553192">6</text>
+<line x1="609.1818181818182" y1="626.4034042553192" x2="707.8181818181818" y2="605.6927659574468" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 707.8181818181818 599.6927659574468 L 713.8181818181818 610.6927659574468 L 701.8181818181818 610.6927659574468 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="707.8181818181818" y="594.6927659574468">7</text>
+<line x1="707.8181818181818" y1="605.6927659574468" x2="806.4545454545455" y2="593.9523404255319" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 806.4545454545455 587.9523404255319 L 812.4545454545455 598.9523404255319 L 800.4545454545455 598.9523404255319 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="806.4545454545455" y="582.9523404255319">8</text>
+<line x1="806.4545454545455" y1="593.9523404255319" x2="905.0909090909091" y2="596.2212765957447" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 905.0909090909091 590.2212765957447 L 911.0909090909091 601.2212765957447 L 899.0909090909091 601.2212765957447 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="905.0909090909091" y="585.2212765957447">9</text>
+<line x1="905.0909090909091" y1="596.2212765957447" x2="1003.7272727272727" y2="623.5540425531915" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 1003.7272727272727 617.5540425531915 L 1009.7272727272727 628.5540425531915 L 997.7272727272727 628.5540425531915 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="1003.7272727272727" y="612.5540425531915">10</text>
+<line x1="1003.7272727272727" y1="623.5540425531915" x2="1102.3636363636365" y2="585.3514893617021" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 1102.3636363636365 579.3514893617021 L 1108.3636363636365 590.3514893617021 L 1096.3636363636365 590.3514893617021 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="1102.3636363636365" y="574.3514893617021">11</text>
+<line x1="1102.3636363636365" y1="585.3514893617021" x2="1201" y2="633.8961702127659" stroke="#bf6b28" stroke-width="1.5" opacity="0.48"/>
+<path d="M 1201 627.8961702127659 L 1207 638.8961702127659 L 1195 638.8961702127659 Z" fill="#ffffff" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="1201" y="622.8961702127659">12</text>
+<text class="small" x="116" y="726" fill="#bf6b28">最佳可行: 6/0/16  J=0.4573</text>
+<text class="small muted" transform="translate(42 420) rotate(-90)" text-anchor="middle">综合代价 J（越低越好）</text>
+<text class="small muted" x="660" y="774" text-anchor="middle">搜索评价顺序（不含后续 robustness validation）</text>
+<circle cx="42" cy="746" r="5" fill="#2878a5"/><text class="small" x="53" y="750">收敛</text>
+<path d="M 129 740 L 135 751 L 123 751 Z" fill="white" stroke="#bb4c49" stroke-width="1.7"/><text class="small" x="141" y="750">未收敛</text>
+<text class="small muted" x="250" y="750">连线表示候选的试验顺序；粗环标记最佳可行点；各面板右上角列出后续验证结果。</text>
+</svg>

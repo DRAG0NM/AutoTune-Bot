@@ -1,0 +1,34 @@
+{
+  "name": "autotune-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PID experiment tools for Agnes Harness: simulation, CSV replay and serial execution",
+  "engines": {
+    "node": ">=24.10"
+  },
+  "bin": {
+    "autotune": "./bridge/cli.js"
+  },
+  "scripts": {
+    "selftest": "node bridge/cli.js selftest",
+    "test": "node --test",
+    "trial:sim": "node bridge/cli.js trial --backend sim --json",
+    "trial:replay": "node bridge/cli.js trial --backend replay --csv testdata/sample_step_response.csv --json",
+    "sample": "node tools/make_sample_csv.js",
+    "plot:evidence": "node tools/plot-evidence.js",
+    "verify:evidence": "node tools/verify-evidence-figures.js",
+    "verify:history": "node tools/verify-history.js",
+    "audit:sessions": "node tools/audit-sessions.js"
+  },
+  "dependencies": {},
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DRAG0NM/AutoTune-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DRAG0NM/AutoTune-Bot/issues"
+  },
+  "homepage": "https://github.com/DRAG0NM/AutoTune-Bot#readme"
+}

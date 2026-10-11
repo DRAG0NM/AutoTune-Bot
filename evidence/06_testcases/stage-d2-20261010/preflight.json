@@ -1,0 +1,36 @@
+{
+  "platform": {
+    "exitCode": 0,
+    "stdout": "[\n  {\n    \"name\": \"platform\",\n    \"status\": \"warn\",\n    \"detail\": [\n      \"os linux x64\",\n      \"sandbox.l1=unavailable\",\n      \"sandbox.network=unavailable\",\n      \"exec.kill-tree=full\",\n      \"fs.symlink=full\",\n      \"terminal.truecolor=partial\",\n      \"terminal.kitty-keys=unavailable\",\n      \"ipc=full\"\n    ]\n  }\n]\n",
+    "stderr": ""
+  },
+  "profile": {
+    "exitCode": 0,
+    "stdout": "[\n  {\n    \"name\": \"profile\",\n    \"status\": \"ok\",\n    \"detail\": [\n      \"local-dev hash sha256-1322a3779858cd6204260ffa8955e7650624db27c996d4d60992d2d92fc27bea\",\n      \"packages @agnes/ai, @agnes/base, @agnes/code\",\n      \"dataDir <user-home>/.agh/data\",\n      \"cacheDir <user-home>/.agh/cache\"\n    ]\n  }\n]\n",
+    "stderr": ""
+  },
+  "storage": {
+    "exitCode": 0,
+    "stdout": "[\n  {\n    \"name\": \"storage\",\n    \"status\": \"ok\",\n    \"detail\": [\n      \"node:sqlite 3.53.0\",\n      \"journal_mode wal\",\n      \"transaction write/read verified\"\n    ]\n  }\n]\n",
+    "stderr": ""
+  },
+  "daemon": {
+    "exitCode": 0,
+    "stdout": "[\n  {\n    \"name\": \"daemon\",\n    \"status\": \"ok\",\n    \"detail\": [\n      \"lock: ok\",\n      \"socket: ok\"\n    ]\n  }\n]\n",
+    "stderr": ""
+  },
+  "credentials": {
+    "status": "unsupported",
+    "reason": "Current CLI help does not advertise doctor credentials; no credential files read."
+  },
+  "aghIdentity": {
+    "cli": "<user-home>/agh/packages/cli/dist/local/agnes.mjs",
+    "version": "agh 0.0.0 node 24.16.0 protocol _agnes/v1",
+    "commit": "cde816b88c737b9fd04e7ef55b899e7b4cd55eb7",
+    "localChanges": [
+      "packages/core/src/effects/effect.ts",
+      "packages/core/test/effect.test.ts"
+    ],
+    "purpose": "Keep AGH identity fixed while changing test design; no upgrade performed"
+  }
+}

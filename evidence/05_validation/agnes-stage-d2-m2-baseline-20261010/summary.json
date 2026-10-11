@@ -1,0 +1,228 @@
+{
+  "verified": true,
+  "campaign": "agnes-stage-d2-m2-baseline-20261010",
+  "sourceHash": "fb45a48708fc6b340ae3771e572e1a138ac914f8f030b2c4ab8fe092202b510e",
+  "total": 4,
+  "searches": 1,
+  "distinctSearchPoints": 1,
+  "planComplete": true,
+  "validationCount": 3,
+  "best": null,
+  "controller": {
+    "name": "baseline",
+    "derivativeFilterMs": null
+  },
+  "validationPassed": false,
+  "robustness": [
+    {
+      "runId": "76da087c-dd95-44bb-9946-acc91af98a95",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 12,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 416.48852253588325,
+          "saturatedFraction": 0.04,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 10,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": -20,
+        "seed": 20261008,
+        "disturbance": null,
+        "disturbanceEvent": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": -19.1553,
+        "step": 19.1553,
+        "ss": 0.4244,
+        "overshoot": 0.3518,
+        "settlingMs": 2650,
+        "ssErr": 0.4244,
+        "osc": 0,
+        "energy": 2388,
+        "peakAbs": 20,
+        "j": 0.5978,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.3831,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": null
+    },
+    {
+      "runId": "4abcdbce-d31f-45ba-af47-f79eada3e8a8",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 12,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 416.49051465795515,
+          "saturatedFraction": 0.04,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 10,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 20,
+        "seed": 20261009,
+        "disturbance": null,
+        "disturbanceEvent": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 19.1553,
+        "step": -19.1553,
+        "ss": -0.4224,
+        "overshoot": 0.3519,
+        "settlingMs": 2700,
+        "ssErr": -0.4224,
+        "osc": 0,
+        "energy": 2397,
+        "peakAbs": 20,
+        "j": 0.5979,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.3831,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": null
+    },
+    {
+      "runId": "685060da-c74b-4ff3-8072-04e43b2ec2e6",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 12,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 416.63180604082936,
+          "saturatedFraction": 0.04,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 10,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": -20,
+        "seed": 20261009,
+        "disturbance": null,
+        "disturbanceEvent": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": -19.1553,
+        "step": 19.1553,
+        "ss": 0.4254,
+        "overshoot": 0.3523,
+        "settlingMs": 2700,
+        "ssErr": 0.4254,
+        "osc": 0,
+        "energy": 2377,
+        "peakAbs": 20,
+        "j": 0.5981,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.3831,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": null
+    }
+  ]
+}

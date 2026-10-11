@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="800" viewBox="0 0 1320 800" role="img" aria-labelledby="title desc">
+<title id="title">original D convergence criterion breakdown</title>
+<desc id="desc">Original D paired scenarios: normalized reverse overshoot, absolute tail error and impulse recovery. Crosses in recovery panels mean no qualifying recovery within the observation window.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="40" y="40">原 D 结构对照 | 收敛判据拆解</text>
+<text class="subtitle muted" x="40" y="64">固定 gains 6 / 0.02 / 16；同一 sim-pressure-3 工况；18/18 条均未收敛。恢复图中的叉号表示窗口内未达到带内保持要求。</text>
+<text class="panel-title" x="112" y="123">归一化反向过冲（%）</text>
+<line class="grid" x1="112" x2="1285" y1="240.5" y2="240.5"/>
+<text class="small muted" text-anchor="end" x="103" y="244.5">30</text>
+<line class="grid" x1="112" x2="1285" y1="201.5" y2="201.5"/>
+<text class="small muted" text-anchor="end" x="103" y="205.5">40</text>
+<line class="grid" x1="112" x2="1285" y1="162.5" y2="162.5"/>
+<text class="small muted" text-anchor="end" x="103" y="166.5">50</text>
+<line x1="112" x2="1285" y1="240.5" y2="240.5" stroke="#bb4c49" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text class="small" x="1282" y="235.5" text-anchor="end" fill="#bb4c49">门槛 30%</text>
+<line class="axis" x1="112" x2="112" y1="143" y2="260"/>
+<line class="axis" x1="112" x2="1285" y1="260" y2="260"/>
+<circle cx="102" cy="220.922" r="5.5" fill="#2878a5"/>
+<circle cx="336.6" cy="235.352" r="5.5" fill="#2878a5"/>
+<circle cx="571.2" cy="204.73700000000002" r="5.5" fill="#2878a5"/>
+<circle cx="805.8" cy="235.313" r="5.5" fill="#2878a5"/>
+<circle cx="1040.4" cy="219.284" r="5.5" fill="#2878a5"/>
+<circle cx="1275" cy="160.979" r="5.5" fill="#2878a5"/>
+<circle cx="112" cy="220.922" r="5.5" fill="#25826e"/>
+<circle cx="346.6" cy="235.352" r="5.5" fill="#25826e"/>
+<circle cx="581.2" cy="204.73700000000002" r="5.5" fill="#25826e"/>
+<circle cx="815.8" cy="235.313" r="5.5" fill="#25826e"/>
+<circle cx="1050.4" cy="219.284" r="5.5" fill="#25826e"/>
+<circle cx="1285" cy="160.979" r="5.5" fill="#25826e"/>
+<circle cx="122" cy="226.148" r="5.5" fill="#bf6b28"/>
+<circle cx="356.6" cy="240.617" r="5.5" fill="#bf6b28"/>
+<circle cx="591.2" cy="208.40300000000002" r="5.5" fill="#bf6b28"/>
+<circle cx="825.8" cy="241.31900000000002" r="5.5" fill="#bf6b28"/>
+<circle cx="1060.4" cy="224.471" r="5.5" fill="#bf6b28"/>
+<circle cx="1295" cy="166.556" r="5.5" fill="#bf6b28"/>
+<text class="small muted" text-anchor="middle" x="112" y="277">Search / lag 10</text>
+<text class="small muted" text-anchor="middle" x="346.6" y="277">Dead zone / 0.15</text>
+<text class="small muted" text-anchor="middle" x="581.2" y="277">Delay / 10 ms</text>
+<text class="small muted" text-anchor="middle" x="815.8" y="277">Noise / 0.15</text>
+<text class="small muted" text-anchor="middle" x="1050.4" y="277">Scale / 0.85</text>
+<text class="small muted" text-anchor="middle" x="1285" y="277">Combined</text>
+<text class="panel-title" x="112" y="333">末窗绝对误差（°）</text>
+<line class="grid" x1="112" x2="1285" y1="461.64285714285717" y2="461.64285714285717"/>
+<text class="small muted" text-anchor="end" x="103" y="465.64285714285717">0.10</text>
+<line class="grid" x1="112" x2="1285" y1="419.85714285714283" y2="419.85714285714283"/>
+<text class="small muted" text-anchor="end" x="103" y="423.85714285714283">0.20</text>
+<line class="grid" x1="112" x2="1285" y1="378.07142857142856" y2="378.07142857142856"/>
+<text class="small muted" text-anchor="end" x="103" y="382.07142857142856">0.30</text>
+<line x1="112" x2="1285" y1="461.64285714285717" y2="461.64285714285717" stroke="#bb4c49" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text class="small" x="1282" y="456.64285714285717" text-anchor="end" fill="#bb4c49">门槛 0.10°</text>
+<line class="axis" x1="112" x2="112" y1="353" y2="470"/>
+<line class="axis" x1="112" x2="1285" y1="470" y2="470"/>
+<circle cx="102" cy="438.24285714285713" r="5.5" fill="#2878a5"/>
+<circle cx="336.6" cy="423.74321428571426" r="5.5" fill="#2878a5"/>
+<circle cx="571.2" cy="440.20678571428573" r="5.5" fill="#2878a5"/>
+<circle cx="805.8" cy="439.5382142857143" r="5.5" fill="#2878a5"/>
+<circle cx="1040.4" cy="400.21785714285716" r="5.5" fill="#2878a5"/>
+<circle cx="1275" cy="375.68964285714287" r="5.5" fill="#2878a5"/>
+<circle cx="112" cy="438.24285714285713" r="5.5" fill="#25826e"/>
+<circle cx="346.6" cy="423.74321428571426" r="5.5" fill="#25826e"/>
+<circle cx="581.2" cy="440.20678571428573" r="5.5" fill="#25826e"/>
+<circle cx="815.8" cy="439.5382142857143" r="5.5" fill="#25826e"/>
+<circle cx="1050.4" cy="400.21785714285716" r="5.5" fill="#25826e"/>
+<circle cx="1285" cy="375.68964285714287" r="5.5" fill="#25826e"/>
+<circle cx="122" cy="439.7889285714286" r="5.5" fill="#bf6b28"/>
+<circle cx="356.6" cy="425.03857142857146" r="5.5" fill="#bf6b28"/>
+<circle cx="591.2" cy="441.83642857142854" r="5.5" fill="#bf6b28"/>
+<circle cx="825.8" cy="440.75" r="5.5" fill="#bf6b28"/>
+<circle cx="1060.4" cy="402.2235714285714" r="5.5" fill="#bf6b28"/>
+<circle cx="1295" cy="372.72285714285715" r="5.5" fill="#bf6b28"/>
+<text class="small muted" text-anchor="middle" x="112" y="487">Search / lag 10</text>
+<text class="small muted" text-anchor="middle" x="346.6" y="487">Dead zone / 0.15</text>
+<text class="small muted" text-anchor="middle" x="581.2" y="487">Delay / 10 ms</text>
+<text class="small muted" text-anchor="middle" x="815.8" y="487">Noise / 0.15</text>
+<text class="small muted" text-anchor="middle" x="1050.4" y="487">Scale / 0.85</text>
+<text class="small muted" text-anchor="middle" x="1285" y="487">Combined</text>
+<text class="panel-title" x="112" y="543">施扰后恢复时间（ms）</text>
+<line class="grid" x1="112" x2="1285" y1="680" y2="680"/>
+<text class="small muted" text-anchor="end" x="103" y="684">0</text>
+<line class="grid" x1="112" x2="1285" y1="641" y2="641"/>
+<text class="small muted" text-anchor="end" x="103" y="645">500</text>
+<line class="grid" x1="112" x2="1285" y1="602" y2="602"/>
+<text class="small muted" text-anchor="end" x="103" y="606">1000</text>
+<line class="grid" x1="112" x2="1285" y1="563" y2="563"/>
+<text class="small muted" text-anchor="end" x="103" y="567">1500</text>
+<line class="axis" x1="112" x2="112" y1="563" y2="680"/>
+<line class="axis" x1="112" x2="1285" y1="680" y2="680"/>
+<circle cx="102" cy="598.1" r="5.5" fill="#2878a5"/>
+<path d="M 332.6 569 L 340.6 577 M 340.6 569 L 332.6 577" stroke="#2878a5" stroke-width="2"/>
+<circle cx="571.2" cy="602" r="5.5" fill="#2878a5"/>
+<circle cx="805.8" cy="586.4" r="5.5" fill="#2878a5"/>
+<path d="M 1036.4 569 L 1044.4 577 M 1044.4 569 L 1036.4 577" stroke="#2878a5" stroke-width="2"/>
+<path d="M 1271 569 L 1279 577 M 1279 569 L 1271 577" stroke="#2878a5" stroke-width="2"/>
+<circle cx="112" cy="598.1" r="5.5" fill="#25826e"/>
+<path d="M 342.6 569 L 350.6 577 M 350.6 569 L 342.6 577" stroke="#25826e" stroke-width="2"/>
+<circle cx="581.2" cy="602" r="5.5" fill="#25826e"/>
+<circle cx="815.8" cy="586.4" r="5.5" fill="#25826e"/>
+<path d="M 1046.4 569 L 1054.4 577 M 1054.4 569 L 1046.4 577" stroke="#25826e" stroke-width="2"/>
+<path d="M 1281 569 L 1289 577 M 1289 569 L 1281 577" stroke="#25826e" stroke-width="2"/>
+<circle cx="122" cy="602" r="5.5" fill="#bf6b28"/>
+<path d="M 352.6 569 L 360.6 577 M 360.6 569 L 352.6 577" stroke="#bf6b28" stroke-width="2"/>
+<circle cx="591.2" cy="605.9" r="5.5" fill="#bf6b28"/>
+<circle cx="825.8" cy="586.4" r="5.5" fill="#bf6b28"/>
+<path d="M 1056.4 569 L 1064.4 577 M 1064.4 569 L 1056.4 577" stroke="#bf6b28" stroke-width="2"/>
+<path d="M 1291 569 L 1299 577 M 1299 569 L 1291 577" stroke="#bf6b28" stroke-width="2"/>
+<text class="small muted" text-anchor="middle" x="112" y="697">Search / lag 10</text>
+<text class="small muted" text-anchor="middle" x="346.6" y="697">Dead zone / 0.15</text>
+<text class="small muted" text-anchor="middle" x="581.2" y="697">Delay / 10 ms</text>
+<text class="small muted" text-anchor="middle" x="815.8" y="697">Noise / 0.15</text>
+<text class="small muted" text-anchor="middle" x="1050.4" y="697">Scale / 0.85</text>
+<text class="small muted" text-anchor="middle" x="1285" y="697">Combined</text>
+<circle cx="165" cy="750" r="5.5" fill="#2878a5"/><text class="small" x="177" y="754">Baseline</text>
+<circle cx="465" cy="750" r="5.5" fill="#25826e"/><text class="small" x="477" y="754">Conditional integral</text>
+<circle cx="765" cy="750" r="5.5" fill="#bf6b28"/><text class="small" x="777" y="754">Derivative filter 20 ms</text>
+<text class="small muted" x="40" y="780">虚线：过冲30%、末窗误差0.10°；恢复须在±0.10°带内保持300ms；施扰时间1500ms，结束时间3000ms。</text>
+</svg>

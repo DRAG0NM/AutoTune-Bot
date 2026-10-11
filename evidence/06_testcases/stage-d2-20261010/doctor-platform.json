@@ -1,0 +1,5 @@
+{
+  "exitCode": 0,
+  "stdout": "[\n  {\n    \"name\": \"platform\",\n    \"status\": \"warn\",\n    \"detail\": [\n      \"os linux x64\",\n      \"sandbox.l1=unavailable\",\n      \"sandbox.network=unavailable\",\n      \"exec.kill-tree=full\",\n      \"fs.symlink=full\",\n      \"terminal.truecolor=partial\",\n      \"terminal.kitty-keys=unavailable\",\n      \"ipc=full\"\n    ]\n  }\n]\n",
+  "stderr": ""
+}

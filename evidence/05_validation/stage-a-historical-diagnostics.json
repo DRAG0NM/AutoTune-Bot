@@ -1,0 +1,813 @@
+{
+  "ok": true,
+  "campaign": "agnes-20261010-a",
+  "results": [
+    {
+      "runId": "5e0350d0-9f12-4985-a902-7b41c478e757",
+      "csv": "run_2026-10-10T00-47-55-409Z_d144a097_sim.csv",
+      "csvHash": "e04c1f13d2984758e1604c55b989722478dc0ae9efe81bd4723411466b019493",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.3080500000000008,
+          "iseDeg2Sec": 2.6493358500000026
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.0009444444444444444,
+          "meanAbsErrorDeg": 0.0017222222222222229,
+          "rmsErrorDeg": 0.002173067468400883,
+          "rmsOutput": 0.25526674501609314
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.9,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 40.74553499999998,
+          "totalVariation": 21.160000000000004
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "b173ba43-364d-45bf-a062-f463e7c56036",
+      "csv": "run_2026-10-10T00-48-32-153Z_4ef64e0b_sim.csv",
+      "csvHash": "084de3ef82def8c0a315d7f45a3bb7e19409b04a8beeb423c4245cdcef982964",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0.02,
+        "AngleKd": 12
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 2.8682,
+          "iseDeg2Sec": 4.414176599999999
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.45205555555555554,
+          "meanAbsErrorDeg": 0.46116666666666667,
+          "rmsErrorDeg": 0.5354173346299335,
+          "rmsOutput": 2.1974265251273666
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.93,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 69.86493999999996,
+          "totalVariation": 36.02000000000001
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 93.3,
+          "first": -2.99,
+          "last": -16.54,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "dddc030c-2b7b-4c9d-a87f-bd22713fd1ed",
+      "csv": "run_2026-10-10T00-49-06-919Z_8ddfd036_sim.csv",
+      "csvHash": "7a01ca1531022a23158076adbbfbbd10e49d8cd94eb5b221724024127a442b8e",
+      "gains": {
+        "AngleKp": 6,
+        "AngleKi": 0,
+        "AngleKd": 10
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 0.7704499999999995,
+          "iseDeg2Sec": 1.3063939499999988
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.0004444444444444446,
+          "meanAbsErrorDeg": 0.002888888888888889,
+          "rmsErrorDeg": 0.0031797973380564854,
+          "rmsOutput": 0.33389119984410087
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 17.87,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 45.20764,
+          "totalVariation": 39.339999999999996
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "4724dda0-0945-4322-85dc-93b395394169",
+      "csv": "run_2026-10-10T00-50-51-299Z_744ad2cf_sim.csv",
+      "csvHash": "9542f83b6fbf77511e8c9b3ff857e79c14805c41551d9a534cfdd5a04d095396",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 12
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.4151000000000018,
+          "iseDeg2Sec": 2.8045871000000027
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": -0.00038888888888888887,
+          "meanAbsErrorDeg": 0.0012777777777777779,
+          "rmsErrorDeg": 0.0016832508230603463,
+          "rmsOutput": 0.3582596823534572
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.87,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 41.77682999999999,
+          "totalVariation": 24.599999999999998
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "e64021fa-b193-403b-962c-ea4e3bff262e",
+      "csv": "run_2026-10-10T00-51-46-338Z_4dcf095e_sim.csv",
+      "csvHash": "a662e086d87f1b8d750f9b9e7d6e7e445333634de80090f68b10aede87328480",
+      "gains": {
+        "AngleKp": 3,
+        "AngleKi": 0,
+        "AngleKd": 10
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 36.20165000000001,
+          "iseDeg2Sec": 692.2243451500001
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 24.106666666666666,
+          "meanAbsErrorDeg": 24.106666666666666,
+          "rmsErrorDeg": 25.156297733702125,
+          "rmsOutput": 74.59647887877223
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 100,
+          "observedSaturatedSamples": 4,
+          "observedSaturatedFraction": 0.05,
+          "energyOutputSquaredSec": 6150.982415,
+          "totalVariation": 91.53999999999999
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "37edebbe-f724-44ba-b3a5-1db2803bb395",
+      "csv": "run_2026-10-10T00-52-22-850Z_1d2467f5_sim.csv",
+      "csvHash": "cb68d42f37ab76ea55db45eb2af32fa2b267c2de8688ed92bad8dd853de5d989",
+      "gains": {
+        "AngleKp": 3,
+        "AngleKi": 0,
+        "AngleKd": 6
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 57,
+          "startMs": 0,
+          "endMs": 2800,
+          "spanMs": 2800,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 35.40740000000001,
+          "iseDeg2Sec": 733.9439015
+        },
+        "tail": {
+          "startMs": 1960,
+          "endMs": 2800,
+          "meanErrorDeg": 25.762690476190482,
+          "meanAbsErrorDeg": 25.762690476190482,
+          "rmsErrorDeg": 27.03886210139205,
+          "rmsOutput": 76.95348536306727
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 100,
+          "observedSaturatedSamples": 5,
+          "observedSaturatedFraction": 0.07142857142857142,
+          "energyOutputSquaredSec": 6070.072469999999,
+          "totalVariation": 91.07000000000001
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "b843d340-92c7-413f-b5bb-9c3afbe1cb3c",
+      "csv": "run_2026-10-10T00-54-06-067Z_f590611d_sim.csv",
+      "csvHash": "cc4c3a897a6959076bf0beb1fc4b74d0058c5f8aae8eab6f0a6495880ec80ab9",
+      "gains": {
+        "AngleKp": 5,
+        "AngleKi": 0,
+        "AngleKd": 10
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 0.8693499999999993,
+          "iseDeg2Sec": 1.6050436499999994
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.0005555555555555556,
+          "meanAbsErrorDeg": 0.0021111111111111113,
+          "rmsErrorDeg": 0.0025603819159562024,
+          "rmsOutput": 0.31914817178789473
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 14.88,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 37.83538999999998,
+          "totalVariation": 30.81
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "3331a589-1348-413d-922a-c8220760326d",
+      "csv": "run_2026-10-10T00-54-36-176Z_24f8068a_sim.csv",
+      "csvHash": "be512e01a52539c62931e99e090472d696de16c33da37b0ec5e8a39efe4c5236",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 6
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.281550000000001,
+          "iseDeg2Sec": 2.581352550000003
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.003111111111111111,
+          "meanAbsErrorDeg": 0.003111111111111111,
+          "rmsErrorDeg": 0.004027681991198191,
+          "rmsOutput": 0.20795298613976296
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.92,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 40.39540000000001,
+          "totalVariation": 19.450000000000006
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "f1eae8bb-0c90-423a-8a77-083630948cc9",
+      "csv": "run_2026-10-10T00-55-06-188Z_85f53648_sim.csv",
+      "csvHash": "fdce0a47729e9064ad82f240100d9e851b0f7832f1946ad99e8416036e61320c",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 4
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.2705000000000013,
+          "iseDeg2Sec": 2.5233637000000013
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.005777777777777777,
+          "meanAbsErrorDeg": 0.005777777777777777,
+          "rmsErrorDeg": 0.007371114795831994,
+          "rmsOutput": 0.16505891204186596
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.94,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 40.220099999999995,
+          "totalVariation": 17.979999999999993
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "29d13da8-b859-4f03-818d-161eeac71586",
+      "csv": "run_2026-10-10T00-55-32-947Z_92308c8a_sim.csv",
+      "csvHash": "8a28ef9f84916674aee3ce182a3c326f7cf520c2bdf559dd07396f79151dfaad",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 9
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.3272500000000005,
+          "iseDeg2Sec": 2.6859148500000027
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.0003333333333333334,
+          "meanAbsErrorDeg": 0.001555555555555556,
+          "rmsErrorDeg": 0.002,
+          "rmsOutput": 0.2786574958618555
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.9,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 40.95339999999998,
+          "totalVariation": 21.95
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "85050057-32de-42ff-aa1c-742e277b5ae6",
+      "csv": "run_2026-10-10T00-55-59-676Z_b639db09_sim.csv",
+      "csvHash": "476d4a9ac27505160c735b32c56b58d2938832b502076c94e2e0f4ec96a5338d",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.3311000000000002,
+          "iseDeg2Sec": 2.660517100000001
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": -0.009277777777777777,
+          "meanAbsErrorDeg": 0.009277777777777777,
+          "rmsErrorDeg": 0.010336021155809103,
+          "rmsOutput": 0.15588457268119896
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.92,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 41.51666499999999,
+          "totalVariation": 22.630000000000006
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "0932faba-b7d0-41f6-88a8-aeacac55f896",
+      "csv": "run_2026-10-10T00-56-27-413Z_bca06ce4_sim.csv",
+      "csvHash": "8e110b6f63d26ce08d147856b95c65834e7a6133263d99136eb3cdd513e31dac",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "disturbanceAtMsSource": null,
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.3240000000000005,
+          "iseDeg2Sec": 2.6634811000000016
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.0007777777777777777,
+          "meanAbsErrorDeg": 0.002333333333333333,
+          "rmsErrorDeg": 0.0027487370837451066,
+          "rmsOutput": 0.25661254840712683
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 12.1,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 41.88962999999998,
+          "totalVariation": 21.619999999999997
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": null,
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    },
+    {
+      "runId": "b9744e79-45dd-46ca-8c49-436c14ee11c2",
+      "csv": "run_2026-10-10T00-56-47-003Z_abebf807_sim.csv",
+      "csvHash": "47ab624ead2c5724ae026c6fe32506abee345a957771ad956058e376ca753b4f",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "disturbanceAtMsSource": "legacy-half-duration",
+      "diagnostics": {
+        "version": "1.0",
+        "method": "left-end zero-order hold",
+        "quality": {
+          "samples": 61,
+          "startMs": 0,
+          "endMs": 3000,
+          "spanMs": 3000,
+          "minGapMs": 50,
+          "maxGapMs": 50,
+          "meanGapMs": 50
+        },
+        "error": {
+          "iaeDegSec": 1.9529499999999997,
+          "iseDeg2Sec": 3.1630042500000006
+        },
+        "tail": {
+          "startMs": 2100,
+          "endMs": 3000,
+          "meanErrorDeg": 0.18538888888888888,
+          "meanAbsErrorDeg": 0.18950000000000006,
+          "rmsErrorDeg": 0.27510977606927906,
+          "rmsOutput": 1.1772401812903113
+        },
+        "output": {
+          "limit": 100,
+          "observedPeakAbs": 11.9,
+          "observedSaturatedSamples": 0,
+          "observedSaturatedFraction": 0,
+          "energyOutputSquaredSec": 49.108854999999984,
+          "totalVariation": 26.480000000000004
+        },
+        "integral": {
+          "available": true,
+          "maxAbs": 0,
+          "first": 0,
+          "last": 0,
+          "observedLimitSamples": 0,
+          "unit": "degree per control-step sum",
+          "limit": 1000
+        },
+        "disturbance": {
+          "atMs": 1500,
+          "observed": true,
+          "firstObservedMs": 1500,
+          "observedPeakErrorDeg": 1.069,
+          "recovered": true,
+          "recoveryMs": 1050,
+          "observedAfterMs": 1500,
+          "holdMs": 300,
+          "toleranceDeg": 0.1,
+          "maxGapMs": 100,
+          "observedMaxGapMs": 50,
+          "recoveryWindowMaxGapMs": 50,
+          "sparseObserved": false
+        },
+        "limitations": [
+          "稀疏遥测不能排除采样之间的饱和或高频抖动",
+          "积分限幅状态不能单独证明或排除windup",
+          "恢复仅描述有限观测窗口，不代表永久稳定",
+          "整轮J与反向过冲不等于施扰后的偏差峰值",
+          "输出能量代理不等于电功率，派生轮速不等于真实运动"
+        ]
+      }
+    }
+  ]
+}

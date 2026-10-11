@@ -1,0 +1,10 @@
+* text=auto
+*.js text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.csv -text
+*.jsonl -text
+evidence/versions/** -text
+*.png binary
+*.zip binary

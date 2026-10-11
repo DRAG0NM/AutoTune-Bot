@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="440" viewBox="0 0 1420 440" role="img" aria-labelledby="title desc">
+<title id="title">D2-M2 paired controller metrics</title>
+<desc id="desc">Four matched scenarios compare J, normalized reverse overshoot, and absolute tail error. Dashed limits show 30% overshoot and the recorded angle tolerance.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="38" y="38">D2-M2 | 配对控制器指标</text>
+<text class="subtitle muted" x="38" y="62">固定 gains 6 / 0.02 / 16；sim-pressure-3；3 s；lag 10 ms；无扰动。每条线连接相同初态与 seed。</text>
+<text class="panel-title" x="93" y="104">综合代价 J（越低越好）</text>
+<line class="grid" x1="93" x2="460" y1="301.8181818181818" y2="301.8181818181818"/>
+<text class="small muted" text-anchor="end" x="85" y="305.8181818181818">0.45</text>
+<line class="grid" x1="93" x2="460" y1="258.1818181818182" y2="258.1818181818182"/>
+<text class="small muted" text-anchor="end" x="85" y="262.1818181818182">0.50</text>
+<line class="grid" x1="93" x2="460" y1="214.5454545454545" y2="214.5454545454545"/>
+<text class="small muted" text-anchor="end" x="85" y="218.5454545454545">0.55</text>
+<line class="grid" x1="93" x2="460" y1="170.90909090909093" y2="170.90909090909093"/>
+<text class="small muted" text-anchor="end" x="85" y="174.90909090909093">0.60</text>
+<line class="axis" x1="93" x2="93" y1="136" y2="328"/>
+<line class="axis" x1="93" x2="460" y1="328" y2="328"/>
+<line x1="93" x2="93" y1="172.39272727272723" y2="271.18545454545455" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="93" cy="172.39272727272723" r="5" fill="#2878a5"/>
+<rect x="88.5" y="266.68545454545455" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="93" y="345">1</text>
+<line x1="215.33333333333331" x2="215.33333333333331" y1="172.82909090909092" y2="278.1672727272727" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="215.33333333333331" cy="172.82909090909092" r="5" fill="#2878a5"/>
+<rect x="210.83333333333331" y="273.6672727272727" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="215.33333333333331" y="345">2</text>
+<line x1="337.66666666666663" x2="337.66666666666663" y1="172.56727272727278" y2="271.27272727272725" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="337.66666666666663" cy="172.56727272727278" r="5" fill="#2878a5"/>
+<rect x="333.16666666666663" y="266.77272727272725" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="337.66666666666663" y="345">3</text>
+<line x1="460" x2="460" y1="172.74181818181822" y2="271.4472727272727" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="460" cy="172.74181818181822" r="5" fill="#2878a5"/>
+<rect x="455.5" y="266.9472727272727" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="460" y="345">4</text>
+<text class="small muted" text-anchor="middle" x="276.5" y="368">matched scenario (see key)</text>
+<text class="panel-title" x="558" y="104">归一化反向过冲（%）</text>
+<line class="grid" x1="558" x2="925" y1="305.4117647058824" y2="305.4117647058824"/>
+<text class="small muted" text-anchor="end" x="550" y="309.4117647058824">24</text>
+<line class="grid" x1="558" x2="925" y1="260.235294117647" y2="260.235294117647"/>
+<text class="small muted" text-anchor="end" x="550" y="264.235294117647">28</text>
+<line class="grid" x1="558" x2="925" y1="215.05882352941177" y2="215.05882352941177"/>
+<text class="small muted" text-anchor="end" x="550" y="219.05882352941177">32</text>
+<line class="grid" x1="558" x2="925" y1="169.8823529411765" y2="169.8823529411765"/>
+<text class="small muted" text-anchor="end" x="550" y="173.8823529411765">36</text>
+<line x1="558" x2="925" y1="237.64705882352945" y2="237.64705882352945" stroke="#bb4c49" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text class="small" fill="#bb4c49" x="922" y="231.64705882352945" text-anchor="end">门槛 30%</text>
+<line class="axis" x1="558" x2="558" y1="136" y2="328"/>
+<line class="axis" x1="558" x2="925" y1="328" y2="328"/>
+<line x1="558" x2="558" y1="178.4658823529412" y2="280.11294117647054" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="558" cy="178.4658823529412" r="5" fill="#2878a5"/>
+<rect x="553.5" y="275.61294117647054" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="558" y="345">1</text>
+<line x1="680.3333333333334" x2="680.3333333333334" y1="179.14352941176472" y2="280.79058823529414" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="680.3333333333334" cy="179.14352941176472" r="5" fill="#2878a5"/>
+<rect x="675.8333333333334" y="276.29058823529414" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="680.3333333333334" y="345">2</text>
+<line x1="802.6666666666666" x2="802.6666666666666" y1="178.57882352941178" y2="280.3388235294118" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="802.6666666666666" cy="178.57882352941178" r="5" fill="#2878a5"/>
+<rect x="798.1666666666666" y="275.8388235294118" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="802.6666666666666" y="345">3</text>
+<line x1="925" x2="925" y1="179.03058823529415" y2="280.6776470588235" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="925" cy="179.03058823529415" r="5" fill="#2878a5"/>
+<rect x="920.5" y="276.1776470588235" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="925" y="345">4</text>
+<text class="small muted" text-anchor="middle" x="741.5" y="368">matched scenario (see key)</text>
+<text class="panel-title" x="1023" y="104">末窗绝对误差（°）</text>
+<line class="grid" x1="1023" x2="1390" y1="302.7368421052632" y2="302.7368421052632"/>
+<text class="small muted" text-anchor="end" x="1015" y="306.7368421052632">0.15</text>
+<line class="grid" x1="1023" x2="1390" y1="252.21052631578948" y2="252.21052631578948"/>
+<text class="small muted" text-anchor="end" x="1015" y="256.2105263157895">0.25</text>
+<line class="grid" x1="1023" x2="1390" y1="201.6842105263158" y2="201.6842105263158"/>
+<text class="small muted" text-anchor="end" x="1015" y="205.6842105263158">0.35</text>
+<line class="grid" x1="1023" x2="1390" y1="151.1578947368421" y2="151.1578947368421"/>
+<text class="small muted" text-anchor="end" x="1015" y="155.1578947368421">0.45</text>
+<line x1="1023" x2="1390" y1="184.96" y2="184.96" stroke="#bb4c49" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text class="small" fill="#bb4c49" x="1387" y="178.96" text-anchor="end">容差 0.383°</text>
+<line class="axis" x1="1023" x2="1023" y1="136" y2="328"/>
+<line class="axis" x1="1023" x2="1390" y1="328" y2="328"/>
+<line x1="1023" x2="1023" y1="164.74947368421056" y2="299.90736842105264" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="1023" cy="164.74947368421056" r="5" fill="#2878a5"/>
+<rect x="1018.5" y="295.40736842105264" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="1023" y="345">1</text>
+<line x1="1145.3333333333333" x2="1145.3333333333333" y1="164.09263157894736" y2="299.25052631578944" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="1145.3333333333333" cy="164.09263157894736" r="5" fill="#2878a5"/>
+<rect x="1140.8333333333333" y="294.75052631578944" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="1145.3333333333333" y="345">2</text>
+<line x1="1267.6666666666667" x2="1267.6666666666667" y1="163.58736842105262" y2="298.89684210526315" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="1267.6666666666667" cy="163.58736842105262" r="5" fill="#2878a5"/>
+<rect x="1263.1666666666667" y="294.39684210526315" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="1267.6666666666667" y="345">3</text>
+<line x1="1390" x2="1390" y1="165.10315789473685" y2="300.26105263157893" stroke="#d8dee5" stroke-width="2"/>
+<circle cx="1390" cy="165.10315789473685" r="5" fill="#2878a5"/>
+<rect x="1385.5" y="295.76105263157893" width="9" height="9" fill="#25826e"/>
+<text class="small muted" text-anchor="middle" x="1390" y="345">4</text>
+<text class="small muted" text-anchor="middle" x="1206.5" y="368">matched scenario (see key)</text>
+<circle cx="55" cy="395" r="5" fill="#2878a5"/><text class="small" x="67" y="399">Baseline</text>
+<rect x="160" y="390.5" width="9" height="9" fill="#25826e"/><text class="small" x="177" y="399">Conditional integral</text>
+<text class="small muted" x="420" y="399">横轴编号：1 搜索(+20°, seed08)；2 验证(-20°, seed08)；3 验证(-20°, seed09)；4 验证(+20°, seed09)</text>
+<text class="small muted" x="38" y="425">J 为过冲、调节时间、稳态误差与控制能量的加权综合代价；虚线标示收敛判定门槛。</text>
+</svg>

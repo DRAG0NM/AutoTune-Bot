@@ -1,0 +1,552 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1583" height="1059" viewBox="0 0 1583 1059" role="img" aria-labelledby="title desc">
+<title id="title">D2-T | 六类压力验证的连续指标</title>
+<desc id="desc">Per-campaign robustness diagnostics: impulse recovery, post-impulse absolute error peak, IAE and command squared integral. Column scales are consistent across panels.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="38" y="38">D2-T | 六类压力验证的连续指标</text>
+<text class="subtitle muted" x="38" y="62">逐条 robustness 验证；各列使用固定尺度。恢复要求：进入±0.10°并保持300ms；冲量施加于1500ms，结束时间3000ms。</text>
+<text class="panel-title" x="38" y="114">Baseline | gains 6/0/16</text>
+<text class="small" x="360" y="141">恢复时间（ms）</text>
+<text class="small muted" text-anchor="middle" x="360" y="162">0</text>
+<text class="small muted" text-anchor="middle" x="441" y="162">750</text>
+<text class="small muted" text-anchor="middle" x="522" y="162">1500</text>
+<text class="small" x="558" y="141">施扰后峰值（°）</text>
+<text class="small muted" text-anchor="middle" x="558" y="162">0.0</text>
+<text class="small muted" text-anchor="middle" x="639" y="162">0.6</text>
+<text class="small muted" text-anchor="middle" x="720" y="162">1.2</text>
+<text class="small" x="756" y="141">末窗绝对误差（°）</text>
+<text class="small muted" text-anchor="middle" x="756" y="162">0.000</text>
+<text class="small muted" text-anchor="middle" x="837" y="162">0.075</text>
+<text class="small muted" text-anchor="middle" x="918" y="162">0.150</text>
+<text class="small" x="954" y="141">整轮IAE（°·s）</text>
+<text class="small muted" text-anchor="middle" x="954" y="162">0.0</text>
+<text class="small muted" text-anchor="middle" x="1035" y="162">1.1</text>
+<text class="small muted" text-anchor="middle" x="1116" y="162">2.2</text>
+<text class="small" x="1152" y="141">整轮ISE（°²·s）</text>
+<text class="small muted" text-anchor="middle" x="1152" y="162">0</text>
+<text class="small muted" text-anchor="middle" x="1233" y="162">2</text>
+<text class="small muted" text-anchor="middle" x="1314" y="162">4</text>
+<text class="small" x="1350" y="141">输出²积分（单位²·s）</text>
+<text class="small muted" text-anchor="middle" x="1350" y="162">0</text>
+<text class="small muted" text-anchor="middle" x="1431" y="162">45</text>
+<text class="small muted" text-anchor="middle" x="1512" y="162">90</text>
+<text class="small" text-anchor="end" x="336" y="185">1. 死区0.15</text>
+<line x1="360" x2="522" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="414" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="414" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="185" text-anchor="end">500</text>
+<line x1="558" x2="720" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="657.36" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="657.36" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="185" text-anchor="end">0.736</text>
+<line x1="756" x2="918" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="800.172" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="800.172" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="185" text-anchor="end">0.0409</text>
+<line x1="864" x2="864" y1="170" y2="192" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1029.4956818181818" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1029.4956818181818" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="185" text-anchor="end">1.025</text>
+<line x1="1152" x2="1314" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1213.801722225" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1213.801722225" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="185" text-anchor="end">1.526</text>
+<line x1="1350" x2="1512" y1="181" y2="181" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1434.472263" y1="181" y2="181" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1434.472263" cy="181" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="185" text-anchor="end">46.93</text>
+<text class="small" text-anchor="end" x="336" y="216">2. 测量延迟10ms</text>
+<line x1="360" x2="522" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="446.4" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="446.4" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="216" text-anchor="end">800</text>
+<line x1="558" x2="720" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="661.95" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="661.95" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="216" text-anchor="end">0.770</text>
+<line x1="756" x2="918" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="784.188" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="784.188" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="216" text-anchor="end">0.0261</text>
+<line x1="864" x2="864" y1="201" y2="223" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1030.5965454545453" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1030.5965454545453" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="216" text-anchor="end">1.040</text>
+<line x1="1152" x2="1314" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1213.0649887499999" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1213.0649887499999" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="216" text-anchor="end">1.508</text>
+<line x1="1350" x2="1512" y1="212" y2="212" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1439.67321" y1="212" y2="212" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1439.67321" cy="212" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="216" text-anchor="end">49.82</text>
+<text class="small" text-anchor="end" x="336" y="247">3. 噪声0.15</text>
+<line x1="360" x2="522" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="408.6" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="408.6" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="247" text-anchor="end">450</text>
+<line x1="558" x2="720" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="652.77" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="652.77" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="247" text-anchor="end">0.702</text>
+<line x1="756" x2="918" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="777.06" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="777.06" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="247" text-anchor="end">0.0195</text>
+<line x1="864" x2="864" y1="232" y2="254" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1025.523" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1025.523" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="247" text-anchor="end">0.971</text>
+<line x1="1152" x2="1314" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1212.3722079" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1212.3722079" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="247" text-anchor="end">1.491</text>
+<line x1="1350" x2="1512" y1="243" y2="243" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1434.759759" y1="243" y2="243" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1434.759759" cy="243" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="247" text-anchor="end">47.09</text>
+<text class="small" text-anchor="end" x="336" y="278">4. 控制/阻尼倍率0.85</text>
+<line x1="360" x2="522" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="457.2" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="457.2" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="278" text-anchor="end">900</text>
+<line x1="558" x2="720" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="672.615" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="672.615" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="278" text-anchor="end">0.849</text>
+<line x1="756" x2="918" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="796.392" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="796.392" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="278" text-anchor="end">0.0374</text>
+<line x1="864" x2="864" y1="263" y2="285" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1043.1920454545455" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1043.1920454545455" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="278" text-anchor="end">1.211</text>
+<line x1="1152" x2="1314" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1226.783442375" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1226.783442375" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="278" text-anchor="end">1.847</text>
+<line x1="1350" x2="1512" y1="274" y2="274" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1454.494311" y1="274" y2="274" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1454.494311" cy="274" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="278" text-anchor="end">58.05</text>
+<text class="small" text-anchor="end" x="336" y="309">5. 组合 / x0=3 / seed08</text>
+<line x1="360" x2="522" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="473.4" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="473.4" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="309" text-anchor="end">1050</text>
+<line x1="558" x2="720" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="690.84" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="690.84" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="309" text-anchor="end">0.984</text>
+<line x1="756" x2="918" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="838.944" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="838.944" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="309" text-anchor="end">0.0768</text>
+<line x1="864" x2="864" y1="294" y2="316" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1063.7881363636363" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1063.7881363636363" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="309" text-anchor="end">1.491</text>
+<line x1="1152" x2="1314" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1237.7893497750001" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1237.7893497750001" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="309" text-anchor="end">2.118</text>
+<line x1="1350" x2="1512" y1="305" y2="305" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1477.707777" y1="305" y2="305" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1477.707777" cy="305" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="309" text-anchor="end">70.95</text>
+<text class="small" text-anchor="end" x="336" y="340">6. 组合 / x0=-3 / seed09</text>
+<line x1="360" x2="522" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="478.8" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="478.8" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="525" y="340" text-anchor="end">1100</text>
+<line x1="558" x2="720" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="693.405" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="693.405" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="723" y="340" text-anchor="end">1.003</text>
+<line x1="756" x2="918" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="861.0840000000001" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="861.0840000000001" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="921" y="340" text-anchor="end">0.0973</text>
+<line x1="864" x2="864" y1="325" y2="347" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1063.3536818181817" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1063.3536818181817" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="1119" y="340" text-anchor="end">1.485</text>
+<line x1="1152" x2="1314" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1237.233349575" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1237.233349575" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="1317" y="340" text-anchor="end">2.105</text>
+<line x1="1350" x2="1512" y1="336" y2="336" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1488.451059" y1="336" y2="336" stroke="#2878a5" stroke-width="7" opacity=".6"/>
+<circle cx="1488.451059" cy="336" r="3.5" fill="#2878a5"/>
+<text class="small" x="1515" y="340" text-anchor="end">76.92</text>
+<text class="panel-title" x="38" y="406">Conditional integral | gains 6/0/16</text>
+<text class="small" x="360" y="433">恢复时间（ms）</text>
+<text class="small muted" text-anchor="middle" x="360" y="454">0</text>
+<text class="small muted" text-anchor="middle" x="441" y="454">750</text>
+<text class="small muted" text-anchor="middle" x="522" y="454">1500</text>
+<text class="small" x="558" y="433">施扰后峰值（°）</text>
+<text class="small muted" text-anchor="middle" x="558" y="454">0.0</text>
+<text class="small muted" text-anchor="middle" x="639" y="454">0.6</text>
+<text class="small muted" text-anchor="middle" x="720" y="454">1.2</text>
+<text class="small" x="756" y="433">末窗绝对误差（°）</text>
+<text class="small muted" text-anchor="middle" x="756" y="454">0.000</text>
+<text class="small muted" text-anchor="middle" x="837" y="454">0.075</text>
+<text class="small muted" text-anchor="middle" x="918" y="454">0.150</text>
+<text class="small" x="954" y="433">整轮IAE（°·s）</text>
+<text class="small muted" text-anchor="middle" x="954" y="454">0.0</text>
+<text class="small muted" text-anchor="middle" x="1035" y="454">1.1</text>
+<text class="small muted" text-anchor="middle" x="1116" y="454">2.2</text>
+<text class="small" x="1152" y="433">整轮ISE（°²·s）</text>
+<text class="small muted" text-anchor="middle" x="1152" y="454">0</text>
+<text class="small muted" text-anchor="middle" x="1233" y="454">2</text>
+<text class="small muted" text-anchor="middle" x="1314" y="454">4</text>
+<text class="small" x="1350" y="433">输出²积分（单位²·s）</text>
+<text class="small muted" text-anchor="middle" x="1350" y="454">0</text>
+<text class="small muted" text-anchor="middle" x="1431" y="454">45</text>
+<text class="small muted" text-anchor="middle" x="1512" y="454">90</text>
+<text class="small" text-anchor="end" x="336" y="477">1. 死区0.15</text>
+<line x1="360" x2="522" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="414" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="414" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="477" text-anchor="end">500</text>
+<line x1="558" x2="720" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="657.36" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="657.36" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="477" text-anchor="end">0.736</text>
+<line x1="756" x2="918" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="800.172" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="800.172" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="477" text-anchor="end">0.0409</text>
+<line x1="864" x2="864" y1="462" y2="484" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1029.4956818181818" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1029.4956818181818" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="477" text-anchor="end">1.025</text>
+<line x1="1152" x2="1314" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1213.801722225" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1213.801722225" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="477" text-anchor="end">1.526</text>
+<line x1="1350" x2="1512" y1="473" y2="473" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1434.472263" y1="473" y2="473" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1434.472263" cy="473" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="477" text-anchor="end">46.93</text>
+<text class="small" text-anchor="end" x="336" y="508">2. 测量延迟10ms</text>
+<line x1="360" x2="522" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="446.4" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="446.4" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="508" text-anchor="end">800</text>
+<line x1="558" x2="720" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="661.95" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="661.95" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="508" text-anchor="end">0.770</text>
+<line x1="756" x2="918" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="784.188" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="784.188" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="508" text-anchor="end">0.0261</text>
+<line x1="864" x2="864" y1="493" y2="515" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1030.5965454545453" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1030.5965454545453" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="508" text-anchor="end">1.040</text>
+<line x1="1152" x2="1314" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1213.0649887499999" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1213.0649887499999" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="508" text-anchor="end">1.508</text>
+<line x1="1350" x2="1512" y1="504" y2="504" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1439.67321" y1="504" y2="504" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1439.67321" cy="504" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="508" text-anchor="end">49.82</text>
+<text class="small" text-anchor="end" x="336" y="539">3. 噪声0.15</text>
+<line x1="360" x2="522" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="408.6" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="408.6" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="539" text-anchor="end">450</text>
+<line x1="558" x2="720" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="652.77" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="652.77" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="539" text-anchor="end">0.702</text>
+<line x1="756" x2="918" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="777.06" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="777.06" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="539" text-anchor="end">0.0195</text>
+<line x1="864" x2="864" y1="524" y2="546" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1025.523" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1025.523" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="539" text-anchor="end">0.971</text>
+<line x1="1152" x2="1314" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1212.3722079" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1212.3722079" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="539" text-anchor="end">1.491</text>
+<line x1="1350" x2="1512" y1="535" y2="535" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1434.759759" y1="535" y2="535" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1434.759759" cy="535" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="539" text-anchor="end">47.09</text>
+<text class="small" text-anchor="end" x="336" y="570">4. 控制/阻尼倍率0.85</text>
+<line x1="360" x2="522" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="457.2" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="457.2" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="570" text-anchor="end">900</text>
+<line x1="558" x2="720" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="672.615" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="672.615" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="570" text-anchor="end">0.849</text>
+<line x1="756" x2="918" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="796.392" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="796.392" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="570" text-anchor="end">0.0374</text>
+<line x1="864" x2="864" y1="555" y2="577" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1043.1920454545455" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1043.1920454545455" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="570" text-anchor="end">1.211</text>
+<line x1="1152" x2="1314" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1226.783442375" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1226.783442375" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="570" text-anchor="end">1.847</text>
+<line x1="1350" x2="1512" y1="566" y2="566" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1454.494311" y1="566" y2="566" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1454.494311" cy="566" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="570" text-anchor="end">58.05</text>
+<text class="small" text-anchor="end" x="336" y="601">5. 组合 / x0=3 / seed08</text>
+<line x1="360" x2="522" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="473.4" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="473.4" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="601" text-anchor="end">1050</text>
+<line x1="558" x2="720" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="690.84" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="690.84" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="601" text-anchor="end">0.984</text>
+<line x1="756" x2="918" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="838.944" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="838.944" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="601" text-anchor="end">0.0768</text>
+<line x1="864" x2="864" y1="586" y2="608" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1063.7881363636363" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1063.7881363636363" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="601" text-anchor="end">1.491</text>
+<line x1="1152" x2="1314" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1237.7893497750001" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1237.7893497750001" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="601" text-anchor="end">2.118</text>
+<line x1="1350" x2="1512" y1="597" y2="597" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1477.707777" y1="597" y2="597" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1477.707777" cy="597" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="601" text-anchor="end">70.95</text>
+<text class="small" text-anchor="end" x="336" y="632">6. 组合 / x0=-3 / seed09</text>
+<line x1="360" x2="522" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="478.8" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="478.8" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="525" y="632" text-anchor="end">1100</text>
+<line x1="558" x2="720" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="693.405" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="693.405" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="723" y="632" text-anchor="end">1.003</text>
+<line x1="756" x2="918" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="861.0840000000001" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="861.0840000000001" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="921" y="632" text-anchor="end">0.0973</text>
+<line x1="864" x2="864" y1="617" y2="639" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1063.3536818181817" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1063.3536818181817" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="1119" y="632" text-anchor="end">1.485</text>
+<line x1="1152" x2="1314" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1237.233349575" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1237.233349575" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="1317" y="632" text-anchor="end">2.105</text>
+<line x1="1350" x2="1512" y1="628" y2="628" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1488.451059" y1="628" y2="628" stroke="#25826e" stroke-width="7" opacity=".6"/>
+<circle cx="1488.451059" cy="628" r="3.5" fill="#25826e"/>
+<text class="small" x="1515" y="632" text-anchor="end">76.92</text>
+<text class="panel-title" x="38" y="698">Derivative filter 20ms | gains 6/0/16</text>
+<text class="small" x="360" y="725">恢复时间（ms）</text>
+<text class="small muted" text-anchor="middle" x="360" y="746">0</text>
+<text class="small muted" text-anchor="middle" x="441" y="746">750</text>
+<text class="small muted" text-anchor="middle" x="522" y="746">1500</text>
+<text class="small" x="558" y="725">施扰后峰值（°）</text>
+<text class="small muted" text-anchor="middle" x="558" y="746">0.0</text>
+<text class="small muted" text-anchor="middle" x="639" y="746">0.6</text>
+<text class="small muted" text-anchor="middle" x="720" y="746">1.2</text>
+<text class="small" x="756" y="725">末窗绝对误差（°）</text>
+<text class="small muted" text-anchor="middle" x="756" y="746">0.000</text>
+<text class="small muted" text-anchor="middle" x="837" y="746">0.075</text>
+<text class="small muted" text-anchor="middle" x="918" y="746">0.150</text>
+<text class="small" x="954" y="725">整轮IAE（°·s）</text>
+<text class="small muted" text-anchor="middle" x="954" y="746">0.0</text>
+<text class="small muted" text-anchor="middle" x="1035" y="746">1.1</text>
+<text class="small muted" text-anchor="middle" x="1116" y="746">2.2</text>
+<text class="small" x="1152" y="725">整轮ISE（°²·s）</text>
+<text class="small muted" text-anchor="middle" x="1152" y="746">0</text>
+<text class="small muted" text-anchor="middle" x="1233" y="746">2</text>
+<text class="small muted" text-anchor="middle" x="1314" y="746">4</text>
+<text class="small" x="1350" y="725">输出²积分（单位²·s）</text>
+<text class="small muted" text-anchor="middle" x="1350" y="746">0</text>
+<text class="small muted" text-anchor="middle" x="1431" y="746">45</text>
+<text class="small muted" text-anchor="middle" x="1512" y="746">90</text>
+<text class="small" text-anchor="end" x="336" y="769">1. 死区0.15</text>
+<line x1="360" x2="522" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="446.4" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="446.4" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="769" text-anchor="end">800</text>
+<line x1="558" x2="720" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="662.895" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="662.895" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="769" text-anchor="end">0.777</text>
+<line x1="756" x2="918" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="823.932" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="823.932" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="921" y="769" text-anchor="end">0.0629</text>
+<line x1="864" x2="864" y1="754" y2="776" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1029.5435454545454" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1029.5435454545454" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="769" text-anchor="end">1.026</text>
+<line x1="1152" x2="1314" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1212.96820995" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1212.96820995" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="769" text-anchor="end">1.505</text>
+<line x1="1350" x2="1512" y1="765" y2="765" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1436.439519" y1="765" y2="765" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1436.439519" cy="765" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="769" text-anchor="end">48.02</text>
+<text class="small" text-anchor="end" x="336" y="800">2. 测量延迟10ms</text>
+<line x1="360" x2="522" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="441" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="441" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="800" text-anchor="end">750</text>
+<line x1="558" x2="720" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="666.135" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="666.135" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="800" text-anchor="end">0.801</text>
+<line x1="756" x2="918" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="780.3" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="780.3" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="921" y="800" text-anchor="end">0.0225</text>
+<line x1="864" x2="864" y1="785" y2="807" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1028.461090909091" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1028.461090909091" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="800" text-anchor="end">1.011</text>
+<line x1="1152" x2="1314" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1212.02771085" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1212.02771085" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="800" text-anchor="end">1.482</text>
+<line x1="1350" x2="1512" y1="796" y2="796" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1441.968066" y1="796" y2="796" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1441.968066" cy="796" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="800" text-anchor="end">51.09</text>
+<text class="small" text-anchor="end" x="336" y="831">3. 噪声0.15</text>
+<line x1="360" x2="522" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="408.6" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="408.6" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="831" text-anchor="end">450</text>
+<line x1="558" x2="720" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="655.875" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="655.875" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="831" text-anchor="end">0.725</text>
+<line x1="756" x2="918" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="774.252" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="774.252" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="921" y="831" text-anchor="end">0.0169</text>
+<line x1="864" x2="864" y1="816" y2="838" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1023.2660454545454" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1023.2660454545454" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="831" text-anchor="end">0.941</text>
+<line x1="1152" x2="1314" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1211.237979075" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1211.237979075" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="831" text-anchor="end">1.463</text>
+<line x1="1350" x2="1512" y1="827" y2="827" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1434.01707" y1="827" y2="827" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1434.01707" cy="827" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="831" text-anchor="end">46.68</text>
+<text class="small" text-anchor="end" x="336" y="862">4. 控制/阻尼倍率0.85</text>
+<line x1="360" x2="522" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="451.8" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="451.8" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="862" text-anchor="end">850</text>
+<line x1="558" x2="720" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="674.91" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="674.91" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="862" text-anchor="end">0.866</text>
+<line x1="756" x2="918" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="793.584" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="793.584" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="921" y="862" text-anchor="end">0.0348</text>
+<line x1="864" x2="864" y1="847" y2="869" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1040.7399545454546" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1040.7399545454546" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="862" text-anchor="end">1.178</text>
+<line x1="1152" x2="1314" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1225.565732925" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1225.565732925" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="862" text-anchor="end">1.816</text>
+<line x1="1350" x2="1512" y1="858" y2="858" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1455.901695" y1="858" y2="858" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1455.901695" cy="858" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="862" text-anchor="end">58.83</text>
+<text class="small" text-anchor="end" x="336" y="893">5. 组合 / x0=3 / seed08</text>
+<line x1="360" x2="522" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="478.8" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="478.8" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="893" text-anchor="end">1100</text>
+<line x1="558" x2="720" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="697.32" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="697.32" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="893" text-anchor="end">1.032</text>
+<line x1="756" x2="918" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="860.436" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="860.436" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="921" y="893" text-anchor="end">0.0967</text>
+<line x1="864" x2="864" y1="878" y2="900" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1062.9965454545454" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1062.9965454545454" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="893" text-anchor="end">1.480</text>
+<line x1="1152" x2="1314" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1237.1684787" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1237.1684787" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="893" text-anchor="end">2.103</text>
+<line x1="1350" x2="1512" y1="889" y2="889" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1480.6368" y1="889" y2="889" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1480.6368" cy="889" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="893" text-anchor="end">72.58</text>
+<text class="small" text-anchor="end" x="336" y="924">6. 组合 / x0=-3 / seed09</text>
+<line x1="360" x2="522" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="360" x2="478.8" y1="920" y2="920" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="478.8" cy="920" r="3.5" fill="#bf6b28"/>
+<text class="small" x="525" y="924" text-anchor="end">1100</text>
+<line x1="558" x2="720" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="558" x2="699.615" y1="920" y2="920" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="699.615" cy="920" r="3.5" fill="#bf6b28"/>
+<text class="small" x="723" y="924" text-anchor="end">1.049</text>
+<line x1="756" x2="918" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="756" x2="881.928" y1="920" y2="920" stroke="#bb4c49" stroke-width="7" opacity=".6"/>
+<circle cx="881.928" cy="920" r="3.5" fill="#bb4c49"/>
+<text class="small" x="921" y="924" text-anchor="end">0.1166</text>
+<line x1="864" x2="864" y1="909" y2="931" stroke="#bb4c49" stroke-dasharray="3 3"/>
+<line x1="954" x2="1116" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="954" x2="1063.327909090909" y1="920" y2="920" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1063.327909090909" cy="920" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1119" y="924" text-anchor="end">1.485</text>
+<line x1="1152" x2="1314" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1152" x2="1236.891726" y1="920" y2="920" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1236.891726" cy="920" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1317" y="924" text-anchor="end">2.096</text>
+<line x1="1350" x2="1512" y1="920" y2="920" stroke="#edf0f3" stroke-width="11"/>
+<line x1="1350" x2="1484.5460850000002" y1="920" y2="920" stroke="#bf6b28" stroke-width="7" opacity=".6"/>
+<circle cx="1484.5460850000002" cy="920" r="3.5" fill="#bf6b28"/>
+<text class="small" x="1515" y="924" text-anchor="end">74.75</text>
+<text class="small muted" x="38" y="1035">红点：末窗误差超过0.10°；虚线：对应门槛。输出平方积分使用控制命令；各行编号仅对应所在批次的验证顺序。</text>
+</svg>

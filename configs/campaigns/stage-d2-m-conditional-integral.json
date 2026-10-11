@@ -1,0 +1,73 @@
+{
+  "campaign": "agnes-stage-d2-m-conditional-integral-20261010",
+  "objective": "regulation",
+  "maxSearch": 1,
+  "gainRanges": {
+    "AngleKp": [
+      6,
+      6
+    ],
+    "AngleKi": [
+      0.02,
+      0.02
+    ],
+    "AngleKd": [
+      16,
+      16
+    ]
+  },
+  "search": {
+    "durationMs": 3000,
+    "target": 0,
+    "x0": 20,
+    "seed": 20261008,
+    "disturbance": null,
+    "simProfile": {
+      "actuatorLagMs": 10
+    },
+    "simController": {
+      "name": "conditional-integral"
+    }
+  },
+  "validation": [
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": -20,
+      "seed": 20261008,
+      "disturbance": null,
+      "simProfile": {
+        "actuatorLagMs": 10
+      },
+      "simController": {
+        "name": "conditional-integral"
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 20,
+      "seed": 20261009,
+      "disturbance": null,
+      "simProfile": {
+        "actuatorLagMs": 10
+      },
+      "simController": {
+        "name": "conditional-integral"
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": -20,
+      "seed": 20261009,
+      "disturbance": null,
+      "simProfile": {
+        "actuatorLagMs": 10
+      },
+      "simController": {
+        "name": "conditional-integral"
+      }
+    }
+  ]
+}

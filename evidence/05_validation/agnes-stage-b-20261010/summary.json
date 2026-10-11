@@ -1,0 +1,208 @@
+{
+  "verified": true,
+  "campaign": "agnes-stage-b-20261010",
+  "sourceHash": "24a3dd84533a012dc546cb5c9c4592c7404ef429ebfec91c82ad559c2ba3dde4",
+  "total": 7,
+  "searches": 4,
+  "distinctSearchPoints": 4,
+  "planComplete": true,
+  "validationCount": 3,
+  "best": {
+    "runId": "b61d175f-77dd-4f6c-8dea-0a19b6ba5b91",
+    "gains": {
+      "AngleKp": 6,
+      "AngleKi": 0,
+      "AngleKd": 16
+    },
+    "j": 0.4356,
+    "converged": true
+  },
+  "validationPassed": true,
+  "robustness": [
+    {
+      "runId": "26faa133-4d5a-4ad4-a112-5a63ae82fe69",
+      "conditions": {
+        "modelVersion": "sim-timing-2",
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261010,
+        "disturbance": null,
+        "disturbanceEvent": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.698,
+        "step": -2.698,
+        "ss": -0.0018,
+        "overshoot": 0.1646,
+        "settlingMs": 750,
+        "ssErr": -0.0018,
+        "osc": 7,
+        "energy": 43,
+        "peakAbs": 3,
+        "j": 0.2445,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": null
+    },
+    {
+      "runId": "25ffd022-2183-4472-8c39-2a83b9a85d11",
+      "conditions": {
+        "modelVersion": "sim-timing-2",
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": -3,
+        "seed": 20261008,
+        "disturbance": -10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": -10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": -2.6963,
+        "step": 2.6963,
+        "ss": 0.0235,
+        "overshoot": 0.1632,
+        "settlingMs": 2250,
+        "ssErr": 0.0235,
+        "osc": 6,
+        "energy": 48,
+        "peakAbs": 3,
+        "j": 0.4325,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.705,
+        "recovered": true,
+        "recoveryMs": 750,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": 50,
+        "sparseObserved": false
+      }
+    },
+    {
+      "runId": "7e4e8610-540b-412b-95fb-740c69d4eee7",
+      "conditions": {
+        "modelVersion": "sim-timing-2",
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261011,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.696,
+        "step": -2.696,
+        "ss": -0.0197,
+        "overshoot": 0.1614,
+        "settlingMs": 2200,
+        "ssErr": -0.0197,
+        "osc": 6,
+        "energy": 47,
+        "peakAbs": 3,
+        "j": 0.4308,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.708,
+        "recovered": true,
+        "recoveryMs": 700,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": 50,
+        "sparseObserved": false
+      }
+    }
+  ]
+}

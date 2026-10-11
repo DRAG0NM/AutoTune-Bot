@@ -1,0 +1,111 @@
+{
+  "campaign": "agnes-stage-d-derivative-filter-20261010-agent",
+  "objective": "impulse-recovery",
+  "maxSearch": 1,
+  "gainRanges": {
+    "AngleKp": [
+      6,
+      6
+    ],
+    "AngleKi": [
+      0.02,
+      0.02
+    ],
+    "AngleKd": [
+      16,
+      16
+    ]
+  },
+  "search": {
+    "durationMs": 3000,
+    "target": 0,
+    "x0": 3,
+    "seed": 20261008,
+    "disturbance": 10,
+    "simProfile": {
+      "actuatorLagMs": 10
+    },
+    "simController": {
+      "name": "derivative-filter",
+      "derivativeFilterMs": 20
+    }
+  },
+  "validation": [
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": 10,
+      "simProfile": {
+        "deadZoneOutput": 0.15
+      },
+      "simController": {
+        "name": "derivative-filter",
+        "derivativeFilterMs": 20
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": 10,
+      "simProfile": {
+        "measurementDelayMs": 10
+      },
+      "simController": {
+        "name": "derivative-filter",
+        "derivativeFilterMs": 20
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": 10,
+      "simProfile": {
+        "noise": 0.15
+      },
+      "simController": {
+        "name": "derivative-filter",
+        "derivativeFilterMs": 20
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": 10,
+      "simProfile": {
+        "controlScale": 0.85,
+        "dampingScale": 0.85
+      },
+      "simController": {
+        "name": "derivative-filter",
+        "derivativeFilterMs": 20
+      }
+    },
+    {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": 10,
+      "simProfile": {
+        "actuatorLagMs": 10,
+        "deadZoneOutput": 0.15,
+        "measurementDelayMs": 10,
+        "noise": 0.15,
+        "controlScale": 0.85,
+        "dampingScale": 0.85
+      },
+      "simController": {
+        "name": "derivative-filter",
+        "derivativeFilterMs": 20
+      }
+    }
+  ]
+}

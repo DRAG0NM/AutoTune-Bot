@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "versions": {
+    "v2.3": {
+      "archiveSha256": "f574af7726a8fc6014291a1dc27dfc8933c7666810ace071969d14bad592c39e",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "fce03b6ba2ed31e3ccb0c75f762d976ef6fdf85a11909f835fd08fe606308d03",
+          "publishedSha256": "88dd68379c8dbbfd0c557ba0f0bcebc42238cd99ebd4c5ada3c8d34676c5cd64",
+          "tokenSha256": "4b5665082771f872873f19140097a503d4edaa53017b9b2796c012ba15a525b2",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        }
+      ]
+    },
+    "stage-a": {
+      "archiveSha256": "1d069297d6e60906efa9c337d7cbb72a7fdb6fa034f4bc40a8cac608c06c2355",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "fce03b6ba2ed31e3ccb0c75f762d976ef6fdf85a11909f835fd08fe606308d03",
+          "publishedSha256": "88dd68379c8dbbfd0c557ba0f0bcebc42238cd99ebd4c5ada3c8d34676c5cd64",
+          "tokenSha256": "4b5665082771f872873f19140097a503d4edaa53017b9b2796c012ba15a525b2",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/diagnostics.js",
+          "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+          "commentsOnly": true
+        }
+      ]
+    },
+    "stage-b": {
+      "archiveSha256": "f0146a386f4b45d3828e01d9df383ee14e86c1ae883ae9332b5a9213b38a0409",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "252a57e93aca72f799feec919b9ee46b015f64a04a2c3f409d315fb50eb80d39",
+          "publishedSha256": "fe129de17d66a961d4f462150ce84269750f671d44d4c292b80578dfa9599e5a",
+          "tokenSha256": "d9f8fc9c1cde71d0b11469174496d2070720c558879ef84a1485059bdf6d5de6",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/diagnostics.js",
+          "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+          "commentsOnly": true
+        }
+      ]
+    },
+    "stage-c": {
+      "archiveSha256": "8dc326c546f1fb6b0fa955fe3103a4b4d4357d6908ec8145352267ff313a127f",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "4108bca20a19185606b9f6b64cfdab8924a4a98a3510841d068b174b3a2c8c4d",
+          "publishedSha256": "13e3028d78880199a6bc13f7e5673ca7ad2564a8af43e502fd039cfaaad0a2a1",
+          "tokenSha256": "20df933c66c7c0e432647360fc6b0a7a2c929934f67f3654fb30f9c9d33c4a40",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/diagnostics.js",
+          "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/sim-options.js",
+          "originalSha256": "0e32f6afec3f826b1f7b1cc3063e93faf3a8d0d0e2c36aa153e2adf2ea50497d",
+          "publishedSha256": "0e32f6afec3f826b1f7b1cc3063e93faf3a8d0d0e2c36aa153e2adf2ea50497d",
+          "tokenSha256": "2cfa1fdbd1b32c87afbf90a58049370154a542117837f7fbdde12937ddc8a95d",
+          "commentsOnly": true
+        }
+      ]
+    },
+    "stage-d": {
+      "archiveSha256": "7e9246e4b3e4d3ea807e189f8afa16a9aef968048ec499652d73334f797e357c",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "c4b124d8a9a038be5c27bce803fe6e62f72aa6226363fffdf9e5c350a594255e",
+          "publishedSha256": "0e5bd076f0560409ca81dbdd14b97b913454ec4a274cd5ec83a69eb22dc20684",
+          "tokenSha256": "6af807bfe53508ab6dabddf99c5701826b02dc4f6b7bac0b2e095fc1055fd3a5",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/diagnostics.js",
+          "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/sim-options.js",
+          "originalSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+          "publishedSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+          "tokenSha256": "c55ca7e33a9df1f79c1fb8b1b237343e618c32388606f636d98f5e4a581a7344",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/sim-controller.js",
+          "originalSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+          "publishedSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+          "tokenSha256": "7ed6c1cf5e96b462e29a228066d29519a525f96fdac8269b288cee60fc86f438",
+          "commentsOnly": true
+        }
+      ]
+    },
+    "stage-d2": {
+      "archiveSha256": "dbc5e66cd29fb0e9bc25509c8ba79f6e022e5eab4af92c67ad4ce34a428ce558",
+      "files": [
+        {
+          "path": "bridge/backends/sim.js",
+          "originalSha256": "c4b124d8a9a038be5c27bce803fe6e62f72aa6226363fffdf9e5c350a594255e",
+          "publishedSha256": "0e5bd076f0560409ca81dbdd14b97b913454ec4a274cd5ec83a69eb22dc20684",
+          "tokenSha256": "6af807bfe53508ab6dabddf99c5701826b02dc4f6b7bac0b2e095fc1055fd3a5",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/metrics.js",
+          "originalSha256": "e7b8d65520e7ee8d350210f4d0e4a2c6dbf156d608d2ebabe3b47457b5317d63",
+          "publishedSha256": "1eb952f8a47abc18a008f328b30b5f13d63a221f2f00e5d68e6f38503c0753f5",
+          "tokenSha256": "255493c19a1711e79df2f04ce5a06d6d9d3c5670bdccc03fe9354fe1c7c488ca",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/diagnostics.js",
+          "originalSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "publishedSha256": "78ee02253d755d5c2e36cc6007b60ca7273fbae2b382deac16179f64e3273ba1",
+          "tokenSha256": "1ede1df95a645e576abf5fa1af8415bc7d4045a73db30b575d3f8f820f35144c",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/sim-options.js",
+          "originalSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+          "publishedSha256": "ae1f98b6783977d5a69922e5f886636655eb5d0f2fd48b2763d9eadafc795b21",
+          "tokenSha256": "c55ca7e33a9df1f79c1fb8b1b237343e618c32388606f636d98f5e4a581a7344",
+          "commentsOnly": true
+        },
+        {
+          "path": "bridge/lib/sim-controller.js",
+          "originalSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+          "publishedSha256": "cabb3c8c7f3cebbd7aea6bf50ca5857e5a47c4a4019baf731d8b4aeac22e7e05",
+          "tokenSha256": "7ed6c1cf5e96b462e29a228066d29519a525f96fdac8269b288cee60fc86f438",
+          "commentsOnly": true
+        }
+      ]
+    }
+  },
+  "policy": "Historical modules retain executable tokens; editorial comments are removed or rewritten. Original full archives are retained privately. Published hashes verify the modules provided here."
+}

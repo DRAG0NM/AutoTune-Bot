@@ -1,0 +1,8 @@
+{
+  "actuatorLagMs": 10,
+  "deadZoneOutput": 0.15,
+  "measurementDelayMs": 10,
+  "noise": 0.15,
+  "controlScale": 0.85,
+  "dampingScale": 0.85
+}

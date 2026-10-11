@@ -1,0 +1,305 @@
+{
+  "ts": "2026-10-09T04:51:21.347Z",
+  "allPass": true,
+  "protocol": {
+    "cmd:Stop": true,
+    "cmd:Start": true,
+    "cmd:Zero": true,
+    "slider:clamp": true,
+    "telemetry:parse": true,
+    "device-tick:wrap": true
+  },
+  "cases": [
+    {
+      "key": "normal-tuned",
+      "label": "正常：整定后参数（网格最优附近）",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.8933,
+        "step": -2.8933,
+        "ss": 0.0011,
+        "overshoot": 0.0173,
+        "settlingMs": 900,
+        "ssErr": 0.0011,
+        "osc": 2,
+        "energy": 41,
+        "peakAbs": 2.996,
+        "j": 0.1491,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "normal-conservative",
+      "label": "正常：偏保守（Kd 较大）",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 16
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.8977,
+        "step": -2.8977,
+        "ss": 0.0035,
+        "overshoot": 0.0003,
+        "settlingMs": 1350,
+        "ssErr": 0.0035,
+        "osc": 0,
+        "energy": 43,
+        "peakAbs": 2.996,
+        "j": 0.2032,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "boundary-high-kd",
+      "label": "边界：Kd 贴上限",
+      "gains": {
+        "AngleKp": 8,
+        "AngleKi": 0,
+        "AngleKd": 20
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.39,
+        "step": -2.39,
+        "ss": 0.0009,
+        "overshoot": 0.2745,
+        "settlingMs": 800,
+        "ssErr": 0.0009,
+        "osc": 8,
+        "energy": 59,
+        "peakAbs": 2.972,
+        "j": 0.34,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "boundary-zero-ki",
+      "label": "边界：Ki=0（无积分）",
+      "gains": {
+        "AngleKp": 6,
+        "AngleKi": 0,
+        "AngleKd": 6
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.6087,
+        "step": -2.6087,
+        "ss": -0.0003,
+        "overshoot": 0.3212,
+        "settlingMs": 1100,
+        "ssErr": -0.0003,
+        "osc": 3,
+        "energy": 49,
+        "peakAbs": 2.984,
+        "j": 0.4223,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "fail-no-control",
+      "label": "失败：无控制 → 摔倒",
+      "gains": {
+        "AngleKp": 0,
+        "AngleKi": 0,
+        "AngleKd": 0
+      },
+      "metrics": {
+        "ok": false,
+        "fail": true,
+        "converged": false,
+        "reason": "样本不足（11 < 20）",
+        "n": 11,
+        "overshoot": null,
+        "settlingMs": null,
+        "ssErr": null,
+        "osc": null,
+        "energy": null,
+        "j": "Infinity"
+      }
+    },
+    {
+      "key": "fail-underdamped",
+      "label": "失败：欠阻尼 → 持续振荡",
+      "gains": {
+        "AngleKp": 12,
+        "AngleKi": 0,
+        "AngleKd": 0
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 1.8347,
+        "step": -1.8347,
+        "ss": -0.0006,
+        "overshoot": 0.9261,
+        "settlingMs": 1450,
+        "ssErr": -0.0006,
+        "osc": 11,
+        "energy": 191,
+        "peakAbs": 2.948,
+        "j": 0.6185,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "fail-windup",
+      "label": "失败：积分饱和 → 低频摆动（= 出厂默认值）",
+      "gains": {
+        "AngleKp": 5,
+        "AngleKi": 0.1,
+        "AngleKd": 5
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.6883,
+        "step": -2.6883,
+        "ss": -0.2954,
+        "overshoot": 1.2617,
+        "settlingMs": "Infinity",
+        "ssErr": -0.2954,
+        "osc": 5,
+        "energy": 432,
+        "peakAbs": 3.392,
+        "j": 0.7241,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    },
+    {
+      "key": "replay-sample",
+      "label": "回放：示例数据集（合成数据，非真实实验）",
+      "gains": null,
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.6883,
+        "step": -2.6883,
+        "ss": -0.2954,
+        "overshoot": 1.2617,
+        "settlingMs": "Infinity",
+        "ssErr": -0.2954,
+        "osc": 5,
+        "energy": 432,
+        "peakAbs": 3.392,
+        "j": 0.7241,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1
+      }
+    }
+  ]
+}

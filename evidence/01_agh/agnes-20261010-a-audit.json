@@ -1,0 +1,17 @@
+{
+  "campaign": "agnes-20261010-a",
+  "session": "e402e63f-097b-40d9-bc05-867d9ede2dfe",
+  "model": "agnes-3.0-flash",
+  "events": 555,
+  "turnsStarted": 2,
+  "turnsEnded": 2,
+  "toolCalls": 28,
+  "shellCalls": 22,
+  "trialRequests": 16,
+  "actualTrials": 13,
+  "runIdsFoundInToolResults": 13,
+  "prohibitedCalls": 0,
+  "readOnlyFollowup": true,
+  "note": "Two malformed trial requests and one unanswered approval did not execute trials; all 13 successful executions have CSV. Corrections followed without new trials.",
+  "exportSha256": "f346ae9fcbe09bd93617f32edb67d52db164741517a428d4949e143c33c82fc4"
+}

@@ -1,0 +1,164 @@
+{
+  "verified": true,
+  "campaign": "agnes-stage-a-20261010",
+  "sourceHash": "08a29422a742646658ddb7ee6d2a91d262b043648d6edbfb8608926d6fd84293",
+  "total": 9,
+  "searches": 6,
+  "distinctSearchPoints": 6,
+  "planComplete": true,
+  "validationCount": 3,
+  "best": {
+    "runId": "a5cc667c-5cad-48ab-bba9-eb312111a0cc",
+    "gains": {
+      "AngleKp": 6,
+      "AngleKi": 0,
+      "AngleKd": 16
+    },
+    "j": 0.4385,
+    "converged": true
+  },
+  "robustness": [
+    {
+      "runId": "fd5fdce0-8112-4295-974f-8aa6ec7ac7bc",
+      "conditions": {
+        "x0": 3,
+        "seed": 20261010,
+        "disturbance": null,
+        "disturbanceEvent": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.6293,
+        "step": -2.6293,
+        "ss": -0.0018,
+        "overshoot": 0.1673,
+        "settlingMs": 750,
+        "ssErr": -0.0018,
+        "osc": 4,
+        "energy": 43,
+        "peakAbs": 2.984,
+        "j": 0.2467,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    },
+    {
+      "runId": "761334cc-7e5b-471d-9c53-8d0befd35d2f",
+      "conditions": {
+        "x0": -3,
+        "seed": 20261008,
+        "disturbance": -10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": -10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": -2.6273,
+        "step": 2.6273,
+        "ss": 0.0223,
+        "overshoot": 0.1656,
+        "settlingMs": 2200,
+        "ssErr": 0.0223,
+        "osc": 6,
+        "energy": 48,
+        "peakAbs": 2.983,
+        "j": 0.4344,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    },
+    {
+      "runId": "afb17d1a-b107-4e76-ae9a-ddb143ef8a4e",
+      "conditions": {
+        "x0": 3,
+        "seed": 20261011,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.627,
+        "step": -2.627,
+        "ss": -0.0191,
+        "overshoot": 0.1652,
+        "settlingMs": 2200,
+        "ssErr": -0.0191,
+        "osc": 6,
+        "energy": 47,
+        "peakAbs": 2.984,
+        "j": 0.4339,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    }
+  ]
+}

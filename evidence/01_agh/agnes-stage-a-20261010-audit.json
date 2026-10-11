@@ -1,0 +1,47 @@
+{
+  "session": "a3ab4faf-c945-4ea7-abfa-cd31f7e8c9ee",
+  "events": 276,
+  "turns": [
+    {
+      "reason": "completed",
+      "lastAssistantSeq": 268
+    }
+  ],
+  "toolCalls": 17,
+  "shellCalls": 12,
+  "prohibitedCalls": [],
+  "runCoverage": {
+    "ad09d4ab-c524-4c82-a6e7-7200a90dd3f1": true,
+    "ec1dd903-2a29-4845-990a-072a2a942018": true,
+    "ad4c314f-21cb-4e3e-9078-92c57c93e8ca": true,
+    "a5cc667c-5cad-48ab-bba9-eb312111a0cc": true,
+    "e722358c-3b05-4ab6-b107-02cdf2e47bb9": true,
+    "5579653c-d7da-4b44-9c7a-29ce676bb723": true,
+    "fd5fdce0-8112-4295-974f-8aa6ec7ac7bc": true,
+    "761334cc-7e5b-471d-9c53-8d0befd35d2f": true,
+    "afb17d1a-b107-4e76-ae9a-ddb143ef8a4e": true
+  },
+  "effectsBalanced": true,
+  "approval": [
+    {
+      "requestId": "r-11131d85d0e4457404fa77d8a642ca61",
+      "verdict": "allowed-session",
+      "via": "sync",
+      "scope": "tool:shell:execute"
+    }
+  ],
+  "commands": [
+    "node --version",
+    "node bridge/cli.js selftest --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=4,AngleKi=0,AngleKd=8\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"公开先验4/0/8（selftest已证明无扰动下J=0.1491收敛），作为抗扰搜索基准点测量施扰后恢复能力\" --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=4,AngleKi=0.02,AngleKd=8\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"上轮4/0/8施扰后recovered=true但整轮converged=false（ssErr=0.1747>0.1，settlingMs=2550），假设加入Ki=0.02积分项消除扰后残余误差，Kp/Kd不变以单变量归因\" --parent ad09d4ab-c524-4c82-a6e7-7200a90dd3f1 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=8\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"4/0/8扰后残差0.175且Ki=0.02反而反向漂移（ss=-0.366，假设积分放大扰动后低频摆动，暂不选Ki）；单变量升Kp 4→6增强对扰后余差的比例修正，观察ssErr能否降到0.1内\" --parent ec1dd903-2a29-4845-990a-072a2a942018 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"6/0/8首点fail=false且converged=true、recovered=true、recoveryMs=800（优于4/0/8的1050），但settlingMs=2300偏长、osc=6；假设加Kd 8→16抑制扰后残余摆动并缩短settling，Kp不变单变量归因\" --parent ad4c314f-21cb-4e3e-9078-92c57c93e8ca --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=8,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"6/0/16改善J(0.4385 vs 0.5327)且recoveryMs=700（最优），但settlingMs=2200仍长；假设Kp 6→8进一步压缩扰后余差（selftest无扰动先验示Kp=8振荡上升，需实测确认施扰工况下是否仍可行）\" --parent a5cc667c-5cad-48ab-bba9-eb312111a0cc --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=7,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261008 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose search --reason \"8/0/16的recoveryMs=600为最优但converged=false（settlingMs=2100仍在带外），6/0/16收敛且J=0.4385；假设Kp 8→7介于两者之间，保留recovery=600量级同时让settling提前回带内（单变量Kp）\" --parent e722358c-3b05-4ab6-b107-02cdf2e47bb9 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261010 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose robustness --reason \"冻结候选6/0/16，按plan验证场景1：无扰动(seed20261010)，检查基本收敛是否保持\" --parent 5579653c-d7da-4b44-9c7a-29ce676bb723 --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 -3 --seed 20261008 --disturb -10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose robustness --reason \"冻结候选6/0/16，按plan验证场景2：负初态x0=-3、反向冲量-10deg/s(seed20261008)，检查对称工况下收敛与抗扰恢复\" --parent fd5fdce0-8112-4295-974f-8aa6ec7ac7bc --json",
+    "node bridge/cli.js trial --backend sim --gains \"AngleKp=6,AngleKi=0,AngleKd=16\" --dur 3000 --target 0 --x0 3 --seed 20261011 --disturb 10 --plan configs/campaigns/stage-a.json --campaign agnes-stage-a-20261010 --purpose robustness --reason \"冻结候选6/0/16，按plan验证场景3：同搜索条件仅换seed=20261011的正向冲量，检查噪声/随机初态偏移下的抗扰鲁棒性\" --parent 761334cc-7e5b-471d-9c53-8d0befd35d2f --json",
+    "node tools/verify-campaign.js --campaign agnes-stage-a-20261010"
+  ]
+}

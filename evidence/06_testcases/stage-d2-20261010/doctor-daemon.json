@@ -1,0 +1,5 @@
+{
+  "exitCode": 0,
+  "stdout": "[\n  {\n    \"name\": \"daemon\",\n    \"status\": \"ok\",\n    \"detail\": [\n      \"lock: ok\",\n      \"socket: ok\"\n    ]\n  }\n]\n",
+  "stderr": ""
+}

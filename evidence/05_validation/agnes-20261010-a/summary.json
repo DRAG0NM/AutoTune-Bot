@@ -1,0 +1,149 @@
+{
+  "verified": true,
+  "campaign": "agnes-20261010-a",
+  "sourceHash": "cdfe03a0649f8ed5fd1b4c09990090ad0efea87a60ba26084bdc51e0fa29a23d",
+  "total": 13,
+  "searches": 10,
+  "distinctSearchPoints": 10,
+  "best": {
+    "runId": "5e0350d0-9f12-4985-a902-7b41c478e757",
+    "gains": {
+      "AngleKp": 4,
+      "AngleKi": 0,
+      "AngleKd": 8
+    },
+    "j": 0.1491,
+    "converged": true
+  },
+  "robustness": [
+    {
+      "runId": "85050057-32de-42ff-aa1c-742e277b5ae6",
+      "conditions": {
+        "x0": 3,
+        "seed": 20261010,
+        "disturbance": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.8937,
+        "step": -2.8937,
+        "ss": -0.0087,
+        "overshoot": 0.0252,
+        "settlingMs": 900,
+        "ssErr": -0.0087,
+        "osc": 1,
+        "energy": 42,
+        "peakAbs": 2.996,
+        "j": 0.156,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    },
+    {
+      "runId": "0932faba-b7d0-41f6-88a8-aeacac55f896",
+      "conditions": {
+        "x0": -3,
+        "seed": 20261008,
+        "disturbance": null,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": true,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": -2.8923,
+        "step": 2.8923,
+        "ss": 0.0008,
+        "overshoot": 0.0221,
+        "settlingMs": 900,
+        "ssErr": 0.0008,
+        "osc": 1,
+        "energy": 42,
+        "peakAbs": 2.995,
+        "j": 0.153,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    },
+    {
+      "runId": "b9744e79-45dd-46ca-8c49-436c14ee11c2",
+      "conditions": {
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.8933,
+        "step": -2.8933,
+        "ss": 0.1747,
+        "overshoot": 0.0173,
+        "settlingMs": 2550,
+        "ssErr": 0.1747,
+        "osc": 2,
+        "energy": 49,
+        "peakAbs": 2.996,
+        "j": 0.3261,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      }
+    }
+  ]
+}

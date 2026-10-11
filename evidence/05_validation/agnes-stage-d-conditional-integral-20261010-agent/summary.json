@@ -1,0 +1,463 @@
+{
+  "verified": true,
+  "campaign": "agnes-stage-d-conditional-integral-20261010-agent",
+  "sourceHash": "63935653e1912c24b49de1ac0dedbda8d027099ade1833b7b2a795e2ca77e0f7",
+  "total": 6,
+  "searches": 1,
+  "distinctSearchPoints": 1,
+  "planComplete": true,
+  "validationCount": 5,
+  "best": null,
+  "controller": {
+    "name": "conditional-integral",
+    "derivativeFilterMs": null
+  },
+  "validationPassed": false,
+  "robustness": [
+    {
+      "runId": "68a73c34-20ab-46c7-af57-bea374382063",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "conditional-integral",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 0,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 50.58232362171263,
+          "saturatedFraction": 0,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0.15,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.695,
+        "step": -2.695,
+        "ss": -0.1907,
+        "overshoot": 0.3132,
+        "settlingMs": "Infinity",
+        "ssErr": -0.1907,
+        "osc": 2,
+        "energy": 51,
+        "peakAbs": 3,
+        "j": 0.565,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.609,
+        "recovered": false,
+        "recoveryMs": null,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": null,
+        "sparseObserved": false
+      }
+    },
+    {
+      "runId": "d0eafa0a-f48d-48d5-8d1c-4cb3d5f33564",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "conditional-integral",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 0,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 50.17533173043493,
+          "saturatedFraction": 0,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 10,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.673,
+        "step": -2.673,
+        "ss": -0.1513,
+        "overshoot": 0.3917,
+        "settlingMs": 2500,
+        "ssErr": -0.1513,
+        "osc": 4,
+        "energy": 56,
+        "peakAbs": 3,
+        "j": 0.625,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.673,
+        "recovered": true,
+        "recoveryMs": 1000,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": 50,
+        "sparseObserved": false
+      }
+    },
+    {
+      "runId": "fe8aae3c-db11-40d4-af71-97e733705d2c",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "conditional-integral",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 0,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 49.90906939912618,
+          "saturatedFraction": 0,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.15,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.6903,
+        "step": -2.6903,
+        "ss": -0.1529,
+        "overshoot": 0.3133,
+        "settlingMs": 2700,
+        "ssErr": -0.1529,
+        "osc": 2,
+        "energy": 51,
+        "peakAbs": 3,
+        "j": 0.5623,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.592,
+        "recovered": true,
+        "recoveryMs": 1200,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": 50,
+        "sparseObserved": false
+      }
+    },
+    {
+      "runId": "1e64b488-f2c6-4843-80bf-d2737ce1d86b",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "conditional-integral",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 0,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 60.41033897138175,
+          "saturatedFraction": 0,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 0.85,
+          "dampingScale": 0.85
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.782,
+        "step": -2.782,
+        "ss": -0.247,
+        "overshoot": 0.3544,
+        "settlingMs": "Infinity",
+        "ssErr": -0.247,
+        "osc": 2,
+        "energy": 67,
+        "peakAbs": 3,
+        "j": 0.6016,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.734,
+        "recovered": false,
+        "recoveryMs": null,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": null,
+        "sparseObserved": false
+      }
+    },
+    {
+      "runId": "96477704-acd1-42bc-ae71-834421129965",
+      "conditions": {
+        "modelVersion": "sim-pressure-3",
+        "controllerVersion": "sim-controller-1",
+        "controller": {
+          "name": "conditional-integral",
+          "derivativeFilterMs": null
+        },
+        "controllerStats": {
+          "controlSteps": 300,
+          "saturatedSteps": 0,
+          "integralSuppressedSteps": 0,
+          "maxAbsIntegral": 64.24271572754505,
+          "saturatedFraction": 0,
+          "integralSuppressedFraction": 0
+        },
+        "controlDtMs": 10,
+        "sampleMs": 50,
+        "simProfile": {
+          "actuatorLagMs": 10,
+          "deadZoneOutput": 0.15,
+          "measurementDelayMs": 10,
+          "noise": 0.15,
+          "controlScale": 0.85,
+          "dampingScale": 0.85
+        },
+        "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "disturbanceEvent": {
+          "type": "angular-velocity-impulse",
+          "atMs": 1500,
+          "amplitude": 10,
+          "unit": "deg/s"
+        },
+        "termination": {
+          "reason": "duration",
+          "atMs": 3000
+        }
+      },
+      "metrics": {
+        "ok": true,
+        "fail": false,
+        "converged": false,
+        "n": 61,
+        "dtMs": 50,
+        "target": 0,
+        "y0": 2.8437,
+        "step": -2.8437,
+        "ss": -0.3057,
+        "overshoot": 0.5039,
+        "settlingMs": "Infinity",
+        "ssErr": -0.3057,
+        "osc": 3,
+        "energy": 86,
+        "peakAbs": 3,
+        "j": 0.7219,
+        "jWeights": {
+          "overshoot": 0.4,
+          "settling": 0.3,
+          "ssErr": 0.2,
+          "energy": 0.1
+        },
+        "jNorm": {
+          "overshoot": 0.5,
+          "settlingMs": 2000,
+          "energy": 20000
+        },
+        "tol": 0.1,
+        "settleHoldMs": 300
+      },
+      "disturbanceRecovery": {
+        "atMs": 1500,
+        "observed": true,
+        "firstObservedMs": 1500,
+        "observedPeakErrorDeg": 0.833,
+        "recovered": false,
+        "recoveryMs": null,
+        "observedAfterMs": 1500,
+        "holdMs": 300,
+        "toleranceDeg": 0.1,
+        "maxGapMs": 100,
+        "observedMaxGapMs": 50,
+        "recoveryWindowMaxGapMs": null,
+        "sparseObserved": false
+      }
+    }
+  ]
+}

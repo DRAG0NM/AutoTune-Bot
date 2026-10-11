@@ -1,0 +1,336 @@
+{
+  "allSessionsComplete": false,
+  "audits": [
+    {
+      "file": "agnes-20261010-a.jsonl",
+      "campaigns": [
+        "agnes-20261010-a"
+      ],
+      "events": 555,
+      "firstSeq": 1,
+      "lastSeq": 555,
+      "effectIntents": 54,
+      "effectSettled": 54,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 28,
+      "toolResults": 28,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 2,
+      "runCoverage": {
+        "covered": 13,
+        "total": 13,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "agnes-stage-a-20261010.jsonl",
+      "campaigns": [
+        "agnes-stage-a-20261010"
+      ],
+      "events": 276,
+      "firstSeq": 1,
+      "lastSeq": 276,
+      "effectIntents": 31,
+      "effectSettled": 31,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 17,
+      "toolResults": 17,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 9,
+        "total": 9,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "agnes-stage-b-20261010.jsonl",
+      "campaigns": [
+        "agnes-stage-b-20261010"
+      ],
+      "events": 386,
+      "firstSeq": 1,
+      "lastSeq": 386,
+      "effectIntents": 41,
+      "effectSettled": 41,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 21,
+      "toolResults": 21,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 7,
+        "total": 7,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "agnes-stage-c-20261010.jsonl",
+      "campaigns": [
+        "agnes-stage-c-20261010"
+      ],
+      "events": 653,
+      "firstSeq": 1,
+      "lastSeq": 653,
+      "effectIntents": 74,
+      "effectSettled": 74,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 39,
+      "toolResults": 39,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 9,
+        "total": 9,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "agnes-stage-d-20261010.jsonl",
+      "campaigns": [
+        "agnes-stage-d-baseline-20261010-agent",
+        "agnes-stage-d-conditional-integral-20261010-agent",
+        "agnes-stage-d-derivative-filter-20261010-agent"
+      ],
+      "events": 568,
+      "firstSeq": 658,
+      "lastSeq": 1225,
+      "effectIntents": 62,
+      "effectSettled": 62,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 33,
+      "toolResults": 33,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 18,
+        "total": 18,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "d2-t-baseline.jsonl",
+      "campaigns": [
+        "agnes-stage-d2-t-baseline-20261010"
+      ],
+      "events": 466,
+      "firstSeq": 1,
+      "lastSeq": 466,
+      "effectIntents": 51,
+      "effectSettled": 51,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 27,
+      "toolResults": 27,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 12,
+        "total": 12,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "d2-t-conditional-integral.jsonl",
+      "campaigns": [
+        "agnes-stage-d2-t-conditional-integral-20261010"
+      ],
+      "events": 585,
+      "firstSeq": 1,
+      "lastSeq": 585,
+      "effectIntents": 63,
+      "effectSettled": 63,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 33,
+      "toolResults": 33,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 16,
+        "total": 16,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "d2-t-derivative-filter.jsonl",
+      "campaigns": [
+        "agnes-stage-d2-t-derivative-filter-20261010"
+      ],
+      "events": 702,
+      "firstSeq": 1,
+      "lastSeq": 702,
+      "effectIntents": 80,
+      "effectSettled": 80,
+      "missingSettlements": [],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 42,
+      "toolResults": 42,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 1,
+      "runCoverage": {
+        "covered": 18,
+        "total": 18,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": true
+    },
+    {
+      "file": "d2-m2-baseline.jsonl",
+      "campaigns": [
+        "agnes-stage-d2-m2-baseline-20261010"
+      ],
+      "events": 372,
+      "firstSeq": 1,
+      "lastSeq": 372,
+      "effectIntents": 43,
+      "effectSettled": 42,
+      "missingSettlements": [
+        "e-d4966e7529d0424d0282569208b633fb"
+      ],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 22,
+      "toolResults": 22,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 0,
+      "runCoverage": {
+        "covered": 4,
+        "total": 4,
+        "missing": []
+      },
+      "prohibitedCallSeqs": [],
+      "complete": false
+    },
+    {
+      "file": "d2-m2-conditional-integral.jsonl",
+      "campaigns": [
+        "agnes-stage-d2-m2-conditional-integral-20261010"
+      ],
+      "events": 57,
+      "firstSeq": 1,
+      "lastSeq": 57,
+      "effectIntents": 6,
+      "effectSettled": 5,
+      "missingSettlements": [
+        "e-7846829b7158072d6cf0e9ee5ba8c4ca"
+      ],
+      "unmatchedSettlements": [],
+      "duplicateIntents": [],
+      "duplicateSettlements": [],
+      "invalidDurations": [],
+      "sequenceGaps": [],
+      "toolCalls": 3,
+      "toolResults": 3,
+      "missingToolResults": [],
+      "unmatchedToolResults": [],
+      "duplicateToolCalls": [],
+      "duplicateToolResults": [],
+      "invalidToolIds": [],
+      "completedTurns": 0,
+      "runCoverage": {
+        "covered": 0,
+        "total": 4,
+        "missing": [
+          "c3e5dbb0-8530-46b0-a3a2-3b3d452b5be4",
+          "143fab36-2d6b-416a-b864-0abd93c0068b",
+          "36a6baca-536a-4fe3-9c93-89bdc5e93645",
+          "42fbc9aa-7ef0-40c8-bcf6-1b1810be02a8"
+        ]
+      },
+      "prohibitedCallSeqs": [],
+      "complete": false
+    }
+  ]
+}

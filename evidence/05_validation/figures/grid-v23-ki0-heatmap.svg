@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="625" viewBox="0 0 1040 625" role="img" aria-labelledby="title desc">
+<title id="title">v2.3 Ki zero grid search</title>
+<desc id="desc">Thirty-six simulated grid candidates for Ki zero. Kp and Kd form the heatmap axes; hard falls are marked separately, and the lowest converged objective is highlighted.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="40" y="40">v2.3 网格搜索 | Ki=0</text>
+<text class="subtitle muted" x="40" y="65">36 个固定种子候选；target=0°，x0=3°，duration=3000ms，seed=20261008。单元格显示 J；摔倒标记为 FALL。</text>
+<text class="label" x="576" y="118" text-anchor="middle">AngleKd</text>
+<text class="label" transform="translate(118 331.5) rotate(-90)" text-anchor="middle">AngleKp</text>
+<text class="label muted" text-anchor="middle" x="276" y="140">0</text>
+<text class="label muted" text-anchor="middle" x="396" y="140">4</text>
+<text class="label muted" text-anchor="middle" x="516" y="140">8</text>
+<text class="label muted" text-anchor="middle" x="636" y="140">12</text>
+<text class="label muted" text-anchor="middle" x="756" y="140">16</text>
+<text class="label muted" text-anchor="middle" x="876" y="140">20</text>
+<text class="label muted" text-anchor="end" x="207" y="181.5">2</text>
+<rect x="220" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="276" y="192">fail</text>
+<rect x="340" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="396" y="192">fail</text>
+<rect x="460" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="516" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="516" y="192">fail</text>
+<rect x="580" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="636" y="192">fail</text>
+<rect x="700" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="756" y="192">fail</text>
+<rect x="820" y="150" width="112" height="53" rx="2" fill="#f1dddd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="173" font-weight="400">FALL</text>
+<text class="small muted" text-anchor="middle" x="876" y="192">fail</text>
+<text class="label muted" text-anchor="end" x="207" y="243.5">4</text>
+<rect x="220" y="212" width="112" height="53" rx="2" fill="#e1e5de" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="235" font-weight="400">J 0.313</text>
+<text class="small muted" text-anchor="middle" x="276" y="254">收敛</text>
+<rect x="340" y="212" width="112" height="53" rx="2" fill="#dfe8e1" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="235" font-weight="400">J 0.257</text>
+<text class="small muted" text-anchor="middle" x="396" y="254">收敛</text>
+<rect x="460" y="212" width="112" height="53" rx="2" fill="#d9eee6" stroke="#202a35" stroke-width="3"/>
+<text class="label" text-anchor="middle" x="516" y="235" font-weight="700">J 0.149</text>
+<text class="small muted" text-anchor="middle" x="516" y="254">收敛 | 最优</text>
+<rect x="580" y="212" width="112" height="53" rx="2" fill="#daede5" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="235" font-weight="400">J 0.167</text>
+<text class="small muted" text-anchor="middle" x="636" y="254">收敛</text>
+<rect x="700" y="212" width="112" height="53" rx="2" fill="#dcebe3" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="235" font-weight="400">J 0.203</text>
+<text class="small muted" text-anchor="middle" x="756" y="254">收敛</text>
+<rect x="820" y="212" width="112" height="53" rx="2" fill="#dee9e1" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="235" font-weight="400">J 0.241</text>
+<text class="small muted" text-anchor="middle" x="876" y="254">收敛</text>
+<text class="label muted" text-anchor="end" x="207" y="305.5">6</text>
+<rect x="220" y="274" width="112" height="53" rx="2" fill="#eed6d2" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="297" font-weight="400">J 0.566</text>
+<text class="small muted" text-anchor="middle" x="276" y="316">未收敛</text>
+<rect x="340" y="274" width="112" height="53" rx="2" fill="#e8ddd7" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="297" font-weight="400">J 0.451</text>
+<text class="small muted" text-anchor="middle" x="396" y="316">未收敛</text>
+<rect x="460" y="274" width="112" height="53" rx="2" fill="#e6e0da" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="516" y="297" font-weight="400">J 0.396</text>
+<text class="small muted" text-anchor="middle" x="516" y="316">收敛</text>
+<rect x="580" y="274" width="112" height="53" rx="2" fill="#e2e4dd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="297" font-weight="400">J 0.331</text>
+<text class="small muted" text-anchor="middle" x="636" y="316">收敛</text>
+<rect x="700" y="274" width="112" height="53" rx="2" fill="#dee8e1" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="297" font-weight="400">J 0.249</text>
+<text class="small muted" text-anchor="middle" x="756" y="316">收敛</text>
+<rect x="820" y="274" width="112" height="53" rx="2" fill="#dceae3" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="297" font-weight="400">J 0.215</text>
+<text class="small muted" text-anchor="middle" x="876" y="316">收敛</text>
+<text class="label muted" text-anchor="end" x="207" y="367.5">8</text>
+<rect x="220" y="336" width="112" height="53" rx="2" fill="#f1d3cf" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="359" font-weight="400">J 0.618</text>
+<text class="small muted" text-anchor="middle" x="276" y="378">未收敛</text>
+<rect x="340" y="336" width="112" height="53" rx="2" fill="#f0d4d0" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="359" font-weight="400">J 0.603</text>
+<text class="small muted" text-anchor="middle" x="396" y="378">未收敛</text>
+<rect x="460" y="336" width="112" height="53" rx="2" fill="#ecd8d3" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="516" y="359" font-weight="400">J 0.529</text>
+<text class="small muted" text-anchor="middle" x="516" y="378">未收敛</text>
+<rect x="580" y="336" width="112" height="53" rx="2" fill="#e8ded8" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="359" font-weight="400">J 0.434</text>
+<text class="small muted" text-anchor="middle" x="636" y="378">未收敛</text>
+<rect x="700" y="336" width="112" height="53" rx="2" fill="#e5e0da" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="359" font-weight="400">J 0.389</text>
+<text class="small muted" text-anchor="middle" x="756" y="378">未收敛</text>
+<rect x="820" y="336" width="112" height="53" rx="2" fill="#e3e3dd" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="359" font-weight="400">J 0.340</text>
+<text class="small muted" text-anchor="middle" x="876" y="378">收敛</text>
+<text class="label muted" text-anchor="end" x="207" y="429.5">10</text>
+<rect x="220" y="398" width="112" height="53" rx="2" fill="#f1d3cf" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="421" font-weight="400">J 0.619</text>
+<text class="small muted" text-anchor="middle" x="276" y="440">未收敛</text>
+<rect x="340" y="398" width="112" height="53" rx="2" fill="#efd5d1" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="421" font-weight="400">J 0.581</text>
+<text class="small muted" text-anchor="middle" x="396" y="440">未收敛</text>
+<rect x="460" y="398" width="112" height="53" rx="2" fill="#efd6d1" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="516" y="421" font-weight="400">J 0.573</text>
+<text class="small muted" text-anchor="middle" x="516" y="440">未收敛</text>
+<rect x="580" y="398" width="112" height="53" rx="2" fill="#edd7d3" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="421" font-weight="400">J 0.543</text>
+<text class="small muted" text-anchor="middle" x="636" y="440">未收敛</text>
+<rect x="700" y="398" width="112" height="53" rx="2" fill="#ebdad5" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="421" font-weight="400">J 0.504</text>
+<text class="small muted" text-anchor="middle" x="756" y="440">未收敛</text>
+<rect x="820" y="398" width="112" height="53" rx="2" fill="#e7ded9" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="421" font-weight="400">J 0.421</text>
+<text class="small muted" text-anchor="middle" x="876" y="440">未收敛</text>
+<text class="label muted" text-anchor="end" x="207" y="491.5">12</text>
+<rect x="220" y="460" width="112" height="53" rx="2" fill="#f1d3cf" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="276" y="483" font-weight="400">J 0.619</text>
+<text class="small muted" text-anchor="middle" x="276" y="502">未收敛</text>
+<rect x="340" y="460" width="112" height="53" rx="2" fill="#efd5d0" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="396" y="483" font-weight="400">J 0.588</text>
+<text class="small muted" text-anchor="middle" x="396" y="502">未收敛</text>
+<rect x="460" y="460" width="112" height="53" rx="2" fill="#eed6d2" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="516" y="483" font-weight="400">J 0.558</text>
+<text class="small muted" text-anchor="middle" x="516" y="502">未收敛</text>
+<rect x="580" y="460" width="112" height="53" rx="2" fill="#eed7d2" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="636" y="483" font-weight="400">J 0.551</text>
+<text class="small muted" text-anchor="middle" x="636" y="502">未收敛</text>
+<rect x="700" y="460" width="112" height="53" rx="2" fill="#ecd9d4" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="756" y="483" font-weight="400">J 0.521</text>
+<text class="small muted" text-anchor="middle" x="756" y="502">未收敛</text>
+<rect x="820" y="460" width="112" height="53" rx="2" fill="#ecd9d4" stroke="#d8dee5" stroke-width="1"/>
+<text class="label" text-anchor="middle" x="876" y="483" font-weight="400">J 0.521</text>
+<text class="small muted" text-anchor="middle" x="876" y="502">未收敛</text>
+<text class="small muted" x="40" y="575">颜色表示 J：绿色较低、红色较高；FALL 表示摔倒；深色边框标记网格内最低 J 的收敛点。</text>
+<text class="small" x="40" y="602">最低收敛点：Kp=4, Ki=0, Kd=8, J=0.1491（共 11 个收敛点）</text>
+</svg>

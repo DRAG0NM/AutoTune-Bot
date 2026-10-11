@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="571" viewBox="0 0 1100 571" role="img" aria-labelledby="title desc">
+<title id="title">v2.3 selftest case outcomes</title>
+<desc id="desc">Nine selftest cases shown by objective J where finite, with distinct markers for converged, non-converged, and expected hard-fall cases. The selftest suite passed all expected assertions.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>svg{fill:#202a35}text{font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#596776}.grid{stroke:#d8dee5;stroke-width:1}.axis{stroke:#202a35;stroke-width:1.2}.small{font-size:13px}.label{font-size:15px}.title{font-size:22px;font-weight:700}.subtitle{font-size:14px}.panel-title{font-size:16px;font-weight:700}</style>
+<text class="title" x="40" y="40">v2.3 selftest | 9 个行为样例</text>
+<text class="subtitle muted" x="40" y="65">allPass=true；横轴为综合代价 J；右侧为收敛状态及运行结果。</text>
+<line class="axis" x1="355" x2="880" y1="110" y2="110"/>
+<line class="grid" x1="355" x2="355" y1="110" y2="466"/>
+<text class="small muted" text-anchor="middle" x="355" y="101">0.0</text>
+<line class="grid" x1="486.25" x2="486.25" y1="110" y2="466"/>
+<text class="small muted" text-anchor="middle" x="486.25" y="101">0.2</text>
+<line class="grid" x1="617.5" x2="617.5" y1="110" y2="466"/>
+<text class="small muted" text-anchor="middle" x="617.5" y="101">0.4</text>
+<line class="grid" x1="748.75" x2="748.75" y1="110" y2="466"/>
+<text class="small muted" text-anchor="middle" x="748.75" y="101">0.6</text>
+<line class="grid" x1="880" x2="880" y1="110" y2="466"/>
+<text class="small muted" text-anchor="middle" x="880" y="101">0.8</text>
+<text class="small" text-anchor="end" x="339" y="134">normal-tuned</text>
+<circle cx="452.846875" cy="130" r="6" fill="#25826e"/>
+<text class="small muted" x="462.846875" y="134">J=0.1491</text>
+<text class="small muted" x="930" y="134">收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="149" y2="149"/>
+<text class="small" text-anchor="end" x="339" y="173">normal-conservative</text>
+<circle cx="488.34999999999997" cy="169" r="6" fill="#25826e"/>
+<text class="small muted" x="498.34999999999997" y="173">J=0.2032</text>
+<text class="small muted" x="930" y="173">收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="188" y2="188"/>
+<text class="small" text-anchor="end" x="339" y="212">boundary-high-kd</text>
+<circle cx="578.125" cy="208" r="6" fill="#25826e"/>
+<text class="small muted" x="588.125" y="212">J=0.3400</text>
+<text class="small muted" x="930" y="212">收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="227" y2="227"/>
+<text class="small" text-anchor="end" x="339" y="251">boundary-zero-ki</text>
+<circle cx="632.134375" cy="247" r="6" fill="#bf6b28"/>
+<text class="small muted" x="642.134375" y="251">J=0.4223</text>
+<text class="small muted" x="930" y="251">未收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="266" y2="266"/>
+<text class="small" text-anchor="end" x="339" y="290">fail-no-control</text>
+<path d="M 876 279 L 884 293 M 884 279 L 876 293" stroke="#bb4c49" stroke-width="2.5"/>
+<text class="small" x="893" y="290" fill="#bb4c49">J=∞</text>
+<text class="small muted" x="930" y="290">预期硬失败 | fail</text>
+<line class="grid" x1="40" x2="1060" y1="305" y2="305"/>
+<text class="small" text-anchor="end" x="339" y="329">fail-between-samples</text>
+<path d="M 876 318 L 884 332 M 884 318 L 876 332" stroke="#bb4c49" stroke-width="2.5"/>
+<text class="small" x="893" y="329" fill="#bb4c49">J=∞</text>
+<text class="small muted" x="930" y="329">预期硬失败 | fail</text>
+<line class="grid" x1="40" x2="1060" y1="344" y2="344"/>
+<text class="small" text-anchor="end" x="339" y="368">fail-underdamped</text>
+<circle cx="760.890625" cy="364" r="6" fill="#bf6b28"/>
+<text class="small muted" x="770.890625" y="368">J=0.6185</text>
+<text class="small muted" x="930" y="368">未收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="383" y2="383"/>
+<text class="small" text-anchor="end" x="339" y="407">fail-windup</text>
+<circle cx="830.190625" cy="403" r="6" fill="#bf6b28"/>
+<text class="small muted" x="840.190625" y="407">J=0.7241</text>
+<text class="small muted" x="930" y="407">未收敛 | ok</text>
+<line class="grid" x1="40" x2="1060" y1="422" y2="422"/>
+<text class="small" text-anchor="end" x="339" y="446">replay-sample</text>
+<circle cx="830.190625" cy="442" r="6" fill="#bf6b28"/>
+<text class="small muted" x="840.190625" y="446">J=0.7241</text>
+<text class="small muted" x="930" y="446">未收敛 | ok</text>
+<text class="small muted" x="40" y="524">绿色：收敛；橙色：未收敛；红色叉号：硬失败、J=∞；allPass 汇总各样例是否符合预期行为。</text>
+</svg>
