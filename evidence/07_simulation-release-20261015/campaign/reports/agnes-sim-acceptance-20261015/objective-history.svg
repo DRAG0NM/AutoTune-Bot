@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img"><title>逐轮目标值（全部结果保留在CSV）</title><rect width="100%" height="100%" fill="white"/><g font-family="Arial,Microsoft YaHei,sans-serif" fill="#26354a"><text x="84" y="27" font-size="20" font-weight="bold">逐轮目标值（全部结果保留在CSV）</text>
+<path d="M84 70V300 M84 300H972" stroke="#e3e9f1" fill="none"/><text x="84" y="323" text-anchor="middle" font-size="12">1</text><text x="74" y="304" text-anchor="end" font-size="12">-0.05788</text>
+<path d="M261.6 70V300 M84 254H972" stroke="#e3e9f1" fill="none"/><text x="261.6" y="323" text-anchor="middle" font-size="12">1.6</text><text x="74" y="258" text-anchor="end" font-size="12">0.109972</text>
+<path d="M439.20000000000005 70V300 M84 208H972" stroke="#e3e9f1" fill="none"/><text x="439.20000000000005" y="323" text-anchor="middle" font-size="12">2.2</text><text x="74" y="212" text-anchor="end" font-size="12">0.277824</text>
+<path d="M616.8 70V300 M84 162.00000000000003H972" stroke="#e3e9f1" fill="none"/><text x="616.8" y="323" text-anchor="middle" font-size="12">2.8</text><text x="74" y="166.00000000000003" text-anchor="end" font-size="12">0.445676</text>
+<path d="M794.4 70V300 M84 116H972" stroke="#e3e9f1" fill="none"/><text x="794.4" y="323" text-anchor="middle" font-size="12">3.4</text><text x="74" y="120" text-anchor="end" font-size="12">0.613528</text>
+<path d="M972 70V300 M84 70H972" stroke="#e3e9f1" fill="none"/><text x="972" y="323" text-anchor="middle" font-size="12">4</text><text x="74" y="74" text-anchor="end" font-size="12">0.78138</text>
+<polyline data-series="search J (finite)" points="84.00,85.86 380.00,243.30 676.00,195.04 972.00,238.40" stroke="#2563eb" stroke-width="2" fill="none"/>
+<circle cx="84" cy="85.86206896551724" r="3" fill="#2563eb"/>
+<circle cx="380" cy="243.30433953721138" r="3" fill="#2563eb"/>
+<circle cx="676" cy="195.0439673045302" r="3" fill="#2563eb"/>
+<circle cx="972" cy="238.39882753854587" r="3" fill="#2563eb"/>
+<text x="84" y="50" fill="#2563eb" font-size="13">search J (finite)</text>
+<text x="500" y="350" text-anchor="middle" font-size="13">Trial / round</text><text transform="translate(18,180) rotate(-90)" text-anchor="middle" font-size="13">Objective J (lower is better)</text></g></svg>

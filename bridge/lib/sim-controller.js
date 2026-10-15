@@ -1,6 +1,4 @@
-// Simulation-only controller variants. These are deliberately separate from
-// firmware tunables: they describe the experiment implementation, not a car
-// parameter that can be sent over serial.
+// Discrete PID variants; historical 10ms sum/difference convention retained.
 export const SIM_CONTROLLER_VERSION = 'sim-controller-1';
 export const SIM_CONTROLLER_DEFAULT = 'baseline';
 export const SIM_CONTROLLER_NAMES = Object.freeze(['baseline', 'conditional-integral', 'derivative-filter']);

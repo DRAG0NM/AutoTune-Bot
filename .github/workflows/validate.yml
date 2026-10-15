@@ -17,5 +17,6 @@ jobs:
       - run: node bridge/cli.js selftest --json
       - run: npm run verify:evidence
       - run: npm run verify:history
+      - run: npm run verify:submission
       - run: npm run audit:sessions
       - run: npm run plot:evidence

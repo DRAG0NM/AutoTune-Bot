@@ -1,0 +1,98 @@
+{
+  "verified": true,
+  "session": "cedae5af-2686-4e75-bddb-f9079834f642",
+  "events": 373,
+  "firstSeq": 1,
+  "lastSeq": 373,
+  "toolCalls": 17,
+  "toolResults": 17,
+  "effectIntents": 34,
+  "effectSettled": 34,
+  "coveredRuns": 7,
+  "sourceHash": "d6d0e3bc222d8c44ba07001a21cac8c376d9594a8250e564a80275da7ca9ce69",
+  "distinctSearchPoints": 4,
+  "acceptanceTurn": {
+    "started": "2026-10-15T00:30:51.923Z",
+    "ended": "2026-10-15T00:37:27.212Z",
+    "wallMs": 395289
+  },
+  "coverage": [
+    {
+      "runId": "0db44080-7dcc-45eb-97cc-5d9c4abf374d",
+      "gains": {
+        "AngleKp": 5,
+        "AngleKi": 0.1,
+        "AngleKd": 5
+      },
+      "callSeq": 193,
+      "resultSeq": 199,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose search --gains 'Kp=5,Ki=0.1,Kd=5' --reason '本次基线5/0.1/5，默认工况x0=3°' --json"
+    },
+    {
+      "runId": "fdd939a6-694e-41c9-8fcd-736ef5b1e1da",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "callSeq": 213,
+      "resultSeq": 219,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose search --parent 0db44080-7dcc-45eb-97cc-5d9c4abf374d --gains 'Kp=4,Ki=0,Kd=8' --reason '基线5/0.1/5：积分残差-0.29°+振荡5次→关积分Ki=0、提Kd=8；引用历史已知先验4/0/8（非本次发现）' --json"
+    },
+    {
+      "runId": "8628f5a8-3b75-4fbe-a626-4a0768ca99ca",
+      "gains": {
+        "AngleKp": 3.5,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "callSeq": 233,
+      "resultSeq": 239,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose search --parent fdd939a6-694e-41c9-8fcd-736ef5b1e1da --gains 'Kp=3.5,Ki=0,Kd=8' --reason '4/0/8已收敛J=0.149，能量代理41为主要J项→Kp降至3.5尝试降控制能量，Kd=8不变' --json"
+    },
+    {
+      "runId": "027bddc3-43d0-4e67-874f-3148cbabdda2",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 12
+      },
+      "callSeq": 253,
+      "resultSeq": 259,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose search --parent 8628f5a8-3b75-4fbe-a626-4a0768ca99ca --gains 'Kp=4,Ki=0,Kd=12' --reason '3.5/0/8降低Kp后未收敛且ssErr=+0.37→回到Kp=4，Kd 8→12进一步抑制超调/能量' --json"
+    },
+    {
+      "runId": "15820bee-bf85-4054-ac86-24783423e25e",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "callSeq": 273,
+      "resultSeq": 279,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose robustness --parent 027bddc3-43d0-4e67-874f-3148cbabdda2 --gains 'Kp=4,Ki=0,Kd=8' --x0 3 --seed 20261009 --dur 3000 --reason '验证1：冠军4/0/8不同噪声种子' --json"
+    },
+    {
+      "runId": "94d9c382-f244-4017-adc8-cc653e229aba",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "callSeq": 293,
+      "resultSeq": 299,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose robustness --parent 15820bee-bf85-4054-ac86-24783423e25e --gains 'Kp=4,Ki=0,Kd=8' --x0 -3 --seed 20261008 --dur 3000 --reason '验证2：反向初始偏差x0=-3°' --json"
+    },
+    {
+      "runId": "9da158d9-c853-420c-8132-e9dc867009bf",
+      "gains": {
+        "AngleKp": 4,
+        "AngleKi": 0,
+        "AngleKd": 8
+      },
+      "callSeq": 312,
+      "resultSeq": 318,
+      "command": "node bridge/cli.js trial --backend sim --campaign agnes-sim-acceptance-20261015 --plan runs/plans/agnes-sim-acceptance-20261015.json --purpose robustness --parent 94d9c382-f244-4017-adc8-cc653e229aba --gains 'Kp=4,Ki=0,Kd=8' --x0 3 --seed 20261008 --dur 3000 --disturb 10 --reason '验证3：t=1500ms角速度冲击10°/s' --json"
+    }
+  ]
+}

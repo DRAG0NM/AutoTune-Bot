@@ -1,0 +1,63 @@
+{
+  "schema": "pendulum-campaign-report/1",
+  "campaign": "agnes-sim-acceptance-20261015",
+  "total": 7,
+  "failed": 0,
+  "converged": 4,
+  "best": {
+    "runId": "fdd939a6-694e-41c9-8fcd-736ef5b1e1da",
+    "gains": {
+      "AngleKp": 4,
+      "AngleKi": 0,
+      "AngleKd": 8
+    },
+    "metrics": {
+      "ok": true,
+      "fail": false,
+      "converged": true,
+      "n": 61,
+      "dtMs": 50,
+      "target": 0,
+      "y0": 2.914,
+      "step": -2.914,
+      "ss": 0.0011,
+      "overshoot": 0.0172,
+      "settlingMs": 900,
+      "ssErr": 0.0011,
+      "osc": 0,
+      "energy": 41,
+      "peakAbs": 3,
+      "j": 0.149,
+      "jWeights": {
+        "overshoot": 0.4,
+        "settling": 0.3,
+        "ssErr": 0.2,
+        "energy": 0.1
+      },
+      "jNorm": {
+        "overshoot": 0.5,
+        "settlingMs": 2000,
+        "energy": 20000
+      },
+      "tol": 0.1,
+      "settleHoldMs": 300
+    }
+  },
+  "sourceHash": "d6d0e3bc222d8c44ba07001a21cac8c376d9594a8250e564a80275da7ca9ce69",
+  "files": {
+    "metricsCsv": "metrics.csv",
+    "historySvg": "objective-history.svg",
+    "gainsSvg": "pid-history.svg",
+    "html": "report.html",
+    "json": "summary.json"
+  },
+  "modelEvidence": "记录证明工具执行；AI自主决策还需真实AGNES会话",
+  "scope": "已测同工况search候选的最优，非全局最优；验证轮不参与冠军排序",
+  "searchCount": 4,
+  "distinctSearchPoints": 4,
+  "parameterChangeExecuted": true,
+  "validationCount": 3,
+  "validationPlanned": 3,
+  "planComplete": true,
+  "validationPassed": false
+}

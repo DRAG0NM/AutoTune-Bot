@@ -22,7 +22,7 @@ export function loadCsv(file) {
   const need = ['ms', 'angle', 'target', 'out'];
   const idx = Object.fromEntries(need.map((k) => [k, header.indexOf(k)]));
   const missing = need.filter((k) => idx[k] < 0);
-  if (missing.length) throw new Error(`CSV 缺少列: ${missing.join(', ')}（表头应含 ms,angle,target,out,spdL,spdR,errInt）`);
+  if (missing.length) throw new Error(`CSV 缺少列: ${missing.join(', ')}（表头必须含 ms,angle,target,out）`);
 
   const rows = lines.slice(1).map((l) => l.split(','));
   if (rows.some(r => r.length !== header.length)) throw new Error('CSV 行列数与表头不一致');
@@ -31,9 +31,9 @@ export function loadCsv(file) {
     angle: NUM(r[idx.angle]),
     target: NUM(r[idx.target]),
     out: NUM(r[idx.out]),
-    spdL: NUM(r[header.indexOf('spdl')] ?? 0),
-    spdR: NUM(r[header.indexOf('spdr')] ?? 0),
-    errInt: NUM(r[header.indexOf('errint')] ?? 0),
+    angularVelocity: header.includes('angularvelocity')&&r[header.indexOf('angularvelocity')].trim()?NUM(r[header.indexOf('angularvelocity')]):null,
+    appliedOut: header.includes('appliedout')&&r[header.indexOf('appliedout')].trim()?NUM(r[header.indexOf('appliedout')]):null,
+    errInt: header.includes('errint')&&r[header.indexOf('errint')].trim()?NUM(r[header.indexOf('errint')]):null,
   }));
   for (let i = 1; i < samples.length; i++) {
     if (samples[i].ms <= samples[i - 1].ms) throw new Error('CSV 时间戳必须严格递增');

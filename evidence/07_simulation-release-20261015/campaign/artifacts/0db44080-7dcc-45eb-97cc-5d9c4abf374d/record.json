@@ -1,0 +1,269 @@
+{
+  "runId": "0db44080-7dcc-45eb-97cc-5d9c4abf374d",
+  "ts": "2026-10-15T00:32:32.359Z",
+  "backend": "sim",
+  "gains": {
+    "AngleKp": 5,
+    "AngleKi": 0.1,
+    "AngleKd": 5
+  },
+  "target": 0,
+  "durationMs": 3000,
+  "csv": "run_2026-10-15T00-32-32-309Z_6399a113_sim.csv",
+  "csvHash": "96a189d981f2d9ff4c04ae760a2a47f6610b894dbea6cabf254d46134079af31",
+  "campaign": "agnes-sim-acceptance-20261015",
+  "decision": {
+    "reason": "本次基线5/0.1/5，默认工况x0=3°",
+    "parent": null,
+    "purpose": "search"
+  },
+  "experimentPlan": {
+    "campaign": "agnes-sim-acceptance-20261015",
+    "objective": "regulation",
+    "maxSearch": 4,
+    "gainRanges": {
+      "AngleKp": [
+        0,
+        20
+      ],
+      "AngleKi": [
+        0,
+        5
+      ],
+      "AngleKd": [
+        0,
+        20
+      ]
+    },
+    "search": {
+      "durationMs": 3000,
+      "target": 0,
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": null,
+      "simProfile": {
+        "actuatorLagMs": 0,
+        "deadZoneOutput": 0,
+        "measurementDelayMs": 0,
+        "noise": 0.05,
+        "controlScale": 1,
+        "dampingScale": 1
+      },
+      "simController": {
+        "name": "baseline",
+        "derivativeFilterMs": null
+      }
+    },
+    "validation": [
+      {
+        "durationMs": 3000,
+        "target": 0,
+        "x0": 3,
+        "seed": 20261009,
+        "disturbance": null,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "simController": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        }
+      },
+      {
+        "durationMs": 3000,
+        "target": 0,
+        "x0": -3,
+        "seed": 20261008,
+        "disturbance": null,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "simController": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        }
+      },
+      {
+        "durationMs": 3000,
+        "target": 0,
+        "x0": 3,
+        "seed": 20261008,
+        "disturbance": 10,
+        "simProfile": {
+          "actuatorLagMs": 0,
+          "deadZoneOutput": 0,
+          "measurementDelayMs": 0,
+          "noise": 0.05,
+          "controlScale": 1,
+          "dampingScale": 1
+        },
+        "simController": {
+          "name": "baseline",
+          "derivativeFilterMs": null
+        }
+      }
+    ],
+    "objectiveNote": "先收敛(不倒/在带内保持)，再降低J",
+    "budget": "wallclock 5min; total max 7 (search <=4, validation 3)"
+  },
+  "evaluation": {
+    "version": "2.3",
+    "metrics": {
+      "settleBand": 0.02,
+      "tolFloor": 0.1,
+      "ssWindow": 0.3,
+      "headWindow": 0.05,
+      "fallLimitDeg": 50,
+      "minSamples": 20,
+      "settleHoldMs": 300
+    },
+    "weights": {
+      "overshoot": 0.4,
+      "settling": 0.3,
+      "ssErr": 0.2,
+      "energy": 0.1
+    }
+  },
+  "sourceHash": "d6d0e3bc222d8c44ba07001a21cac8c376d9594a8250e564a80275da7ca9ce69",
+  "meta": {
+    "backend": "sim",
+    "durationMs": 3000,
+    "target": 0,
+    "configSource": "bridge.example.json",
+    "sim": {
+      "modelVersion": "sim-timing-2",
+      "controllerVersion": "sim-controller-1",
+      "controller": {
+        "name": "baseline",
+        "derivativeFilterMs": null
+      },
+      "controllerStats": {
+        "controlSteps": 300,
+        "saturatedSteps": 0,
+        "integralSuppressedSteps": 0,
+        "maxAbsIntegral": 56.86917131259545,
+        "saturatedFraction": 0,
+        "integralSuppressedFraction": 0
+      },
+      "controlDtMs": 10,
+      "sampleMs": 50,
+      "simProfile": {
+        "actuatorLagMs": 0,
+        "deadZoneOutput": 0,
+        "measurementDelayMs": 0,
+        "noise": 0.05,
+        "controlScale": 1,
+        "dampingScale": 1
+      },
+      "timeSemantics": "state-at-t; output held on [t,t+dt); terminal output held from prior interval",
+      "x0": 3,
+      "seed": 20261008,
+      "disturbance": null,
+      "disturbanceEvent": null,
+      "termination": {
+        "reason": "duration",
+        "atMs": 3000
+      }
+    }
+  },
+  "wallMs": 261,
+  "metrics": {
+    "ok": true,
+    "fail": false,
+    "converged": false,
+    "n": 61,
+    "dtMs": 50,
+    "target": 0,
+    "y0": 2.751,
+    "step": -2.751,
+    "ss": -0.2947,
+    "overshoot": 1.229,
+    "settlingMs": "Infinity",
+    "ssErr": -0.2947,
+    "osc": 5,
+    "energy": 424,
+    "peakAbs": 3.381,
+    "j": 0.7235,
+    "jWeights": {
+      "overshoot": 0.4,
+      "settling": 0.3,
+      "ssErr": 0.2,
+      "energy": 0.1
+    },
+    "jNorm": {
+      "overshoot": 0.5,
+      "settlingMs": 2000,
+      "energy": 20000
+    },
+    "tol": 0.1,
+    "settleHoldMs": 300
+  },
+  "diagnostics": {
+    "version": "1.0",
+    "method": "left-end zero-order hold",
+    "quality": {
+      "samples": 61,
+      "startMs": 0,
+      "endMs": 3000,
+      "spanMs": 3000,
+      "minGapMs": 50,
+      "maxGapMs": 50,
+      "meanGapMs": 50
+    },
+    "error": {
+      "iaeDegSec": 6.065949999999999,
+      "iseDeg2Sec": 15.227238449999998
+    },
+    "tail": {
+      "startMs": 2100,
+      "endMs": 3000,
+      "meanErrorDeg": -0.47516666666666657,
+      "meanAbsErrorDeg": 2.0232777777777775,
+      "rmsErrorDeg": 2.266660747541291,
+      "rmsOutput": 12.236725914684495
+    },
+    "output": {
+      "limit": 100,
+      "observedPeakAbs": 17.65,
+      "observedSaturatedSamples": 0,
+      "observedSaturatedFraction": 0,
+      "energyOutputSquaredSec": 424.32525999999996,
+      "totalVariation": 196.86999999999995
+    },
+    "integral": {
+      "available": true,
+      "maxAbs": 56.42,
+      "first": -2.99,
+      "last": 31.65,
+      "observedLimitSamples": 0,
+      "unit": "degree per control-step sum",
+      "limit": 1000
+    },
+    "disturbance": null,
+    "limitations": [
+      "稀疏遥测不能排除采样之间的饱和或高频抖动",
+      "积分限幅状态不能单独证明或排除windup",
+      "恢复仅描述有限观测窗口，不代表永久稳定",
+      "整轮J与反向过冲不等于施扰后的偏差峰值",
+      "输出能量代理不等于电功率，派生轮速不等于真实运动"
+    ]
+  },
+  "decisionEligible": false,
+  "artifacts": {
+    "response": "artifacts/0db44080-7dcc-45eb-97cc-5d9c4abf374d/response.svg",
+    "control": "artifacts/0db44080-7dcc-45eb-97cc-5d9c4abf374d/control.svg",
+    "phase": "artifacts/0db44080-7dcc-45eb-97cc-5d9c4abf374d/phase.svg",
+    "report": "artifacts/0db44080-7dcc-45eb-97cc-5d9c4abf374d/report.html",
+    "record": "artifacts/0db44080-7dcc-45eb-97cc-5d9c4abf374d/record.json"
+  }
+}

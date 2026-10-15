@@ -3,6 +3,7 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
 import { resolve, basename, relative } from 'node:path';
 import { createHash } from 'node:crypto';
+import { isDeepStrictEqual } from 'node:util';
 import { paths, readIndex } from '../bridge/lib/store.js';
 import { loadCsv } from '../bridge/backends/replay.js';
 import { computeMetrics } from '../bridge/lib/metrics.js';
@@ -31,10 +32,12 @@ try {
     if(!r.csv || basename(r.csv)!==r.csv) throw new Error('CSV 文件名非法');
     const file=resolve(paths.runs,r.csv);
     if(createHash('sha256').update(readFileSync(file)).digest('hex')!==r.csvHash) throw new Error(`CSV hash 不符: ${r.runId}`);
-    const actual=computeMetrics(loadCsv(file),{...r.evaluation.metrics,weights:r.evaluation.weights});
-    for(const k of ['fail','converged','n','j','overshoot','settlingMs','ssErr','osc','energy']) {
-      const normalized=v=> typeof v==='number' && !Number.isFinite(v)?(Number.isNaN(v)?null:String(v)):v;
-      if(normalized(actual[k])!==r.metrics[k]) throw new Error(`指标 ${k} 不符: ${r.runId}`);
+    const actual=computeMetrics(loadCsv(file),{...r.evaluation.metrics,weights:r.evaluation.weights,termination:r.meta.sim.termination});
+    const normalized=JSON.parse(JSON.stringify(actual,(_,v)=>typeof v==='number'&&!Number.isFinite(v)?Number.isNaN(v)?null:String(v):v));
+    for(const key of Object.keys(r.metrics))if(!Object.hasOwn(normalized,key))throw Error(`指标出现额外字段: ${r.runId}/${key}`);
+    for(const [key,value] of Object.entries(normalized)) {
+      if(['jContributions','dominantCostTerm'].includes(key)&&!Object.hasOwn(r.metrics,key))continue;
+      if(!isDeepStrictEqual(value,r.metrics[key])) throw new Error(`指标 ${key} 不符: ${r.runId}`);
     }
   }
   if(new Set(records.map(r=>r.meta.sim.modelVersion??'legacy-1')).size!==1) throw Error('仿真模型版本不一致');

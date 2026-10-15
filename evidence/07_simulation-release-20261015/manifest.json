@@ -1,0 +1,133 @@
+{
+  "schema": "autotune-submission-evidence/1",
+  "campaign": "agnes-sim-acceptance-20261015",
+  "session": "cedae5af-2686-4e75-bddb-f9079834f642",
+  "combinedSourceHash": "d6d0e3bc222d8c44ba07001a21cac8c376d9594a8250e564a80275da7ca9ce69",
+  "sourceFiles": [
+    "bridge/cli.js",
+    "bridge/backends/sim.js",
+    "bridge/backends/replay.js",
+    "bridge/lib/metrics.js",
+    "bridge/lib/protocol.js",
+    "bridge/lib/config.js",
+    "bridge/lib/store.js",
+    "configs/bridge.example.json",
+    "bridge/lib/diagnostics.js",
+    "bridge/lib/sim-options.js",
+    "bridge/lib/sim-controller.js",
+    "bridge/lib/reports.js"
+  ],
+  "files": [
+    {
+      "path": "campaign/index.jsonl",
+      "sha256": "b0ecc48ac27058ed7e57a1931d0a9adfa49d53cfd7e1f5cffb92c0c91ac25417"
+    },
+    {
+      "path": "campaign/plan.json",
+      "sha256": "b6e5eba90f3c36e41e1eab0a5ce7262928aca9aca4859217fb442d9327cd77a7"
+    },
+    {
+      "path": "agh-session.jsonl",
+      "sha256": "383d61819c491e9bd51060b4d52b331ab1bc911a430030f7297ce6b51cf60ae5"
+    },
+    {
+      "path": "environment.json",
+      "sha256": "d2031f3110a9d317b1273109909b102fcdf95cacb73cd421e1cecb6a5c63f9f6"
+    },
+    {
+      "path": "agh-effect-duration.patch",
+      "sha256": "52ad6830a48b2b6b47557f1d6e553860eee5c2246ff5ddd1d20e0b787c888829"
+    },
+    {
+      "path": "source/bridge/cli.js",
+      "sha256": "730d24e60f81b4064b80ed6c71d43ec950d578b7b172caec37321e866a1a16cf"
+    },
+    {
+      "path": "source/bridge/backends/sim.js",
+      "sha256": "805c2fdd70fd5659faf1828f894754d1442fb17d6779c1a47739c6b4751ad177"
+    },
+    {
+      "path": "source/bridge/backends/replay.js",
+      "sha256": "7b424a427a784d0faf5a67273b400723d422794a9a606ac5c2d56a599ffdcb6b"
+    },
+    {
+      "path": "source/bridge/lib/metrics.js",
+      "sha256": "2fc4f52c0927e8ffea163a279ef27d323e9f88e6eddfe85f1d0eeb03077c0078"
+    },
+    {
+      "path": "source/bridge/lib/protocol.js",
+      "sha256": "34fb8643fcef700c3104d561ba3b9e872f5bbc5de3f0d72307a9b4a8b2270f15"
+    },
+    {
+      "path": "source/bridge/lib/config.js",
+      "sha256": "049cb06712ab71ad644114ec1aa0617a0baa44768db39fed506f215bdae4026a"
+    },
+    {
+      "path": "source/bridge/lib/store.js",
+      "sha256": "c5113cd400e7c14d6366018380e94909d80a4362226218c453312104aa9c4ce0"
+    },
+    {
+      "path": "source/configs/bridge.example.json",
+      "sha256": "42219c398a8b45b4ac7eb071b2cb89a00985898d914c6574bdfa9a07d35e1800"
+    },
+    {
+      "path": "source/bridge/lib/diagnostics.js",
+      "sha256": "9697bf8739c50c94bab4eba1f7c0d3c4ca48f7b6b76739dcd50c37a19359eb16"
+    },
+    {
+      "path": "source/bridge/lib/sim-options.js",
+      "sha256": "08a9cc2420db439741144673e69b1cd6c3411377a73d20b1294e18460fb52449"
+    },
+    {
+      "path": "source/bridge/lib/sim-controller.js",
+      "sha256": "e25c8ad6e87be67730bb6b4964ff9c66f6c0ec87288738cced6bb04c3b83b578"
+    },
+    {
+      "path": "source/bridge/lib/reports.js",
+      "sha256": "51182629c76b039ca5adc084928ea06afdd967afd911a89ad7416be7d63d04b6"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-32-32-309Z_6399a113_sim.csv",
+      "sha256": "96a189d981f2d9ff4c04ae760a2a47f6610b894dbea6cabf254d46134079af31"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-33-00-140Z_1d214a8c_sim.csv",
+      "sha256": "bd5e6ad8b7ce51404fb70c82b075df214611451570c321200c6982291250c8cc"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-33-39-776Z_18c82617_sim.csv",
+      "sha256": "9e6712a5cbde6b8572748461fc398f07965262b5cf3fee8cde235b56f9c148ee"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-34-07-929Z_fcaebd30_sim.csv",
+      "sha256": "7864cfaefbd448d797eff73f8972b64946db02eaf1d6a0b54e99d313fd2ec3a4"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-34-38-017Z_c201978e_sim.csv",
+      "sha256": "ea4fd2b12625277afb455d80ee6fb839a3124eba19922ef25527210d833bf894"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-35-07-810Z_835e4cb9_sim.csv",
+      "sha256": "cd05bb20249114f099b7b316303971c4f5cb04a63bbf0d35d4440bc5d56f1a52"
+    },
+    {
+      "path": "campaign/run_2026-10-15T00-35-45-587Z_a589f773_sim.csv",
+      "sha256": "8fdc3a5b4a0fd8c9d093acec7f791bb054516c802b115e32fec63ec5b3bf1d12"
+    }
+  ],
+  "redaction": {
+    "method": "exact string replacement plus actor.id mapping; numeric values and run/tool/effect identifiers preserved",
+    "originalSha256": "52611f818847fe41e2d79353c7bb4b1c0c17a360b2b8f7855ede68e509798d11",
+    "publishedSha256": "383d61819c491e9bd51060b4d52b331ab1bc911a430030f7297ce6b51cf60ae5",
+    "removed": [
+      "local absolute paths",
+      "local user id",
+      "account routing identifiers"
+    ],
+    "unmodified": [
+      "event sequence and timestamps",
+      "session/run/tool/effect ids",
+      "gains, metrics and numeric observations"
+    ]
+  }
+}

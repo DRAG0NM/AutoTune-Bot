@@ -1,7 +1,7 @@
-# 实验与验证材料
+# 历史仿真证据（只读）
 
-`05_validation/` 保存12批110条运行记录、36点初期网格、162点方法探索及15组图表。`06_testcases/` 保存软件测试与各阶段selftest结果。`01_agh/` 保存脱敏会话与审计资料。`versions/` 提供历史复现所需模拟器和评价实现。
+保留2026-10-10至11的仿真CSV、指标、计划、冻结数值模块和真实AGNES会话。当前报告格式新增真实状态列，旧CSV保持原样，包括当时合成的spdL/spdR；这些旧列不是物理轮速证据，当前仿真已不输出它们。
 
-运行 `npm run verify:evidence`、`npm run verify:history` 和 `npm run audit:sessions` 可分别核验数值、重现模型输出和检查会话事件。数据方法与结论见[验证报告](05_validation/report.md)。
+`05_validation/`：历史数值实验；`01_agh/`：模型参与会话；`versions/`：复核时使用的原版本模块和散列。运行 `npm run verify:history` / `npm run verify:evidence` / `npm run audit:sessions` 复核。
 
-CSV内容保持原样；会话中的本机路径、用户标识、凭据、账号路由及上游请求追踪标识已脱敏，事件顺序与实验关联标识保留。具体范围见[会话说明](01_agh/README.md)。版本说明列出发布模块与历史快照的对应关系。
+当前新试验写runs，不修改此处。旧实车证据已转入私人归档，不作为本项目仿真调优证据。

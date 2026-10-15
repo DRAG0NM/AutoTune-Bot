@@ -10,12 +10,12 @@ export const SIM_PRESSURE_VERSION = 'sim-pressure-3';
 
 const G = 9.81;         // 重力加速度
 const L = 0.15;         // 等效摆长 (m)
-const FALL_DEG = 50;    // 与固件摔倒判据一致
+const FALL_DEG = 50;    // simulation termination boundary
 
 /* Assumed plant constants, not identified from vehicle measurements.
  * Dynamics include gravity, control authority and lumped damping. */
 const A_FALL = G / L;   // ≈ 65.4 (1/s²)
-const B_CTRL = 20;      // deg/s² per PWM
+const B_CTRL = 20;      // deg/s² per normalized control unit
 const DAMP = 4.3;       // 1/s
 
 function mulberry32(seed) {
@@ -37,8 +37,8 @@ const DEG = 180 / Math.PI;
  * @param {number} o.target   角度环目标值（度）
  * @param {number} o.durationMs 实验时长
  * @param {number} o.x0       初始角度偏差（度）
- * @param {number} o.dtMs     控制周期（固件为 10ms）
- * @param {number} o.sampleMs 遥测周期（固件改造后为 50ms → 20Hz）
+ * @param {number} o.dtMs     控制周期（默认10ms）
+ * @param {number} o.sampleMs 输出采样周期（默认50ms）
  * @param {number} o.noise    角度传感器噪声幅度（度，峰峰值的一半）
  * @param {object} [o.disturbance] {atMs, impulseDegPerSec} 模拟手推扰动
  * @param {number} o.seed     随机种子
@@ -64,8 +64,8 @@ export function runSim(o = {}) {
   for (const [name, value] of Object.entries({ target, durationMs, x0, dtMs, sampleMs, noise, seed })) {
     if (!Number.isFinite(value)) throw new Error(`sim ${name} 必须是有限数字`);
   }
-  if (durationMs <= 0 || durationMs > 4000 || dtMs <= 0 || sampleMs <= 0 || noise < 0)
-    throw new Error('sim 时长必须在 (0,4000]ms，采样周期为正，噪声非负');
+  if (durationMs <= 0 || durationMs > 60000 || dtMs <= 0 || sampleMs <= 0 || noise < 0)
+    throw new Error('sim 时长必须在 (0,60000]ms，采样周期为正，噪声非负');
   if (![durationMs,dtMs,sampleMs].every(Number.isInteger) || durationMs % dtMs || sampleMs % dtMs)
     throw new Error('sim 时长与遥测周期必须是整数控制周期的倍数');
   if (!Number.isInteger(seed) || seed < 0 || seed > 0xFFFFFFFF) throw new Error('seed 必须是 uint32');
@@ -102,7 +102,7 @@ export function runSim(o = {}) {
   const delaySteps=profile.measurementDelayMs/dtMs;
   const lagAlpha=profile.actuatorLagMs===0?1:1-Math.exp(-dtMs/profile.actuatorLagMs);
   const emit = ms => samples.push({ms, angle:Number((th*DEG).toFixed(3)),target,
-    out:Number(u.toFixed(2)),spdL:Number((u*.6).toFixed(1)),spdR:Number((u*.6).toFixed(1)),errInt:Number(errInt.toFixed(2))});
+    out:Number(u.toFixed(2)),angularVelocity:Number((om*DEG).toFixed(6)),appliedOut:Number(appliedOutput.toFixed(6)),errInt:Number(errInt.toFixed(2))});
 
   for (let i = 0; i <= steps; i++) {
     const ms = i * dtMs;
@@ -121,15 +121,14 @@ export function runSim(o = {}) {
     const delayed=angleHistory[Math.max(0,i-delaySteps)];
     const measured = delayed + noise * gauss(); // 延迟真实角度，再加入当前传感器噪声
 
-    // ---- 与固件同构的 PID 计算（每 10ms 一次）----
+    // ---- Legacy discrete PID convention, every 10ms ----
     const e = target - measured;
     const control = controller.step({gains, error:e, measured, previousMeasured:prevThDeg, offset, errIntMax});
     errInt = control.errInt;
     let uPid = control.uPid;
     prevThDeg = measured;
 
-    //  关键符号约定：固件 main.c 里 AvePWM = -AnglePID.Out;
-    //    PID 输出取反后才作用到电机。仿真必须复刻这一步，否则符号相反、立即摔倒。
+    // Positive actuator input opposes positive tilt; retain historical sign.
     u = clamp(-uPid, -100, 100);
     const deadZoned=Math.sign(u)*Math.max(Math.abs(u)-profile.deadZoneOutput,0);
     appliedOutput=profile.actuatorLagMs===0?deadZoned:appliedOutput+lagAlpha*(deadZoned-appliedOutput);
@@ -138,7 +137,7 @@ export function runSim(o = {}) {
 
     // ---- 被控对象积分（半隐式欧拉）----
     // θ'' = A_FALL·sinθ − B_CTRL·u·cosθ − DAMP·θ'
-    //  单位一致性：th/om 用弧度，而 B_CTRL 是按"度"标定的（deg/s² per PWM），
+    //  单位一致性：th/om 用弧度，而 B_CTRL 是按"度"标定的（deg/s² per normalized control unit），
     //    因此控制项必须除以 DEG 换算回 rad/s²。这一步搞错会让控制权限放大 57.3 倍，
     //    表现为"车瞬间回正、完全看不到动态";是仿真最常见的隐蔽错误。
     const alpha = A_FALL * Math.sin(th) - (B_CTRL / DEG) * profile.controlScale * appliedOutput * Math.cos(th) - DAMP * profile.dampingScale * om;
@@ -167,5 +166,5 @@ export const SIM_PRESETS = {
   'fail-no-control': { gains: { AngleKp: 0, AngleKi: 0, AngleKd: 0 }, label: '失败：无控制 → 摔倒' },
   'fail-between-samples': { gains: { AngleKp: 3, AngleKi: 0, AngleKd: 2 }, label: '失败：摔倒发生在两次遥测采样之间' },
   'fail-underdamped': { gains: { AngleKp: 12, AngleKi: 0, AngleKd: 0 }, label: '失败：欠阻尼 → 持续振荡' },
-  'fail-windup': { gains: { AngleKp: 5, AngleKi: 0.1, AngleKd: 5 }, label: '失败：积分参与后未收敛（出厂默认值；非windup定论）' },
+  'fail-windup': { gains: { AngleKp: 5, AngleKi: 0.1, AngleKd: 5 }, label: '失败：积分参与后未收敛（模型默认值；非windup定论）' },
 };

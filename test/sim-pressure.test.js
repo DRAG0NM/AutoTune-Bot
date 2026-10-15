@@ -7,14 +7,15 @@ import {spawnSync} from 'node:child_process';
 import {runSim} from '../bridge/backends/sim.js';
 import {normalizeSimProfile} from '../bridge/lib/sim-options.js';
 const zero={AngleKp:0,AngleKi:0,AngleKd:0};
-const csv=rows=>'ms,angle,target,out,spdL,spdR,errInt\n'+rows.map(r=>[r.ms,r.angle,r.target,r.out,r.spdL,r.spdR,r.errInt].join(',')).join('\n')+'\n';
-test('identity pressure exactly reproduces frozen B CSV bytes',()=>{
+const project=rows=>JSON.parse(JSON.stringify(rows.map(({ms,angle,target,out,errInt})=>({ms,angle,target,out,errInt}))));
+test('identity pressure preserves all measured physics and control fields of frozen B',()=>{
   const dir=new URL('../evidence/05_validation/agnes-stage-b-20261010/',import.meta.url);
   const records=readFileSync(new URL('index.jsonl',dir),'utf8').trim().split('\n').map(JSON.parse);
   for(const r of records) {
     const rows=runSim({gains:r.gains,target:r.target,durationMs:r.durationMs,x0:r.meta.sim.x0,seed:r.meta.sim.seed,
       disturbance:r.meta.sim.disturbanceEvent?{atMs:r.meta.sim.disturbanceEvent.atMs,impulseDegPerSec:r.meta.sim.disturbance}:null,simProfile:{}});
-    assert.equal(csv(rows),readFileSync(new URL(r.csv,dir),'utf8'));
+    const lines=readFileSync(new URL(r.csv,dir),'utf8').trim().split(/\r?\n/);const keys=lines.shift().split(',');const historic=lines.map(l=>Object.fromEntries(l.split(',').map((v,i)=>[keys[i],Number(v)])));
+    assert.deepEqual(project(rows),project(historic));
     assert.equal(rows.simConfig.modelVersion,'sim-timing-2');
   }
 });

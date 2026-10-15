@@ -1,0 +1,20 @@
+{
+  "schema": "autotune-runtime-evidence/1",
+  "runtime": "AGH",
+  "version": "0.0.0",
+  "sourceRepository": "https://github.com/AgnesAI-Labs/agnes-harness",
+  "sourceCommit": "cde816b88c737b9fd04e7ef55b899e7b4cd55eb7",
+  "localPatch": "agh-effect-duration.patch",
+  "compiledCliSha256": "8acf28811fda0a4dcf9a54fe7d928dbafb47c6d3e7a22dda497275a0a5ce4a85",
+  "model": "agnes-3.0-flash",
+  "node": "24.16.0",
+  "platform": "WSL Ubuntu-24.04",
+  "modelRoles": [
+    "primary",
+    "escalation",
+    "fast",
+    "compaction",
+    "verifier"
+  ],
+  "credentialsIncluded": false
+}

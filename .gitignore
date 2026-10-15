@@ -16,8 +16,6 @@ state/*
 .idea/
 Thumbs.db
 desktop.ini
-firmware/**/Objects/
-firmware/**/Listings/
-firmware/**/*.hex
-firmware/**/*.axf
-firmware/**/*.uvguix.*
+dist/
+*.zip
+submission.local/

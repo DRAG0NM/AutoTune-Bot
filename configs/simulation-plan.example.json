@@ -1,0 +1,12 @@
+{
+  "campaign": "replace-with-unique-id",
+  "objective": "regulation",
+  "maxSearch": 12,
+  "gainRanges": {"AngleKp": [0,20], "AngleKi": [0,5], "AngleKd": [0,20]},
+  "search": {"durationMs":3000,"target":0,"x0":3,"seed":20261008,"disturbance":null},
+  "validation": [
+    {"durationMs":3000,"target":0,"x0":3,"seed":20261009,"disturbance":null},
+    {"durationMs":3000,"target":0,"x0":-3,"seed":20261008,"disturbance":null},
+    {"durationMs":3000,"target":0,"x0":3,"seed":20261008,"disturbance":10}
+  ]
+}

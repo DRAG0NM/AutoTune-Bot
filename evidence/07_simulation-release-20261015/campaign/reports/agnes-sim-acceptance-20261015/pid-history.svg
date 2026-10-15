@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img"><title>PID 参数变化</title><rect width="100%" height="100%" fill="white"/><g font-family="Arial,Microsoft YaHei,sans-serif" fill="#26354a"><text x="84" y="27" font-size="20" font-weight="bold">PID 参数变化</text>
+<path d="M84 70V300 M84 300H972" stroke="#e3e9f1" fill="none"/><text x="84" y="323" text-anchor="middle" font-size="12">1</text><text x="74" y="304" text-anchor="end" font-size="12">-0.96</text>
+<path d="M261.6 70V300 M84 254H972" stroke="#e3e9f1" fill="none"/><text x="261.6" y="323" text-anchor="middle" font-size="12">2.2</text><text x="74" y="258" text-anchor="end" font-size="12">1.824</text>
+<path d="M439.2 70V300 M84 208H972" stroke="#e3e9f1" fill="none"/><text x="439.2" y="323" text-anchor="middle" font-size="12">3.4</text><text x="74" y="212" text-anchor="end" font-size="12">4.608</text>
+<path d="M616.8 70V300 M84 162H972" stroke="#e3e9f1" fill="none"/><text x="616.8" y="323" text-anchor="middle" font-size="12">4.6</text><text x="74" y="166" text-anchor="end" font-size="12">7.392</text>
+<path d="M794.4 70V300 M84 115.99999999999997H972" stroke="#e3e9f1" fill="none"/><text x="794.4" y="323" text-anchor="middle" font-size="12">5.8</text><text x="74" y="119.99999999999997" text-anchor="end" font-size="12">10.176</text>
+<path d="M972 70V300 M84 70H972" stroke="#e3e9f1" fill="none"/><text x="972" y="323" text-anchor="middle" font-size="12">7</text><text x="74" y="74" text-anchor="end" font-size="12">12.96</text>
+<polyline data-series="AngleKp" points="84.00,201.52 232.00,218.05 380.00,226.31 528.00,218.05 676.00,218.05 824.00,218.05 972.00,218.05" stroke="#2563eb" stroke-width="2" fill="none"/>
+<circle cx="84" cy="201.52298850574715" r="3" fill="#2563eb"/>
+<circle cx="232" cy="218.04597701149424" r="3" fill="#2563eb"/>
+<circle cx="380" cy="226.30747126436782" r="3" fill="#2563eb"/>
+<circle cx="528" cy="218.04597701149424" r="3" fill="#2563eb"/>
+<circle cx="676" cy="218.04597701149424" r="3" fill="#2563eb"/>
+<circle cx="824" cy="218.04597701149424" r="3" fill="#2563eb"/>
+<circle cx="972" cy="218.04597701149424" r="3" fill="#2563eb"/>
+<text x="84" y="50" fill="#2563eb" font-size="13">AngleKp</text>
+<polyline data-series="AngleKi" points="84.00,282.49 232.00,284.14 380.00,284.14 528.00,284.14 676.00,284.14 824.00,284.14 972.00,284.14" stroke="#0f9d83" stroke-width="2" fill="none"/>
+<circle cx="84" cy="282.485632183908" r="3" fill="#0f9d83"/>
+<circle cx="232" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<circle cx="380" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<circle cx="528" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<circle cx="676" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<circle cx="824" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<circle cx="972" cy="284.1379310344828" r="3" fill="#0f9d83"/>
+<text x="334" y="50" fill="#0f9d83" font-size="13">AngleKi</text>
+<polyline data-series="AngleKd" points="84.00,201.52 232.00,151.95 380.00,151.95 528.00,85.86 676.00,151.95 824.00,151.95 972.00,151.95" stroke="#dc6537" stroke-width="2" fill="none"/>
+<circle cx="84" cy="201.52298850574715" r="3" fill="#dc6537"/>
+<circle cx="232" cy="151.95402298850576" r="3" fill="#dc6537"/>
+<circle cx="380" cy="151.95402298850576" r="3" fill="#dc6537"/>
+<circle cx="528" cy="85.86206896551724" r="3" fill="#dc6537"/>
+<circle cx="676" cy="151.95402298850576" r="3" fill="#dc6537"/>
+<circle cx="824" cy="151.95402298850576" r="3" fill="#dc6537"/>
+<circle cx="972" cy="151.95402298850576" r="3" fill="#dc6537"/>
+<text x="584" y="50" fill="#dc6537" font-size="13">AngleKd</text>
+<text x="500" y="350" text-anchor="middle" font-size="13">Trial / round</text><text transform="translate(18,180) rotate(-90)" text-anchor="middle" font-size="13">Discrete PID gain</text></g></svg>

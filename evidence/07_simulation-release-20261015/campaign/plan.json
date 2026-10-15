@@ -1,0 +1,14 @@
+{
+  "campaign": "agnes-sim-acceptance-20261015",
+  "objective": "regulation",
+  "maxSearch": 4,
+  "gainRanges": {"AngleKp": [0,20], "AngleKi": [0,5], "AngleKd": [0,20]},
+  "search": {"durationMs":3000,"target":0,"x0":3,"seed":20261008,"disturbance":null},
+  "validation": [
+    {"durationMs":3000,"target":0,"x0":3,"seed":20261009,"disturbance":null},
+    {"durationMs":3000,"target":0,"x0":-3,"seed":20261008,"disturbance":null},
+    {"durationMs":3000,"target":0,"x0":3,"seed":20261008,"disturbance":10}
+  ],
+  "objectiveNote": "先收敛(不倒/在带内保持)，再降低J",
+  "budget": "wallclock 5min; total max 7 (search <=4, validation 3)"
+}

@@ -1,0 +1,101 @@
+diff --git a/packages/core/src/effects/effect.ts b/packages/core/src/effects/effect.ts
+index 0241100..d0c0d29 100644
+--- a/packages/core/src/effects/effect.ts
++++ b/packages/core/src/effects/effect.ts
+@@ -11,10 +11,15 @@ export type EffectHandle = {
+   settle(outcome: EffectOutcome): EventInput
+ }
+ 
++// Event timestamps use the wall clock so they remain human-readable. Effect durations need a
++// clock that cannot jump when NTP, VM time sync, or a manual clock change adjusts wall time.
++const defaultMonotonicClock = (): number =>
++  typeof globalThis.performance?.now === 'function' ? globalThis.performance.now() : Date.now()
++
+ /**
+  * The effect sandwich, spelled once. Everything the kernel does outside its own process announces
+  * itself with an `effect/intent` before it happens and closes with an `effect/settled` after, both
+- * carrying the same `effectId` and the wall time between them. That pair is the only thing that
++ * carrying the same `effectId` and the elapsed duration between them. That pair is the only thing that
+  * makes an unfinished effect visible to a resume, so it is not a bookkeeping detail: an intent with
+  * no settlement is precisely the state 06 has to reconcile.
+  *
+@@ -27,6 +32,7 @@ export class EffectRuntime {
+     private readonly o: {
+       ev(type: string, data: unknown): EventInput
+       clock: Clock
++      monotonicClock?: Clock
+       effectId(): string
+     },
+   ) {}
+@@ -34,12 +40,16 @@ export class EffectRuntime {
+   /** Mints the id, stamps the start time, and hands back both rows of the sandwich. */
+   start(body: Record<string, unknown>): EffectHandle {
+     const effectId = this.o.effectId()
+-    const started = this.o.clock()
++    const started = (this.o.monotonicClock ?? defaultMonotonicClock)()
+     return {
+       effectId,
+       intent: this.o.ev('effect/intent', { effectId, ...body }),
+       settle: (outcome: EffectOutcome): EventInput =>
+-        this.o.ev('effect/settled', { effectId, outcome, durationMs: this.o.clock() - started }),
++        this.o.ev('effect/settled', {
++          effectId,
++          outcome,
++          durationMs: Math.max(0, Math.round((this.o.monotonicClock ?? defaultMonotonicClock)() - started)),
++        }),
+     }
+   }
+ }
+diff --git a/packages/core/test/effect.test.ts b/packages/core/test/effect.test.ts
+index df9db09..803a734 100644
+--- a/packages/core/test/effect.test.ts
++++ b/packages/core/test/effect.test.ts
+@@ -12,8 +12,10 @@ describe('effect outcomes', () => {
+ 
+   it('records unknown as a first-class settlement outcome', () => {
+     let now = 10
++    let monotonic = 100
+     const runtime = new EffectRuntime({
+       clock: () => now,
++      monotonicClock: () => monotonic,
+       effectId: () => 'effect-1',
+       ev: (type, data) => ({
+         type,
+@@ -26,10 +28,37 @@ describe('effect outcomes', () => {
+ 
+     const effect = runtime.start({ kind: 'tool' })
+     now = 17
++    monotonic = 107
+ 
+     expect(effect.settle('unknown')).toMatchObject({
+       type: 'effect/settled',
+       data: { effectId: 'effect-1', outcome: 'unknown', durationMs: 7 },
+     })
+   })
++
++  it('keeps duration nonnegative when the wall clock moves backwards', () => {
++    let wall = 10_000
++    let monotonic = 500
++    const runtime = new EffectRuntime({
++      clock: () => wall,
++      monotonicClock: () => monotonic,
++      effectId: () => 'effect-clock-jump',
++      ev: (type, data) => ({
++        type,
++        data: data as EventInput['data'],
++        actor: { id: 'system', org: 'local', role: 'system', deptPath: [], attrs: {} },
++        origin: 'system',
++        trust: 'trusted',
++      }),
++    })
++
++    const effect = runtime.start({ kind: 'inference' })
++    wall = 2_000
++    monotonic = 512
++
++    expect(effect.settle('ok')).toMatchObject({
++      type: 'effect/settled',
++      data: { effectId: 'effect-clock-jump', outcome: 'ok', durationMs: 12 },
++    })
++  })
+ })

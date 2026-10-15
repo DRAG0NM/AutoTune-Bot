@@ -1,0 +1,25 @@
+{
+  "trial": {
+    "durationMs": 3000
+  },
+  "metrics": {
+    "settleBand": 0.02,
+    "tolFloor": 0.1,
+    "ssWindow": 0.3,
+    "headWindow": 0.05,
+    "fallLimitDeg": 50,
+    "minSamples": 20,
+    "settleHoldMs": 300
+  },
+  "cost": {
+    "wOvershoot": 0.4,
+    "wSettling": 0.3,
+    "wSsErr": 0.2,
+    "wEnergy": 0.1
+  },
+  "agents": {
+    "maxRounds": 25,
+    "stopAfterNoImprovement": 3,
+    "repeatPerParamSet": 2
+  }
+}

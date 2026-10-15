@@ -1,9 +1,9 @@
 {
   "name": "autotune-bot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "PID experiment tools for Agnes Harness: simulation, CSV replay and serial execution",
+  "description": "AGNES PID AI tuning assistant for second-order inverted-pendulum simulation with CSV, SVG and HTML reports",
   "engines": {
     "node": ">=24.10"
   },
@@ -15,11 +15,12 @@
     "test": "node --test",
     "trial:sim": "node bridge/cli.js trial --backend sim --json",
     "trial:replay": "node bridge/cli.js trial --backend replay --csv testdata/sample_step_response.csv --json",
-    "sample": "node tools/make_sample_csv.js",
     "plot:evidence": "node tools/plot-evidence.js",
     "verify:evidence": "node tools/verify-evidence-figures.js",
     "verify:history": "node tools/verify-history.js",
-    "audit:sessions": "node tools/audit-sessions.js"
+    "audit:sessions": "node tools/audit-sessions.js",
+    "verify:submission": "node tools/verify-submission.js",
+    "demo": "node tools/demo.js"
   },
   "dependencies": {},
   "license": "Apache-2.0",

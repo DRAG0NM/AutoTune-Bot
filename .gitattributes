@@ -1,10 +1,13 @@
 * text=auto
 *.js text eol=lf
+*.mjs text eol=lf
+*.ps1 text eol=lf
 *.md text eol=lf
 *.json text eol=lf
 *.yml text eol=lf
 *.csv -text
 *.jsonl -text
 evidence/versions/** -text
+evidence/07_simulation-release-20261015/** -text
 *.png binary
 *.zip binary

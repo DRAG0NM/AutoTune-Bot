@@ -1,0 +1,10 @@
+AutoTune-Bot / PID AI simulation tuning assistant
+Distributed under the Apache License, Version 2.0; see LICENSE.
+
+Agnes Harness is an external Apache-2.0 project by AgnesAI-Labs:
+https://github.com/AgnesAI-Labs/agnes-harness
+The included effect-duration patch modifies the AGH files identified in its diff;
+it changes elapsed-time logging and its regression test, not the PID simulation.
+The configured AGH runtime, model credentials and third-party binaries are not
+redistributed here. Historical control-source and AI-assistance disclosures are
+documented in docs/sources-and-ai.md.

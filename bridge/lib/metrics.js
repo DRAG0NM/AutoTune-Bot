@@ -5,12 +5,12 @@
 
 const O = {
   settleBand: 0.02, // 进入 ±2% 阶跃幅值带
-  tolFloor: 0.1, // 容差地板（度）：待现场数据复校
+  tolFloor: 0.1, // 容差地板（度）：仿真绝对容差
   ssWindow: 0.3, // 末段 30% 用于稳态值
   headWindow: 0.05, // 首段 5% 用于初始值
   minSamples: 20,
   settleHoldMs: 300, // 末尾须有至少 300ms 的持续带内观测，避免单点宣称收敛
-  fallLimitDeg: 50, // 与固件 |Angle|>50° 摔倒判据一致
+  fallLimitDeg: 50, // 仿真角度终止阈值
 };
 
 const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : NaN);
@@ -26,7 +26,7 @@ export const COST_WEIGHTS = { overshoot: 0.4, settling: 0.3, ssErr: 0.2, energy:
  *   overshoot  归一化到 50%（超调 0.5 及以上记满分惩罚）
  *   settlingMs 归一化到 2000 ms
  *   ssErr      以阶跃幅值为分母（与幅值无关，便于跨工况比较）
- *   energy     归一化到 20000（Σ PWM²·Δt 的经验量级）
+ *   energy     归一化到 20000（Σ control²·Δt 的经验量级）
  */
 export const COST_NORM = { overshoot: 0.5, settlingMs: 2000, energy: 2e4 };
 const NORM = COST_NORM;
@@ -137,11 +137,14 @@ export function computeMetrics(samples, opts = {}) {
   // ---- 代价函数 J（越小越好）----
   //  v2 修正：归一化常数与权重全部显式命名并随结果一起返回，
 
-  const j =
-    W.overshoot * Math.min(overshoot / NORM.overshoot, 1) +
-    W.settling * Math.min(settlingMs / NORM.settlingMs, 1) +
-    W.ssErr * Math.min(Math.abs(ssErr) / Math.max(absStep, 1), 1) +
-    W.energy * Math.min(energy / NORM.energy, 1);
+  const jContributions = {
+    overshoot: W.overshoot * Math.min(overshoot / NORM.overshoot, 1),
+    settling: W.settling * Math.min(settlingMs / NORM.settlingMs, 1),
+    ssErr: W.ssErr * Math.min(Math.abs(ssErr) / Math.max(absStep, 1), 1),
+    energy: W.energy * Math.min(energy / NORM.energy, 1),
+  };
+  const j = Object.values(jContributions).reduce((sum,value)=>sum+value,0);
+  const dominantCostTerm = j>0 ? Object.keys(jContributions).reduce((a,b)=>jContributions[a]>=jContributions[b]?a:b) : null;
 
   return {
     ok: true, fail: false, converged,
@@ -150,6 +153,7 @@ export function computeMetrics(samples, opts = {}) {
     overshoot: round(overshoot), settlingMs: settleIdx < 0 ? Infinity : Math.round(settlingMs),
     ssErr: round(ssErr), osc, energy: Math.round(energy), peakAbs: round(peakAbs),
     j: round(j),
+    jContributions, dominantCostTerm,
     jWeights: W,          // 本次 J 实际使用的权重
     jNorm: NORM,          // 本次 J 实际使用的归一化常数
     tol: round(tol),      // 本次调节时间判据使用的容差带

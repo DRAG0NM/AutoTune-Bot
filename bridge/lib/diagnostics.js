@@ -1,4 +1,4 @@
-// 只读遥测诊断；不改变历史评价 J 或实车放行状态。
+// 仿真时序诊断；不改变历史评价J。
 export const DIAGNOSTIC_VERSION = '1.0';
 
 export function diagnose(samples, options = {}) {

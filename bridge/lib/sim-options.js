@@ -1,4 +1,4 @@
-// 仿真压力参数是实验假设，未经实车辨识；禁止用于 serial/replay。
+// 仿真压力参数是数值实验假设，仅允许sim后端。
 export const SIM_PROFILE_DEFAULTS = Object.freeze({
   actuatorLagMs:0, deadZoneOutput:0, measurementDelayMs:0,
   noise:0.05, controlScale:1, dampingScale:1,

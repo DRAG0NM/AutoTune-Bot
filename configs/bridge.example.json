@@ -1,62 +1,6 @@
 {
-  "serial": {
-    "port": "COM5",
-    "baud": 115200
-  },
   "trial": {
-    "durationMs": 3000,
-    "gapMs": 3000
-  },
-  "safety": {
-    "heartbeatMs": 100,
-    "watchdogMs": 500,
-    "settleMs": 250,
-    "serialAckTimeoutMs": 500,
-    "serialMinCoverageFraction": 0.8,
-    "serialMaxSampleGapMs": 250,
-    "serialMaxStartTelemetryDelayMs": 500,
-    "paramLimits": {
-      "AngleKp": [
-        0,
-        20
-      ],
-      "AngleKi": [
-        0,
-        5
-      ],
-      "AngleKd": [
-        0,
-        20
-      ],
-      "SpeedKp": [
-        0,
-        20
-      ],
-      "SpeedKi": [
-        0,
-        5
-      ],
-      "SpeedKd": [
-        0,
-        20
-      ],
-      "TurnKp": [
-        0,
-        20
-      ],
-      "TurnKi": [
-        0,
-        10
-      ],
-      "TurnKd": [
-        0,
-        20
-      ],
-      "Offset": [
-        0,
-        30
-      ]
-    }
+    "durationMs": 3000
   },
   "metrics": {
     "settleBand": 0.02,

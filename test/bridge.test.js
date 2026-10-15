@@ -7,7 +7,7 @@ import { spawnSync } from 'node:child_process';
 import { runSim } from '../bridge/backends/sim.js';
 import { computeMetrics } from '../bridge/lib/metrics.js';
 import { loadCsv } from '../bridge/backends/replay.js';
-import { parseGainList, parseTelemetry } from '../bridge/lib/protocol.js';
+import { parseGainList } from '../bridge/lib/protocol.js';
 
 const root = new URL('../', import.meta.url);
 const dir = mkdtempSync(join(tmpdir(), 'autotune-test-'));
@@ -68,7 +68,7 @@ test('metrics cannot report success for NaN, stale timestamps, or changing targe
 
 test('invalid trial options do not run or create evidence', () => {
   for (const args of [['--dur','NaN'],['--seed','-1'],['--x0','NaN'],['--gains','AngleKp='],
-    ['--dur','5000'],['--tag','../escape'],['--bogus','1'],['--seed'],['--seed','1','--seed','2'],
+    ['--dur','60001'],['--tag','../escape'],['--bogus','1'],['--seed'],['--seed','1','--seed','2'],
     ['--gains','AngleKp=21'],['--gains','AngleKp=4,AngleKp=5'],['--json','false']]) {
     const r=cli('trial','--backend','sim','--json',...args);
     assert.notEqual(r.status,0,JSON.stringify(args));
@@ -93,13 +93,10 @@ test('grid with only nonconverged candidates reports no optimum, Infinity stays 
   assert.equal(x.best,null); assert.equal(x.rows[0].j,'Infinity'); assert.equal(x.rows[0].fail,true);
 });
 
-test('protocol rejects malformed gains and empty/out-of-range telemetry fields', () => {
+test('parameter contract rejects malformed gains and unrelated keys', () => {
   assert.throws(()=>parseGainList('AngleKp=4,garbage'));
   assert.throws(()=>parseGainList('AngleKp=4=8'));
   assert.throws(()=>parseGainList('SpeedKp=1'));
-  assert.equal(parseTelemetry('T,0,,0,0,0,0,0'),null);
-  assert.equal(parseTelemetry('T,-1,0,0,0,0,0,0'),null);
-  assert.equal(parseTelemetry('T,4294967296,0,0,0,0,0,0'),null);
 });
 
 test('late single in-band sample is not convergence; energy uses actual intervals', () => {

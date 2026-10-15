@@ -1,5 +1,3 @@
-# 本机运行记录
+# 当前仿真产物
 
-CLI在此生成单次CSV及追加式 `index.jsonl`。本机运行产物默认忽略；需要保存为实验数据时，核验后导出到 `evidence/05_validation/<campaign>/`。
-
-实验保留全部搜索和预定验证记录，包括失败结果。历史重复冒烟及无完整来源的试运行不并入正式批次。
+每轮CSV与index.jsonl为原始执行证据；artifacts包含逐轮JSON/SVG/HTML，reports包含按campaign汇总的CSV/SVG/HTML。plans保存冻结试验条件。失败轮不得删去。此目录为本机运行产物，默认不提交。
