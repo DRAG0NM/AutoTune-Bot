@@ -26,7 +26,10 @@ test('PowerShell launcher uses WSL web helper, opens returned session and refuse
   assert.deepEqual(args.slice(0,4),['-d','Ubuntu-24.04','--exec','node']);
   assert.match(args[4],/\/tools\/launch-agnes-web\.mjs$/);
   assert.equal(args[args.indexOf('--cli')+1],'/home/drag0nm/agh/packages/cli/dist/local/agnes.mjs');
-  const expectedProject='/mnt/'+dir[0].toLowerCase()+'/'+dir.slice(3).replaceAll('\\','/');
+  const resolved=spawnSync('pwsh',['-NoProfile','-NonInteractive','-Command',`[IO.Path]::GetFullPath('${dir.replaceAll("'","''")}')`],{encoding:'utf8'});
+  assert.equal(resolved.status,0,resolved.stderr);
+  const windowsProject=resolved.stdout.trim().replaceAll('\\','/');
+  const expectedProject='/mnt/'+windowsProject[0].toLowerCase()+windowsProject.slice(2);
   assert.equal(args[args.indexOf('--project')+1],expectedProject);
   assert.equal(args[4],expectedProject+'/tools/launch-agnes-web.mjs');
   assert.match(loaded.stdout,/OPEN:http:\/\/127.0.0.1:4177\/\?session=agnes%3Alocal/);
