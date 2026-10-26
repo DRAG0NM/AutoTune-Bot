@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+  <title>AutoTune-Bot · 二阶倒立摆仿真 PID AI 调参助手</title>
+  <rect width="1200" height="360" fill="#f5f3ee"/>
+  <g font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',Georgia,serif" fill="#2b2a28">
+    <text x="80" y="150" font-size="68" font-weight="600" letter-spacing="1">AutoTune-Bot</text>
+    <text x="82" y="204" font-size="26" fill="#57534c">二阶倒立摆仿真 · PID AI 调参助手</text>
+    <text x="82" y="252" font-size="17" fill="#8a857c" font-family="ui-monospace,'Cascadia Mono',Consolas,monospace">plan → trial → analyze → retune → freeze → validate → report</text>
+  </g>
+  <rect x="82" y="282" width="34" height="34" rx="3" fill="#a54139"/>
+  <text x="99" y="306" font-size="17" fill="#f5f3ee" text-anchor="middle" font-family="'Noto Serif SC','Songti SC',serif">调</text>
+
+  <!-- 响应曲线：从倾倒到收敛 -->
+  <g transform="translate(700 70)">
+    <path d="M0 220H420" stroke="#d9d4ca" stroke-width="1"/>
+    <path d="M0 120H420" stroke="#77736b" stroke-width="1" stroke-dasharray="4 6"/>
+    <text x="424" y="124" font-size="13" fill="#8a857c" font-family="ui-monospace,Consolas,monospace">θ=0</text>
+    <path d="M0 30 C 30 30, 45 190, 75 190 S 115 70, 145 70 S 185 155, 210 155 S 245 100, 265 100 S 295 132, 315 132 S 345 114, 365 116 S 400 120, 420 120"
+          fill="none" stroke="#2b2a28" stroke-width="2.4" stroke-linecap="round" opacity="0.28"/>
+    <path d="M0 30 C 40 30, 60 150, 100 140 S 160 112, 200 121 S 300 120, 420 120"
+          fill="none" stroke="#a54139" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="30" r="5" fill="#a54139"/>
+    <text x="0" y="248" font-size="13" fill="#8a857c" font-family="ui-monospace,Consolas,monospace">5/0.1/5  J=0.7235</text>
+    <text x="420" y="248" font-size="13" fill="#a54139" text-anchor="end" font-family="ui-monospace,Consolas,monospace">4/0/8  J=0.149</text>
+  </g>
+</svg>
