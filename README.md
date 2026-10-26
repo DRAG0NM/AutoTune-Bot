@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/DRAG0NM/AutoTune-Bot/actions/workflows/validate.yml"><img alt="Validate" src="https://img.shields.io/github/actions/workflow/status/DRAG0NM/AutoTune-Bot/validate.yml?branch=main&style=flat-square&label=validate&labelColor=2b2a28"></a>
-  <img alt="Node.js >=24.10" src="https://img.shields.io/badge/Node.js-%3E%3D24.10-2b2a28?style=flat-square&logo=nodedotjs&logoColor=f5f3ee">
+  <img alt="Node.js 24.10+" src="https://img.shields.io/badge/Node.js-%3E%3D24.10-2b2a28?style=flat-square&logo=nodedotjs&logoColor=f5f3ee">
   <img alt="Zero dependencies" src="https://img.shields.io/badge/dependencies-0-77736b?style=flat-square">
   <img alt="Model" src="https://img.shields.io/badge/model-agnes--3.0--flash-77736b?style=flat-square">
   <a href="LICENSE"><img alt="License Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-a54139?style=flat-square"></a>
